@@ -18,7 +18,6 @@
                  [compojure "1.4.0"]
                  [enlive "1.1.6"]
                  [sablono "0.3.5"]
-                 [domina "1.0.0"]
                  [org.omcljs/om "0.8.8"]
                  [racehub/om-bootstrap "0.5.3"]
                  [environ "1.0.0"]]
