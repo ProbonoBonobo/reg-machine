@@ -23,12 +23,14 @@
 
 
 (def app-state (atom {:values {:x "" :y "" :op "" :result "" :tape []}
-                      :current-target :x :shift-in false}))
+                      :current-target :x :address-bus :x :shift-in false}))
 (def keyboard-input (atom {:key-id nil}))
 
 (defn flushRegister [m]
   ; Destructively clear the associated register.
   (swap! app-state assoc-in [:values m] ""))
+
+
 
 
 (defn show [arg]
@@ -38,6 +40,8 @@
         (= arg 'op) (get-in @app-state [:values :op])
         (= arg 'result) (get-in @app-state [:values :result])
         (= arg 'current-target) (get-in @app-state [:current-target])
+        (= arg 'address-bus) (if (not (= :x (get-in @app-state [:address-bus])))
+                                  :y)
         (= arg 'tape) (get-in @app-state [:values :tape])))
 
 (defn boolean? [val]
@@ -57,8 +61,79 @@
   ; indifferent to the difference between nil, nothing, and the empty string
   (or (empty? lat) (= "" (first lat)) (and (= (first lat) nil) (= (count lat) 1))))
 
-(defn add [x y]
-  (+ x y))
+(defn shunt [val reg]
+  (swap! app-state update-in [:values reg] str reg val))
+(defn put [val reg]
+  (swap! app-state assoc-in [:values reg] (str val)))
+(defn operator? [val]
+  (let [ops (set ["/" "*" "+" "-"])]
+    (contains? ops val)))
+(defn call-to-eval? [val]
+  (let [evaluators (set ["="])]
+    (contains? evaluators val)))
+(def can-evaluate? (and (map (juxt show null? not) ['x 'y 'op])))
+
+(defn bus-driver [x]
+  ; the bus-driver's name is otto. he's a cool dude.
+  ; he handles state changes otto-matically.
+  ; all inputs should go through otto or all semblance of order in this universe will be blown to smithereens
+  ; otto's responsibilities are total: he updates the address bus, control bus, data bus, and numeric registers
+  ; in the process, otto consumes x.
+  (let [address-bus (show 'address-bus)
+        control-bus (show 'op)
+        data-bus    (show 'result)]
+
+  (cond (number? x) (if (and (not (null? data-bus))
+                             (null? control-bus)
+                             (null? (show 'x))
+                             (null? (show 'y)))
+                        (do
+                          (put :x :address-bus)
+                          (put x address-bus)
+                          (flushRegister data-bus)) ;then we're starting a new computation. flush!
+                        (shunt x address-bus))
+
+        (operator? x) (let [duplicate-op? (not (null? control-bus))]
+                        (do
+                          (put x control-bus) ;non-empty control-bus shouldn't block
+
+                          (if (and (show 'x) (show 'y)) ; the chained arithmetic case, e.g. the minus sign in 3 + 5 - 1
+                            (do
+                              (bus-driver "=")         ;drive the passengers home first
+                              (put x control-bus)        ;now you can operate on them again
+                              (put data-bus :x)) ;and again, and again...
+
+                            (if (and (not (null? data-bus)) ; the deferred continuation case
+                                     (null? (show 'x))      ; e.g. the star in 3 + 5 = * 4
+                                     (null? (show 'y)))
+                              (do
+                                (put x control-bus)
+                                (put data-bus :x))))
+                          (if (not duplicate-op?)
+                            (if (= address-bus :x)
+                              :y
+                              :x))))
+        (call-to-eval? x)
+                      (if (can-evaluate?)
+                        (let [first-num (js/parseFloat (show 'x))
+                              second-num (js/parseFloat (show 'y))
+                              dispatch (fn [instruction] (cond (= instruction "add") '+
+                                                               (= instruction "subtract") '-
+                                                               (= instruction "divide") '/
+                                                               (= instruction "multiply") '*))
+                              result (apply (dispatch (show 'op)) [first-num second-num])]
+                          (do
+                            (put (str result) data-bus)
+                            (flushRegister :x)
+                            (flushRegister :y)
+                            (flushRegister :op))
+                          )
+                        (if (null? (show 'x))
+                          (if (null? (show 'y))
+                            nil)
+                          (put (show 'x) data-bus)))))) ;then let x equal itself
+
+
 (defn reval! [arg]
   ; Destructively update the value of the result register
   (let [current-op (show 'op)
@@ -112,9 +187,7 @@
 
 
 
-(defn can-evaluate? [] (and (not (= "" (get-in @app-state [:values :x])))
-                            (not (= "" (get-in @app-state [:values :op])))
-                            (not (= "" (get-in @app-state [:values :y])))))
+
 
 (defn concatToRegister [atmap loc value]
   (let [pending-op (get-in @app-state [:values :op])]
@@ -160,15 +233,15 @@
                   ]
                  [:button {:href    "#"
 
-                           :onClick #(concatToRegister app-state target-register 1)}
+                           :onClick #(bus-driver 1)}
                   "1"] " "
 
                  [:button {:href    "#"
-                           :onClick #(concatToRegister app-state target-register 2)}
+                           :onClick #(bus-driver 2)}
                   "2"] " "
 
                  [:button {:href    "#"
-                           :onClick #(concatToRegister app-state target-register 3)}
+                           :onClick #(bus-driver 3)}
                   "3"] " "
                  [:button {:href    "#"
                            :onClick #(op-button-handler "add")}
