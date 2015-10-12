@@ -43,6 +43,8 @@
   :profiles {:dev {:source-paths ["env/dev/clj"]
                    :test-paths ["test/clj"]
 
+                   :min-lein-version "2.0.0"
+
                    :dependencies [[figwheel "0.2.5"]
                                   [figwheel-sidecar "0.2.5"]
                                   [com.cemerick/piggieback "0.1.5"]
