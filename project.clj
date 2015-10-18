@@ -20,7 +20,8 @@
                  [sablono "0.3.5"]
                  [org.omcljs/om "0.8.8"]
                  [racehub/om-bootstrap "0.5.3"]
-                 [environ "1.0.0"]]
+                 [environ "1.0.0"]
+                 [quil "2.2.6"]]
 
   :plugins [[lein-cljsbuild "1.0.5"]
             [lein-figwheel "0.4.1"]
