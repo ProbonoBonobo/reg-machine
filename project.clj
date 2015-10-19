@@ -71,7 +71,8 @@
                                                           :source-map    "resources/public/js/test.js.map"
                                                           :preamble      ["react/react.min.js"]
                                                           :optimizations :whitespace
-                                                          :pretty-print  false}}}}}
+                                                          :pretty-print  false}}}
+                               }}
 
              :uberjar {:source-paths ["env/prod/clj"]
                        :hooks [leiningen.cljsbuild]
