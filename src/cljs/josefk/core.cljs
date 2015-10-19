@@ -383,7 +383,7 @@
                        "+"] " "
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff "divide"))}
-                       "/"] " "
+                       "/"] " " ]
                       ;[:button {:href    "#"
                       ;          :onClick #(do
                       ;                     (but app-state target-register '.)
@@ -746,13 +746,13 @@
                        (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
                        (q/text (str "(put :r2 (target))") (get (line 3) :x) (get (line 3) :y))
                        (q/text (str "(put " (get-in @keyboard-input [:key-id]) " :r2)") (get (line 4) :x) (get (line 4) :y))
-                       (q/text (str "=> 'ok") (get (line 2) :x) (get (line 2) :y))
-                       (= code 3) (do
-                                    (q/text (str "loading instr reg 3...") (get (line 1) :x) (get (line 1) :y))
-                                    (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
-                                    (q/text (str "(eval '(put (key) (target))") (get (line 3) :x) (get (line 3) :y))
-                                    (q/text (str "=> (put " (get-in @keyboard-input [:key-id]) " " (translate-target) ")") (get (line 4) :x) (get (line 4) :y))))))
-  )
+                       (q/text (str "=> 'ok") (get (line 2) :x) (get (line 2) :y)))
+          (= code 3) (do
+                       (q/text (str "loading instr reg 3...") (get (line 1) :x) (get (line 1) :y))
+                       (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
+                       (q/text (str "(eval '(put (key) (target))") (get (line 3) :x) (get (line 3) :y))
+                       (q/text (str "=> (put " (get-in @keyboard-input [:key-id]) " " (translate-target) ")") (get (line 4) :x) (get (line 4) :y))))))
+
                      ;;1 push to empty y register
                      ;(fn [e] (do (divert-route :current-target :y)
                      ;            (put e :current-target)))
@@ -882,3 +882,4 @@
     ;(add-watch result :on-change (fn [_ _ _ _] (render!)))
 
     (render!)
+
