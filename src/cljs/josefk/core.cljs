@@ -15,6 +15,8 @@
 ;(defonce app-state (atom {:text "Hello Chestnut!"}))
 ;
 ;
+;(def state (atom {:accumulator {:r1 "" :r2 "" :r3 "" :op ""} :target :r1})
+
 (defn bind-input [input-atom]
   #(reset! input-atom (-> %1 .-target .-value)))
 
@@ -24,8 +26,8 @@
 
 
 (def app-state (atom {:values {:x "" :y "" :op "" :result "" :tape []} :data-bus :result :control-bus :op :address-bus :x :primary-register :x :secondary-register :y
-                      :current-target :x :shift-in false :opval ""}))
-(def keyboard-input (atom {:key-id nil}))
+                      :current-target :x :shift-in false :opval "" :opcode nil}))
+(def keyboard-input (atom {:key-id nil :ascii-code nil}))
 
 (defn flushRegister [m]
   ; Destructively clear the associated register.
@@ -189,31 +191,46 @@
                                  (if (empty? y)
                                    (if (empty? op)
                                      (if (empty? x)
-                                       (push val :to-empty :x-register) ;the first action
-                                       (push val :to-non-empty :x-register)) ;keep concatenating to x
-                                     (push val :to-empty :y-register)) ;update :current-target to y and assoc the new val
-                                   (push val :to-non-empty :y-register)) ;keep concatenating to y
-                                 (push val :to-fresh-sparkly :x-register)) ;clear registers, reset target to x, put val there
+                                       (do (swap! app-state assoc-in [:opcode] 0)
+                                        (push val :to-empty :x-register)) ;the first action
+                                       (do (swap! app-state assoc-in [:opcode] 3)
+                                         (push val :to-non-empty :x-register))) ;keep concatenating to x
+                                     (do (swap! app-state assoc-in [:opcode] 1)
+                                       (push val :to-empty :y-register))) ;update :current-target to y and assoc the new val
+                                   (do (swap! app-state assoc-in [:opcode] 3)
+                                       (push val :to-non-empty :y-register))) ;keep concatenating to y
+                                 (do (swap! app-state assoc-in [:opcode] 5)
+                                     (push val :to-fresh-sparkly :x-register))) ;clear registers, reset target to x, put val there
                     (shift? val) (swap! app-state assoc-in [:shift-in] true) ;helper events for keyboard inputs
                     (unshift? val) (swap! app-state assoc-in [:shift-in] false)
                     (operator? val) (if (empty? ans)
                                       (if (empty? y)
                                         (if (empty? op)
                                           (if (empty? x)
-                                            (push "" :nothin-baby :shhh-just-the-wind) ;don't add voids
-                                            (push val :to-empty :op-register)) ;this is the usual case
-                                          (push val :to-non-empty :op-register)) ;if duplicate ops, take most recent
-                                        (push val :to-fully-evaluated :op-register)) ;chained expressions are ok (e.g. 5+3*8-2)
-                                      (push val :to-previously-evaluated :op-register)) ;resume chaining if the prev op was "equals"
+                                            (do (swap! app-state assoc-in [:opcode] 4)
+                                                (push "" :nothin-baby :shhh-just-the-wind)) ;don't add voids
+                                            (do (swap! app-state assoc-in [:opcode] 2)
+                                              (push val :to-empty :op-register))) ;this is the usual case
+                                          (do (swap! app-state assoc-in [:opcode] 2)
+                                              (push val :to-non-empty :op-register))) ;if duplicate ops, take most recent
+                                        (do (swap! app-state assoc-in [:opcode] 6)
+                                            (push val :to-fully-evaluated :op-register))) ;chained expressions are ok (e.g. 5+3*8-2)
+                                      (do (swap! app-state assoc-in [:opcode] 8)
+                                          (push val :to-previously-evaluated :op-register))) ;resume chaining if the prev op was "equals"
                     (eval? val) (if (empty? ans)
                                   (if (empty? y)
                                     (if (empty? op)
                                       (if (empty? x)
-                                        (push "" :nothin-baby :shhh-just-the-wind) ;don't evaluate voids
-                                        (push val :to-unevaluated :output-register)) ;let x equal itself
-                                      (push val :to-unevaluated :output-register)) ;stupid edge case
-                                    (push val :to-fully-evaluated :output-register)) ;normal evaluation flushes all but the output register
-                                  (push "" :nothin-baby :shhh-just-the-wind))))) ;already evaluated, do nothing
+                                        (do (swap! app-state assoc-in [:opcode] 2)
+                                            (push "" :nothin-baby :shhh-just-the-wind)) ;don't evaluate voids
+                                        (do (swap! app-state assoc-in [:opcode] 10)
+                                            (push val :to-unevaluated :output-register))) ;let x equal itself
+                                      (do (swap! app-state assoc-in [:opcode] 10)
+                                          (push val :to-unevaluated :output-register))) ;stupid edge case
+                                    (do (swap! app-state assoc-in [:opcode] 7)
+                                        (push val :to-fully-evaluated :output-register))) ;normal evaluation flushes all but the output register
+                                  (do (swap! app-state assoc-in [:opcode] 2)
+                                      (push "" :nothin-baby :shhh-just-the-wind)))))) ;already evaluated, do nothing
 (def opcode
   ;an experiment in rewriting "push" as a vector of methods: we're not really doing the von-neumann bottleneck
   ;any favors by dispatching on action tags. can we force the use of direct addressing by converting the cond
@@ -457,7 +474,9 @@
                                 (d/td (str (get-in @keyboard-input [:key-id]))))
                               (d/tr
                                 (d/td (d/code {} "Shift key:"))
-                                (d/td (d/code {} (str (get-in @app-state [:shift-in])))))))]))))
+                                (d/td (d/code {} (str (get-in @app-state [:shift-in])))))))
+
+                     ]))))
 
     (def stringnums (set ["1" "2" "3" "4" "5" "6" "7" "8" "9" "0"]))
 
@@ -478,6 +497,8 @@
                          (let [ascii-code (.-keyCode e)
                                character (js/String.fromCharCode (.-keyCode e))
                                shifted? (get-in @app-state [:shift-in])]
+                           (swap! keyboard-input assoc-in [:key-id] character)
+                           (swap! keyboard-input assoc-in [:ascii-code] ascii-code)
                            (cond
                              (= ascii-code 16) (swap! app-state assoc-in [:shift-in] true)
                              (= ascii-code 48) (butt-stuff 0)
@@ -505,6 +526,392 @@
       (.render js/React
                (a-simple-stateful-object app-state keyboard-input)
                (.getElementById js/document "app")))
+(def img (atom nil))
+(defn quil-setup []
+  ; Set frame rate to 30 frames per second.
+  (reset! img (q/load-image "lock-1.jpg"))
+  (q/frame-rate 10)
+  ; Set color mode to HSB (HSV) instead of default RGB.
+  (q/color-mode :hsb)
+  ; setup function returns initial state. It contains
+  ; circle color and position.
+  {:color 0
+   :angle 0})
+
+(def x-scalar 22.2222)
+(def y-scalar 22.2727)
+(defn quil-update-state [state]
+  ; Update sketch state by changing circle color and position.
+  {:color (mod (+ (:color state) 0.7) 255)
+   ;:angle (+ (:angle state) 0.1)})
+   })
+(def op-sentinel-x (* 15 x-scalar))
+(def op-sentinel-y (* 7.33 y-scalar))
+(def targ-x (* 15 x-scalar))
+(def targ-y (* 11.75 y-scalar))
+(defn line [line-num]
+  ;utility function for generating line coordinates in the body of the control unit
+  (let [line-height .75]
+  (zipmap [:x :y] (into [] [(* 2.5 x-scalar)
+                            (* (+ 6.5 (* line-num line-height)) y-scalar)]))))
+(defn translate-target []
+  (if (= (get-in @app-state [:current-target]) :x)
+    "r1"
+    (if (= (get-in @app-state [:current-target]) :y)
+      "r2"
+      "r3")))
+
+
+(defn quil-draw-state [state]
+  ; Clear the sketch by filling it with light-grey color.
+  (q/background 240)
+  ; Set circle color.
+  (q/fill (:color state) 255 255)
+  ; Calculate x and y coordinates of the circle.
+  ;(let [angle (:angle state)
+   ;     x (* 150 (q/cos angle))
+    ;    y (* 150 (q/sin angle))]
+  (let [x 19
+        y 16
+        meta-bounding-box (q/rect (* 0.25 x-scalar)
+                                  (* 4.5 y-scalar)
+                                  (* 35.5 x-scalar)
+                                  (* 10.5 y-scalar))
+
+        input-bounding-box (q/rect (* 19 x-scalar)
+                                   (* 16 y-scalar)
+                                   (* 7 x-scalar)
+                                   (* 5 y-scalar))
+        output-bounding-box (q/rect (* 28 x-scalar)
+                                    (* 16 y-scalar)
+                                    (* 7 x-scalar)
+                                    (* 5 y-scalar))
+        acu-bounding-box (q/rect (* 19 x-scalar)
+                                 (* 5 y-scalar)
+                                 (* 16 x-scalar)
+                                 (* 9.5 y-scalar))
+        accumulator-box (q/rect (* 20 x-scalar)
+                                (* 9 y-scalar)
+                                (* 14 x-scalar)
+                                (* 5 y-scalar))
+        cpu-bounding-box (q/rect (* 1 x-scalar)
+                                 (* 5 y-scalar)
+                                 (* 16 x-scalar)
+                                 (* 9.5 y-scalar))
+        op-box (q/rect (* 20 x-scalar)
+                       (* 6.5 y-scalar)
+                       (* 14 x-scalar)
+                       (* 1.75 y-scalar))
+        ;ram-bounding-box    (q/rect (* 0.5 x-scalar)
+        ;                           (* 2.5 y-scalar)
+        ;                          (* 33.5 x-scalar)
+        ;                         (* 3 y-scalar))
+        instruction1 (q/rect (* 0.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction2 (q/rect (* 3.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction3 (q/rect (* 6.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction4 (q/rect (* 9.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction5 (q/rect (* 12.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction6 (q/rect (* 15.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction7 (q/rect (* 18.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction8 (q/rect (* 21.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction9 (q/rect (* 24.5 x-scalar)
+                             (* 1 y-scalar)
+                             (* 3 x-scalar)
+                             (* 3 y-scalar))
+        instruction10 (q/rect (* 27.5 x-scalar)
+                              (* 1 y-scalar)
+                              (* 3 x-scalar)
+                              (* 3 y-scalar))
+        instruction11 (q/rect (* 30.5 x-scalar)
+                              (* 1 y-scalar)
+                              (* 3 x-scalar)
+                              (* 3 y-scalar))
+        code (get-in @app-state [:opcode])
+
+
+
+
+        ]
+    (apply q/fill [200])
+    (q/rect (* 19 x-scalar)
+                               (* 16 y-scalar)
+                               (* 7 x-scalar)
+                               (* 5 y-scalar))
+    (q/rect (* 28 x-scalar)
+                                (* 16 y-scalar)
+                                (* 7 x-scalar)
+                                (* 5 y-scalar))
+    (q/rect (* 19 x-scalar)
+                             (* 5 y-scalar)
+                             (* 16 x-scalar)
+                             (* 9.5 y-scalar))
+    (q/rect (* 20 x-scalar)
+                            (* 9 y-scalar)
+                            (* 14 x-scalar)
+                            (* 5 y-scalar))
+    (q/rect (* 1 x-scalar)
+                             (* 5 y-scalar)
+                             (* 16 x-scalar)
+                             (* 9.5 y-scalar))
+    (q/rect (* 20 x-scalar)
+                   (* 6.5 y-scalar)
+                   (* 14 x-scalar)
+                   (* 1.75 y-scalar))
+    (q/rect (* 10 x-scalar)
+                                (* 8.33 y-scalar)
+                                (* 4 x-scalar)
+                                (* 2.41 y-scalar))
+    (q/rect (* 2 x-scalar)
+                                (* 6.5 y-scalar)
+                                (* 6 x-scalar)
+                                (* 7 y-scalar))
+    ;Move origin point to the center of the sketch.
+    ; Draw the circle.
+    (apply q/fill [63 2 0])
+    (q/line  (* 12 x-scalar) op-sentinel-y op-sentinel-x op-sentinel-y)
+    (q/line  (* 12 x-scalar) op-sentinel-y (* 12 x-scalar) (* 8.33 y-scalar))
+    (q/line  (* 12 x-scalar) targ-y targ-x targ-y)
+    (q/line  (* 12 x-scalar) targ-y (* 12 x-scalar) (* 10.75 y-scalar))
+
+
+
+
+    ; move the input line over if there's a shift event
+    (if (true? (get-in @app-state [:shift-in]))
+      (q/line (* 20 x-scalar) (* 16 y-scalar) (* 25 x-scalar) (* 14 y-scalar))
+      (q/line (* 22 x-scalar) (* 16 y-scalar) (* 27 x-scalar) (* 14 y-scalar)))
+    (q/line (* 32 x-scalar) (* 16 y-scalar) (* 27 x-scalar) (* 14 y-scalar))
+    ;
+    ;(if (can-evaluate?)
+    ;  (q/line (* 20 x-scalar)
+    ;          (* 7 y-scalar)
+    ;          (* 17 x-scalar)
+    ;          (* 7 y-scalar)))
+
+    (if (= (get-in @app-state [:current-target]) :x)
+      (do
+        (q/ellipse (* 21.25 x-scalar) (* 10.85 y-scalar) (* 0.25 x-scalar) (* 0.25 y-scalar))
+        (q/line (* 15 x-scalar) (* 11.75 y-scalar) (* 20 x-scalar) (* 10.75 y-scalar)))
+      (if (= (get-in @app-state [:current-target]) :y)
+        (do (q/ellipse (* 21.25 x-scalar) (* 11.85 y-scalar) (* 0.25 x-scalar) (* 0.25 y-scalar))
+            (q/line (* 15 x-scalar) (* 11.75 y-scalar) (* 20 x-scalar) (* 11.75 y-scalar)))
+        (do (q/ellipse (* 21.25 x-scalar) (* 12.85 y-scalar) (* 0.25 x-scalar) (* 0.25 y-scalar))
+            (q/line (* 15 x-scalar) (* 11.75 y-scalar) (* 20 x-scalar) (* 12.75 y-scalar)))))
+    (q/line op-sentinel-x op-sentinel-y (* 20 x-scalar) op-sentinel-y)
+
+
+    ; boolean sentinel for op register
+    (if (empty? (get-in @app-state [:values :op]))
+      (apply q/fill [250 340 240])
+      (apply q/fill [80 250 340]))
+    (q/ellipse op-sentinel-x op-sentinel-y (* 2 x-scalar) (* 2 y-scalar))
+    ; sentinel node for current target
+    (if (not (contains? (set [3 1 5]) (get-in @app-state [:opcode])))
+      (apply q/fill [250 340 240])
+      (apply q/fill [80 250 340]))
+    (q/ellipse targ-x targ-y (* 2 x-scalar) (* 2 y-scalar))
+
+    ;
+   ;   (q/line op-sentinel-x op-sentinel-y (* 21.5 x-scalar) (* 7.33 y-scalar))
+   ;   (q/line op-sentinel-x op-sentinel-y (* 15 x-scalar) (* 11.75 y-scalar)))
+
+
+    ;solder the sentinels to the opcode getter
+
+    (apply q/fill [63 2 0])
+
+    (q/text "INPUT " (* 19.66 x-scalar) (* 17 y-scalar))
+    (q/text (str "keyboard:") (* 20.33 x-scalar) (* 18 y-scalar))
+    (q/text (str (get-in @keyboard-input [:key-id])) (* 23.33 x-scalar) (* 18 y-scalar))
+    (q/text (str "ascii code:") (* 20.33 x-scalar) (* 19 y-scalar))
+    (q/text (str (get-in @keyboard-input [:ascii-code])) (* 23.33 x-scalar) (* 19 y-scalar))
+    (q/text "OUTPUT " (* 28.66 x-scalar) (* 17 y-scalar))
+    (q/text (str (get-in @app-state [:values (get-in @app-state [:current-target])])) (* 29.33 x-scalar) (* 18 y-scalar))
+    (q/text "ACCUMULATOR " (* 21 x-scalar) (* 10 y-scalar))
+    (q/text "r1" (* 22 x-scalar) (* 11 y-scalar))
+    (q/text (get-in @app-state [:values :x]) (* 23 x-scalar) (* 11 y-scalar))
+    (q/text "r2" (* 22 x-scalar) (* 12 y-scalar))
+    (q/text (get-in @app-state [:values :y]) (* 23 x-scalar) (* 12 y-scalar))
+    (q/text "r3" (* 22 x-scalar) (* 13 y-scalar))
+    (q/text (get-in @app-state [:values :result]) (* 23 x-scalar) (* 13 y-scalar))
+    (q/text "ARITHMETIC CONTROL UNIT " (* 20 x-scalar) (* 6 y-scalar))
+    (q/text "op" (* 22 x-scalar) (* 7.5 y-scalar))
+    (q/text (get-in @app-state [:values :op]) (* 23 x-scalar) (* 7.5 y-scalar))
+    (q/text "CONTROL UNIT" (* 2 x-scalar) (* 6 y-scalar))
+    (q/text "INSTRUCTION REGISTERS" (* 1 x-scalar) (* 0.85 y-scalar))
+    (q/text "1" (* 3 x-scalar) (* 3.8 y-scalar))
+    (q/text "2" (* 6 x-scalar) (* 3.8 y-scalar))
+    (q/text "3" (* 9 x-scalar) (* 3.8 y-scalar))
+    (q/text "4" (* 12 x-scalar) (* 3.8 y-scalar))
+    (q/text "5" (* 15 x-scalar) (* 3.8 y-scalar))
+    (q/text "6" (* 18 x-scalar) (* 3.8 y-scalar))
+    (q/text "7" (* 21 x-scalar) (* 3.8 y-scalar))
+    (q/text "8" (* 24 x-scalar) (* 3.8 y-scalar))
+    (q/text "9" (* 27 x-scalar) (* 3.8 y-scalar))
+    (q/text "10" (* 29.75 x-scalar) (* 3.8 y-scalar))
+    (q/text "11" (* 32.8 x-scalar) (* 3.8 y-scalar))
+    (q/text "OPCODE" (* 10.5 x-scalar) (* 9 y-scalar))
+    (q/text (get-in @app-state [:opcode]) (* 11.5 x-scalar) (* 10.25 y-scalar))
+    (if (= (get-in @app-state [:current-target]) :x)
+      (q/text "r1" (* 14.83 x-scalar) (* 11.89 y-scalar))
+      (if (= (get-in @app-state [:current-target]) :y)
+        (q/text "r2" (* 14.83 x-scalar) (* 11.89 y-scalar))
+        (q/text "r3" (* 14.83 x-scalar) (* 11.89 y-scalar))))
+    (cond (= code 0) (q/text (str "(put " (get-in @keyboard-input [:key-id]) " :register :" (translate-target) ")") (get (line 1) :x) (get (line 2) :y))
+          (= code 1) (do
+                       (q/text (str "loading instr reg 1...") (get (line 1) :x) (get (line 1) :y))
+                       (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
+                       (q/text (str "(put :r2 (target))") (get (line 3) :x) (get (line 3) :y))
+                       (q/text (str "(put " (get-in @keyboard-input [:key-id]) " :r2)") (get (line 4) :x) (get (line 4) :y))
+                       (q/text (str "=> 'ok") (get (line 2) :x) (get (line 2) :y))
+          (= code 3) (do
+                       (q/text (str "loading instr reg 3...") (get (line 1) :x) (get (line 1) :y))
+                       (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
+                       (q/text (str "(eval '(put (key) (target))") (get (line 3) :x) (get (line 3) :y))
+                       (q/text (str "=> (put " (get-in @keyboard-input [:key-id]) " " (translate-target) ")") (get (line 4) :x) (get (line 4) :y))))))
+
+                     ;;1 push to empty y register
+                     ;(fn [e] (do (divert-route :current-target :y)
+                     ;            (put e :current-target)))
+                     ;;2 push to empty op
+                     ;(fn [e] (put e :control-bus))
+                     ;;3 push to a non-empty x-register
+                     ;(fn [e] (shunt e :current-target))
+                     ;;4 push to a non-empty y-register
+                     ;(fn [e] (shunt e :current-target))
+                     ;;5 push to a sparkly clean x register (triggered when "equals" is followed by a number)
+                     ;(fn [e]
+                     ;  (do (flushRegister :result)
+                     ;      (flushRegister :op)
+                     ;      (flushRegister :x)
+                     ;      (flushRegister :y)
+                     ;      (divert-route :current-target :x)
+                     ;      (put e :current-target)))
+                     ;;6 push to fully-evaluated op register
+                     ;(fn [e]
+                     ;  (if (can-evaluate?)
+                     ;    (do (put (apply (dispatch (show 'op))    ; Try not to assume a particular data type.  Just serialize these jumps:
+                     ;                    [(js/parseFloat (show 'x))    ; 1) push expression to output-register (we know it's well-formed)
+                     ;                     (js/parseFloat (show 'y))])   ; 2) reduce it down
+                     ;             :data-bus)                          ; 3) clear non-empty input registers
+                     ;        (flushRegister :x)                        ; 4) allocate space in x
+                     ;        (put (show 'data-bus) :primary-register)  ; 5) box it up
+                     ;        (flushRegister :result)
+                     ;        (flushRegister :y)
+                     ;        (flushRegister :op)
+                     ;        (divert-route :current-target :x)
+                     ;        (put e :control-bus))))
+                     ;;7 eval and push answer to output register
+                     ;(fn []
+                     ;  (if (can-evaluate?)
+                     ;    (do (put (apply (dispatch (show 'op))
+                     ;                    [(js/parseFloat (show 'x))
+                     ;                     (js/parseFloat (show 'y))])
+                     ;             :data-bus)
+                     ;        (flushRegister :x)
+                     ;        (flushRegister :y)
+                     ;        (flushRegister :op)
+                     ;        (divert-route :current-target :result))))
+                     ;;8 push op to previously evaluated expression
+                     ;(fn [e]
+                     ;  (do (put (show 'data-bus) :primary-register)
+                     ;      (put e :control-bus)
+                     ;      (flushRegister :result)
+                     ;      (divert-route :current-target :x)))
+                     ;;10 edge case such that x equals itself if y is empty
+                     ;(fn []
+                     ;  (do (put (show 'x) :data-bus)
+                     ;      (flushRegister :x)
+                     ;      (divert-route :current-target :result)))
+                     ;;11 stupid edge case in the event the exp isn't well-formed ("5 +")
+                     ;(fn []
+                     ;  (do (put (show 'x) :data-bus)
+                     ;      (flushRegister :x)
+                     ;      (flushRegister :op)
+                     ;      (divert-route :current-target :result)))]))
+
+    ;(q/line (* 10 x-scalar) (* 9 y-scalar) (
+      ;(do
+      ;(q/rect (* 20 x-scalar)
+      ;        (* 6.5 y-scalar)
+      ;        (* 14 x-scalar)
+      ;        (* 1.75 y-scalar))
+      ;(apply q/fill [100 100 100])
+      ;(q/text "Locked. Incorrect arity for eval" (* 22 x-scalar) (* 7.5 y-scalar))))
+    ;               (q/end-shape)
+
+
+
+;(defn quil-input-setup []
+;  ; Set frame rate to 30 frames per second.
+;  (q/frame-rate 30)
+;  ; Set color mode to HSB (HSV) instead of default RGB.
+;  (q/color-mode :hsb)
+;  ; setup function returns initial state. It contains
+;  ; circle color and position.
+;  {:color 0
+;   :angle 0})
+;(defn quil-update-input-state [state]
+;  ; Update sketch state by changing circle color and position.
+;  {:color (mod (+ (:color state) 0.7) 255)
+;   ;:angle (+ (:angle state) 0.1)})
+  ; })
+;
+;(defn quil-draw-input-state [input-state]
+;  (let [input-bounding-box  (q/rect (* 19 x-scalar)
+;                              (* 16 y-scalar)
+;                              (* 7 x-scalar)
+;                              (* 5 y-scalar))]))
+
+(q/defsketch josefk
+             :host "josefk"
+             :size [800 500]
+             ; setup function called only once, during sketch initialization.
+             :setup quil-setup
+             ; update-state is called on each iteration before draw-state.
+             :update quil-update-state
+             :draw quil-draw-state
+             ; This sketch uses functional-mode middleware.
+             ; Check quil wiki for more info about middlewares and particularly
+             ; fun-mode.
+             :middleware [m/fun-mode])
+
+;(q/defsketch input
+;             :host "josefk"
+;             :size [(* 7 x-scalar) (* 5 y-scalar)]
+;             :setup quil-input-setup
+;
+;             ; update-state is called on each iteration before draw-state.
+;             :update quil-update-input-state
+;             :draw quil-draw-input
+;             ; This sketch uses functional-mode middleware.
+;             ; Check quil wiki for more info about middlewares and particularly
+;             ; fun-mode.
+;             :middleware [m/fun-mode])
 
 
     ;(add-watch x :on-change (fn [_ _ _ _] (render!)))
