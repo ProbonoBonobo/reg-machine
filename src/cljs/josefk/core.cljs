@@ -531,8 +531,8 @@
   (q/fill (:color state) 255 255)
   ; Calculate x and y coordinates of the circle.
   ;(let [angle (:angle state)
-   ;     x (* 150 (q/cos angle))
-    ;    y (* 150 (q/sin angle))]
+  ;     x (* 150 (q/cos angle))
+  ;    y (* 150 (q/sin angle))]
   (let [x 19
         y 16
         meta-bounding-box (q/rect (* 0.25 x-scalar)
@@ -614,50 +614,47 @@
                               (* 3 y-scalar))
         code (get-in @app-state [:opcode])
 
-
-
-
         ]
     (apply q/fill [200])
     (q/rect (* 19 x-scalar)
-                               (* 16 y-scalar)
-                               (* 7 x-scalar)
-                               (* 5 y-scalar))
+            (* 16 y-scalar)
+            (* 7 x-scalar)
+            (* 5 y-scalar))
     (q/rect (* 28 x-scalar)
-                                (* 16 y-scalar)
-                                (* 7 x-scalar)
-                                (* 5 y-scalar))
+            (* 16 y-scalar)
+            (* 7 x-scalar)
+            (* 5 y-scalar))
     (q/rect (* 19 x-scalar)
-                             (* 5 y-scalar)
-                             (* 16 x-scalar)
-                             (* 9.5 y-scalar))
+            (* 5 y-scalar)
+            (* 16 x-scalar)
+            (* 9.5 y-scalar))
     (q/rect (* 20 x-scalar)
-                            (* 9 y-scalar)
-                            (* 14 x-scalar)
-                            (* 5 y-scalar))
+            (* 9 y-scalar)
+            (* 14 x-scalar)
+            (* 5 y-scalar))
     (q/rect (* 1 x-scalar)
-                             (* 5 y-scalar)
-                             (* 16 x-scalar)
-                             (* 9.5 y-scalar))
+            (* 5 y-scalar)
+            (* 16 x-scalar)
+            (* 9.5 y-scalar))
     (q/rect (* 20 x-scalar)
-                   (* 6.5 y-scalar)
-                   (* 14 x-scalar)
-                   (* 1.75 y-scalar))
+            (* 6.5 y-scalar)
+            (* 14 x-scalar)
+            (* 1.75 y-scalar))
     (q/rect (* 10 x-scalar)
-                                (* 8.33 y-scalar)
-                                (* 4 x-scalar)
-                                (* 2.41 y-scalar))
+            (* 8.33 y-scalar)
+            (* 4 x-scalar)
+            (* 2.41 y-scalar))
     (q/rect (* 2 x-scalar)
-                                (* 6.5 y-scalar)
-                                (* 6 x-scalar)
-                                (* 7 y-scalar))
+            (* 6.5 y-scalar)
+            (* 6 x-scalar)
+            (* 7 y-scalar))
     ;Move origin point to the center of the sketch.
     ; Draw the circle.
     (apply q/fill [63 2 0])
-    (q/line  (* 12 x-scalar) op-sentinel-y op-sentinel-x op-sentinel-y)
-    (q/line  (* 12 x-scalar) op-sentinel-y (* 12 x-scalar) (* 8.33 y-scalar))
-    (q/line  (* 12 x-scalar) targ-y targ-x targ-y)
-    (q/line  (* 12 x-scalar) targ-y (* 12 x-scalar) (* 10.75 y-scalar))
+    (q/line (* 12 x-scalar) op-sentinel-y op-sentinel-x op-sentinel-y)
+    (q/line (* 12 x-scalar) op-sentinel-y (* 12 x-scalar) (* 8.33 y-scalar))
+    (q/line (* 12 x-scalar) targ-y targ-x targ-y)
+    (q/line (* 12 x-scalar) targ-y (* 12 x-scalar) (* 10.75 y-scalar))
 
 
 
@@ -698,8 +695,8 @@
     (q/ellipse targ-x targ-y (* 2 x-scalar) (* 2 y-scalar))
 
     ;
-   ;   (q/line op-sentinel-x op-sentinel-y (* 21.5 x-scalar) (* 7.33 y-scalar))
-   ;   (q/line op-sentinel-x op-sentinel-y (* 15 x-scalar) (* 11.75 y-scalar)))
+    ;   (q/line op-sentinel-x op-sentinel-y (* 21.5 x-scalar) (* 7.33 y-scalar))
+    ;   (q/line op-sentinel-x op-sentinel-y (* 15 x-scalar) (* 11.75 y-scalar)))
 
 
     ;solder the sentinels to the opcode getter
@@ -750,12 +747,12 @@
                        (q/text (str "(put :r2 (target))") (get (line 3) :x) (get (line 3) :y))
                        (q/text (str "(put " (get-in @keyboard-input [:key-id]) " :r2)") (get (line 4) :x) (get (line 4) :y))
                        (q/text (str "=> 'ok") (get (line 2) :x) (get (line 2) :y))
-          (= code 3) (do
-                       (q/text (str "loading instr reg 3...") (get (line 1) :x) (get (line 1) :y))
-                       (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
-                       (q/text (str "(eval '(put (key) (target))") (get (line 3) :x) (get (line 3) :y))
-                       (q/text (str "=> (put " (get-in @keyboard-input [:key-id]) " " (translate-target) ")") (get (line 4) :x) (get (line 4) :y))))))
-
+                       (= code 3) (do
+                                    (q/text (str "loading instr reg 3...") (get (line 1) :x) (get (line 1) :y))
+                                    (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
+                                    (q/text (str "(eval '(put (key) (target))") (get (line 3) :x) (get (line 3) :y))
+                                    (q/text (str "=> (put " (get-in @keyboard-input [:key-id]) " " (translate-target) ")") (get (line 4) :x) (get (line 4) :y))))))
+  )
                      ;;1 push to empty y register
                      ;(fn [e] (do (divert-route :current-target :y)
                      ;            (put e :current-target)))
