@@ -88,7 +88,7 @@
     (if (= current-mode :x)
       (divert-route :address-bus :y)
       (divert-route :address-bus :x))))
-(def val (get-in @app-state [:opval]) )
+;(def val (get-in @app-state [:opval]) )
 
 (defn push [val p q]
   ; mechanical instructions for carrying out sequential push operations onto the machine
@@ -384,50 +384,12 @@
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff "divide"))}
                        "/"] " "
-                      [:div
-
-
-
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff 4))}
-                        "4"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff 5))}
-                        "5"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff 6))}
-                        "6"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff "subtract"))}
-                        "-"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do
-                                            (concatToRegister app-state target-register '.)
-                                            )}
-
-                        "."] " "]
-
-                      [:div
-
-
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff 7))}
-                        "7"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff 8))}
-                        "8"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff 9))}
-                        "9"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff "multiply"))
-                                 }
-                        "*"] " "
-                       [:button {:href    "#"
-                                 :onClick #(do (butt-stuff "equals"))
-
-                                 }
-                        "="]]]
+                      ;[:button {:href    "#"
+                      ;          :onClick #(do
+                      ;                     (but app-state target-register '.)
+                      ;                     )}
+                      ;
+                      ; "."] " "]
 
 
 
