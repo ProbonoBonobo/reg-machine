@@ -62,6 +62,9 @@
   (swap! app-state assoc-in [:values (get-in @app-state [reg])] (if (keyword? val)
                                                                   val           ;don't convert kws to strings
                                                                   (str val))))
+
+(defn clear? [val]
+  (= val "clear"))
 (defn operator? [val]
   (let [ops (set ["add" "subtract" "multiply" "divide" "/" "*" "+" "-"])]
     (contains? ops val)))
@@ -187,7 +190,9 @@
                   op (show 'op)
                   ans (show 'result)]
 
-              (cond (num? val) (if (empty? ans)
+              (cond
+                  (clear? val) (swap! app-state assoc-in [:values] {:x "" :y "" :op "" :result "" :tape []} )
+                  (num? val) (if (empty? ans)
                                  (if (empty? y)
                                    (if (empty? op)
                                      (if (empty? x)
@@ -312,7 +317,8 @@
         ans (show 'result)]
     (swap! app-state assoc-in [:opval] num)
 
-    (cond (num? num) (if (empty? ans)
+    (cond
+          (num? num) (if (empty? ans)
                        (if (empty? y)
                          (if (empty? op)
                            (if (empty? x)
@@ -358,11 +364,7 @@
         (do
           (sab/html [:div
                      [:div
-                      [:h5
-                       [:sub " op: " (str (if (not (empty? (show 'op))) (cond (= (show 'op) "add") " + "
-                                                                              (= (show 'op) "subtract") " - "
-                                                                              (= (show 'op) "multiply") " * "
-                                                                              (= (show 'op) "divide") " / ")))]]
+                      [:h3 "Hello. I'm a register machine. *bleep bloop*"]
                       [:h1 (r/well {} (str (get-in @app-state [:values (get-route :current-target)])))]
                       ]
                      [:h3
@@ -384,6 +386,45 @@
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff "divide"))}
                        "/"] " " ]
+                     [:h3
+                      [:button {:href    "#"
+
+                                :onClick #(do (butt-stuff 4))}
+                       "4"] " "
+
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff 5))}
+                       "5"] " "
+
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff 6))}
+                       "6"] " "
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff "subtract"))}
+                       "-"] " "
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff "multiply"))}
+                       "*"] " " ]
+                     [:h3
+                      [:button {:href    "#"
+
+                                :onClick #(do (butt-stuff 4))}
+                       "7"] " "
+
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff 5))}
+                       "8"] " "
+
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff 6))}
+                       "9"] " "
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff "equals"))}
+                       "="] " "
+                      [:button {:href    "#"
+                                :onClick #(do (butt-stuff "clear"))}
+                       "clear"] " " ]
+
                       ;[:button {:href    "#"
                       ;          :onClick #(do
                       ;                     (but app-state target-register '.)
@@ -393,43 +434,13 @@
 
 
 
-                     (table {:striped? true :bordered? true :condensed? false :hover? true}
-                            (d/thead
-                              (d/tr {:class "col-md-*"}
-                                    (d/th {:width 30} "#")
-                                    (d/th {:width 100} "R")
-                                    (d/th {:width 1000} "Value")))
-                            (d/tbody
-                              (d/tr
-                                (d/td "0")
-                                (d/td (d/code {} "X Register:"))
-                                (d/td (d/code {} (show 'x))))
-                              (d/tr
-                                (d/td "1")
-                                (d/td (d/code {} "Y Register"))
-                                (d/td (d/code {} (show 'y))))
-                              (d/tr
-                                (d/td "2")
-                                (d/td (d/code {} "Instruction Register:"))
-                                (d/td (d/code {} (show 'op))))
-                              (d/tr
-                                (d/td "3")
-                                (d/td (d/code {} "Accumulator Register:"))
-                                (d/td (d/code {} (show 'result))))
-                              (d/tr
-                                (d/td "4")
-                                (d/td (d/code {} "Address Register:"))
-                                (d/td (d/code {} (get-route :current-target))))
-                              (d/tr
-                                (d/td "5")
-                                (d/td (d/code {} "Tape register:"))
-                                (d/td (d/code {} (show 'tape))))))
+
                      [:div [:p ""]]
                      (table {:striped? true :bordered? true :condensed? false :hover? true}
                             (d/thead
                               (d/tr {:class "col-md-*"}
-                                    (d/th {:width 30} "I/O Monad: ")
-                                    (d/th {:width 100} "Current: ")))
+                                    (d/th {:width 30} "Input Monad: ")
+                                    (d/th {:width 100} "Current key: ")))
                             (d/tbody
                               (d/tr
                                 (d/td (d/code {} "State Register:"))
@@ -513,9 +524,9 @@
 (def targ-y (* 11.75 y-scalar))
 (defn line [line-num]
   ;utility function for generating line coordinates in the body of the control unit
-  (let [line-height .75]
+  (let [line-height 0.55]
   (zipmap [:x :y] (into [] [(* 2.5 x-scalar)
-                            (* (+ 6.5 (* line-num line-height)) y-scalar)]))))
+                            (* (+ 6.75 (* line-num line-height)) y-scalar)]))))
 (defn translate-target []
   (if (= (get-in @app-state [:current-target]) :x)
     "r1"
@@ -523,6 +534,42 @@
       "r2"
       "r3")))
 
+(defn draw-rectangle
+  [x1 y1 x2 y2] (comp (q/rect (* x1 x-scalar)
+                              (* y1 y-scalar)
+                              (* x2 x-scalar)
+                              (* y2 y-scalar))))
+
+(defn draw-triangle
+  [ordinality]
+  (let [x-coords (map (fn [x] (+ x (* ordinality 3))) [2.25 2.5 2])
+        y-coords [4 4.5 4.5]]
+    (comp (q/triangle
+            (* (nth x-coords 0) x-scalar)
+            (* (nth y-coords 0) y-scalar)
+            (* (nth x-coords 1) x-scalar)
+            (* (nth y-coords 1) y-scalar)
+            (* (nth x-coords 2) x-scalar)
+            (* (nth y-coords 2) y-scalar)))))
+
+(defn draw-circle
+  ;draws a circle of radius r around the center coordinates.
+  ;if x and y scalars are different, it averages the scaling factor of the radius
+  [cx cy r] (comp (q/ellipse (* cx x-scalar)
+                             (* cy y-scalar)
+                             (* r (/ (+ x-scalar y-scalar) 2))
+                             (* r (/ (+ x-scalar y-scalar) 2)))))
+(defn draw-caption
+  ;inserts a string at the translated coordinate vector
+  [s x1 y1] (comp (q/text s
+                          (* x1 x-scalar)
+                          (* y1 y-scalar))))
+
+(defn print-to-console [& args]
+  (map-indexed (fn [line-number txt] (comp (q/text txt
+                                                   (get (line line-number) :x)
+                                                   (get (line line-number) :y))))
+               args))
 
 (defn quil-draw-state [state]
   ; Clear the sketch by filling it with light-grey color.
@@ -533,8 +580,12 @@
   ;(let [angle (:angle state)
   ;     x (* 150 (q/cos angle))
   ;    y (* 150 (q/sin angle))]
-  (let [x 19
-        y 16
+
+
+
+
+  (let [
+        ;the names here appear to be ignored by quil, but they are helpful as comments
         meta-bounding-box (q/rect (* 0.25 x-scalar)
                                   (* 4.5 y-scalar)
                                   (* 35.5 x-scalar)
@@ -646,8 +697,8 @@
             (* 2.41 y-scalar))
     (q/rect (* 2 x-scalar)
             (* 6.5 y-scalar)
-            (* 6 x-scalar)
-            (* 7 y-scalar))
+            (* 7 x-scalar)
+            (* 7.5 y-scalar))
     ;Move origin point to the center of the sketch.
     ; Draw the circle.
     (apply q/fill [63 2 0])
@@ -722,17 +773,17 @@
     (q/text (get-in @app-state [:values :op]) (* 23 x-scalar) (* 7.5 y-scalar))
     (q/text "CONTROL UNIT" (* 2 x-scalar) (* 6 y-scalar))
     (q/text "INSTRUCTION REGISTERS" (* 1 x-scalar) (* 0.85 y-scalar))
-    (q/text "1" (* 3 x-scalar) (* 3.8 y-scalar))
-    (q/text "2" (* 6 x-scalar) (* 3.8 y-scalar))
-    (q/text "3" (* 9 x-scalar) (* 3.8 y-scalar))
-    (q/text "4" (* 12 x-scalar) (* 3.8 y-scalar))
-    (q/text "5" (* 15 x-scalar) (* 3.8 y-scalar))
-    (q/text "6" (* 18 x-scalar) (* 3.8 y-scalar))
-    (q/text "7" (* 21 x-scalar) (* 3.8 y-scalar))
-    (q/text "8" (* 24 x-scalar) (* 3.8 y-scalar))
-    (q/text "9" (* 27 x-scalar) (* 3.8 y-scalar))
-    (q/text "10" (* 29.75 x-scalar) (* 3.8 y-scalar))
-    (q/text "11" (* 32.8 x-scalar) (* 3.8 y-scalar))
+    (q/text "0" (* 3 x-scalar) (* 3.8 y-scalar))
+    (q/text "1" (* 6 x-scalar) (* 3.8 y-scalar))
+    (q/text "2" (* 9 x-scalar) (* 3.8 y-scalar))
+    (q/text "3" (* 12 x-scalar) (* 3.8 y-scalar))
+    (q/text "4" (* 15 x-scalar) (* 3.8 y-scalar))
+    (q/text "5" (* 18 x-scalar) (* 3.8 y-scalar))
+    (q/text "6" (* 21 x-scalar) (* 3.8 y-scalar))
+    (q/text "7" (* 24 x-scalar) (* 3.8 y-scalar))
+    (q/text "8" (* 27 x-scalar) (* 3.8 y-scalar))
+    (q/text "9" (* 29.75 x-scalar) (* 3.8 y-scalar))
+    (q/text "10" (* 32.8 x-scalar) (* 3.8 y-scalar))
     (q/text "OPCODE" (* 10.5 x-scalar) (* 9 y-scalar))
     (q/text (get-in @app-state [:opcode]) (* 11.5 x-scalar) (* 10.25 y-scalar))
     (if (= (get-in @app-state [:current-target]) :x)
@@ -740,40 +791,97 @@
       (if (= (get-in @app-state [:current-target]) :y)
         (q/text "r2" (* 14.83 x-scalar) (* 11.89 y-scalar))
         (q/text "r3" (* 14.83 x-scalar) (* 11.89 y-scalar))))
-    (cond (= code 0) (q/text (str "(put " (get-in @keyboard-input [:key-id]) " :register :" (translate-target) ")") (get (line 1) :x) (get (line 2) :y))
-          (= code 1) (do
-                       (q/text (str "loading instr reg 1...") (get (line 1) :x) (get (line 1) :y))
-                       (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
-                       (q/text (str "(put :r2 (target))") (get (line 3) :x) (get (line 3) :y))
-                       (q/text (str "(put " (get-in @keyboard-input [:key-id]) " :r2)") (get (line 4) :x) (get (line 4) :y))
-                       (q/text (str "=> 'ok") (get (line 2) :x) (get (line 2) :y)))
-          (= code 3) (do
-                       (q/text (str "loading instr reg 3...") (get (line 1) :x) (get (line 1) :y))
-                       (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
-                       (q/text (str "(eval '(put (key) (target))") (get (line 3) :x) (get (line 3) :y))
-                       (q/text (str "=> (put " (get-in @keyboard-input [:key-id]) " " (translate-target) ")") (get (line 4) :x) (get (line 4) :y))))))
 
-                     ;;1 push to empty y register
-                     ;(fn [e] (do (divert-route :current-target :y)
-                     ;            (put e :current-target)))
-                     ;;2 push to empty op
-                     ;(fn [e] (put e :control-bus))
-                     ;;3 push to a non-empty x-register
-                     ;(fn [e] (shunt e :current-target))
-                     ;;4 push to a non-empty y-register
-                     ;(fn [e] (shunt e :current-target))
-                     ;;5 push to a sparkly clean x register (triggered when "equals" is followed by a number)
-                     ;(fn [e]
-                     ;  (do (flushRegister :result)
-                     ;      (flushRegister :op)
-                     ;      (flushRegister :x)
-                     ;      (flushRegister :y)
-                     ;      (divert-route :current-target :x)
-                     ;      (put e :current-target)))
-                     ;;6 push to fully-evaluated op register
-                     ;(fn [e]
-                     ;  (if (can-evaluate?)
-                     ;    (do (put (apply (dispatch (show 'op))    ; Try not to assume a particular data type.  Just serialize these jumps:
+    (cond (= code 0) (do
+                       (draw-triangle 0)
+                       (q/text (print-to-console " " ";the first action" " " "(apply (opcode 0) [num])" "=> loading..." "..." (apply str "now putting '" (get-in @keyboard-input [:key-id]) "' in :r1")) 1 1)
+                       )
+          (= code 3) (do
+                       (draw-triangle 3)
+                       (q/text (print-to-console " " ";keep stringing to" "  target register" " " "(apply (opcode 3) [num]" "=> loading..." "..." (apply str "putting '" (get-in @keyboard-input [:key-id]) "' in " (translate-target) "...") " " "update complete.") 1 1)
+                       )
+          (= code 1) (do
+                       (draw-triangle 1)
+                       (q/text (print-to-console " " ";switch register to r2" "  ;and put val in r2" " " "(apply (opcode 1) [num]) " "=>  loading..." "..." " " (apply str "putting '" (get-in @keyboard-input [:key-id]) "'" "  in :r2...") " ""update complete.") 1 1))
+          (= code 2) (do
+                       (draw-triangle 2)
+                       (q/text (print-to-console " " ";lock r1 and update the " "  cleared op reg" " " "(apply (opcode 2) [num]) " "=>  loading..." "..." (apply str "setting op to'" (show 'op) "'...") " " "update complete.") 1 1))
+          (= code 6) (do
+                       (draw-triangle 6)
+                       (q/text (print-to-console " " ";chained expression" "  (e.g. '5+4-7')" " " "(apply (opcode 6) [num]) " "=> loading..." " " "pushing vectorized " "      expression to r3..." (apply str "r3 evaluates to '" (show 'x) "'...") (apply str "copying '" (show 'x) "' to locked r1...") (apply str "setting op to '" (show 'op) "'...") " " "evaluation complete.") 1 1))
+          (= code 8) (do
+                       (draw-triangle 8)
+                       (q/text (print-to-console " " ";resume chaining a " "  previously evaluated" "  expression" " " "(apply (opcode 8) [num]))" "=> loading..." " " (str "copying '" (show 'x) "' from r3 to locked r1...") "now clearing r3..." (apply str "setting op to '" (show 'op) "'") "evaluation complete.") 1 1))
+          (= code 7) (do
+                       (draw-triangle 7)
+                       (q/text (print-to-console " " ";evaluate normally and" "  flush the registers" " " "(apply (opcode 8) [num]))" "=> loading..." " " "pushing (op r1 r2) to r3..." (apply str "r3 evaluates to '" (show 'result) "'...") "flushing the registers..." " " "evaluation complete.") 1 1))
+          (= code 5) (do
+                       (draw-triangle 5)
+                       (q/text (print-to-console " " ";start a new expression" " " "(apply (opcode 5) [num])" "=> loading...." " " "flushing r3..." (apply str "now putting '" (show 'x) "' in r1...") " " "update complete.") 1 1))
+          (= code 10) (do
+                        (draw-triangle 10)
+                        (q/text (print-to-console " " ";bad expression" "  flush registers but" "  push r1 to r3"  " " "(apply (opcode 10) [num]))" "=> loading..." " " "pushing r1 to r3..." "flushing the registers..." " " "update complete.") 1 1))
+          :else (q/text (print-to-console " ""[heavy breathing]" " " " " " " "listening to keyboard " "  for numbers...") 1 1)
+          )))
+;(apply (opcode 1) [num])) ;update :current-target to y and assoc the new val
+  ;        (apply (opcode 4) [num])) ;keep concatenating to y
+  ;  (apply (opcode 5) [num])) ;clear registers, reset target to x, put val there
+  ;(shift? num) (swap! app-state assoc-in [:shift-in] true) ;helper events for keyboard inputs
+  ;(unshift? num) (swap! app-state assoc-in [:shift-in] false)
+  ;(operator? num) (if (empty? ans)
+  ;                  (if (empty? y)
+  ;                    (if (empty? op)
+  ;                      (if (empty? x)
+  ;                        (apply (opcode -1) []) ;don't add voids
+  ;                        (apply (opcode 2) [num])) ;typical usual case for ops
+  ;                      (apply (opcode 2) [num])) ;if duplicate ops, we take most recent. same logic
+  ;                    (apply (opcode 6) [num])) ;chained expressions are ok (e.g. 5+3*8-2)
+  ;                  (apply (opcode 8) [num])) ;resume chaining if the prev op was "equals"
+  ;(eval? val) (if (empty? ans)
+  ;              (if (empty? y)
+  ;                (if (empty? op)
+  ;                  (if (empty? x)
+  ;                    (apply (opcode -1) []) ;don't evaluate voids
+  ;                    (apply (opcode 10) [])) ;let x equal itself
+  ;                  (apply (opcode 11) [])) ;stupid edge case
+  ;                (apply (opcode 7) [])) ;normal evaluation flushes all but the output register
+  ;              (apply (opcode -1) []))))) ;already evaluated, do nothing
+;
+;
+;(= code 1) (q/text (print-to-console "loading instr reg 1..." "..." "'(map (reduce apply [put]) " "
+;                                    (q/text (str "loading instr reg 1...") (get (line 1) :x) (get (line 1) :y))
+;                                    (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
+;                                    (q/text (str "(put :r2 (target))") (get (line 3) :x) (get (line 3) :y))
+;                                    (q/text (str "(put " (get-in @keyboard-input [:key-id]) " :r2)") (get (line 4) :x) (get (line 4) :y))
+;                                    (q/text (str "=> 'ok") (get (line 2) :x) (get (line 2) :y)))
+;          (= code 3) (do
+;                                    (q/text (str "loading instr reg 3...") (get (line 1) :x) (get (line 1) :y))
+;                                    (q/text (str "...") (get (line 2) :x) (get (line 2) :y))
+;                                    (q/text (str "(eval '(put (key) (target))") (get (line 3) :x) (get (line 3) :y))
+;                                    (q/text (str "=> (put " (get-in @keyboard-input [:key-id]) " " (translate-target) ")") (get (line 4) :x) (get (line 4) :y)))
+;          :else (q/text (print-to-console " " "i am a robot" "  *bleep bloop*" ) 0 0))))
+;
+;                     ;;1 push to empty y register
+;                     ;(fn [e] (do (divert-route :current-target :y)
+;                     ;            (put e :current-target)))
+;                     ;;2 push to empty op
+;                     ;(fn [e] (put e :control-bus))
+;                     ;;3 push to a non-empty x-register
+;                     ;(fn [e] (shunt e :current-target))
+;                     ;;4 push to a non-empty y-register
+;                     ;(fn [e] (shunt e :current-target))
+;                     ;;5 push to a sparkly clean x register (triggered when "equals" is followed by a number)
+;                     ;(fn [e]
+;                     ;  (do (flushRegister :result)
+;                     ;      (flushRegister :op)
+;                     ;      (flushRegister :x)
+;                     ;      (flushRegister :y)
+;                     ;      (divert-route :current-target :x)
+;                     ;      (put e :current-target)))
+;                     ;;6 push to fully-evaluated op register
+;                     ;(fn [e]
+;                     ;  (if (can-evaluate?)
+;                     ;    (do (put (apply (dispatch (show 'op))    ; Try not to assume a particular data type.  Just serialize these jumps:
                      ;                    [(js/parseFloat (show 'x))    ; 1) push expression to output-register (we know it's well-formed)
                      ;                     (js/parseFloat (show 'y))])   ; 2) reduce it down
                      ;             :data-bus)                          ; 3) clear non-empty input registers

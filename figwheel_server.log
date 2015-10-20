@@ -5477,3 +5477,971 @@ notifying browser that file changed:  resources/public/js/app.js
 notifying browser that file changed:  resources/public/js/out/goog/deps.js
 notifying browser that file changed:  /josefk/core.js
 notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.537 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.218 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/cljs/josefk/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3138.invoke (compiler.cljc:1344)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1381)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval3582$fn__3583.invoke (closure.clj:478)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    cljs.closure$eval3595$fn__3596.invoke (closure.clj:492)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1674)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15804.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15850.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15801.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15604.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15613.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15607.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15625.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712$fn__15717.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.656 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 530 and column 37 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 894, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 542 and column 27 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 906, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 552 and column 24 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 916, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 554 and column 30 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 918, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/x at line 553 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.612 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/x at line 553 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 557 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 920, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/x at line 553 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.575 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/x at line 553 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.515 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/x at line 553 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/code at line 774 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/code at line 778 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/code at line 784 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 788, column 164
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/x at line 553 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.547 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/x2 at line 535 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.547 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.542 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.467 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.454 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.513 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.504 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.506 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.501 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.471 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to cljs.core/apply at line 554 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to cljs.core/apply at line 555 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.508 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (2) passed to quil.core/text at line 553 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/args at line 556 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 556, column 21
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 552 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 920, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (2) passed to quil.core/text at line 553 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 790, column 109
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (2) passed to quil.core/text at line 553 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.563 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (2) passed to quil.core/text at line 553 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.522 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (2) passed to quil.core/text at line 553 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.521 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.474 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 790, column 108
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.535 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 567 and column 3 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 922, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.501 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/eval at line 790 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.478 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/eval at line 790 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.498 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.454 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.488 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.471 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.475 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.47 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.466 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.494 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.472 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.479 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.545 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 922, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 780, column 73
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 780, column 73
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 780, column 73
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.548 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.474 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 778 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/keyobard-input at line 778 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/num at line 778 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 778, column 275
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 778 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 778, column 223
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 778 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 778, column 223
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 778 src/cljs/josefk/core.cljs
+WARNING: Use of undeclared Var josefk.core/num at line 778 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 778, column 274
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.483 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 805, column 62
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 779 and column 30 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 948, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.548 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unsupported escape character: \' on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 776, column 151
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unsupported escape character: \' on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 776, column 151
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unsupported escape character: \' on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 776, column 151
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.55 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.476 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.498 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.49 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 779 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 780, column 14
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 779 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.512 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 949, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.477 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 807, column 62
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 807, column 62
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 780 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.625 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.488 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.514 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.494 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.473 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.514 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.489 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.503 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.488 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.504 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.495 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 567 and column 3 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 952, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.48 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.48 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.488 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.504 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.486 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.489 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.477 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 776 and column 5 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 953, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 954, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.486 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.49 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.491 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.493 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 567 and column 3 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 954, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.497 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.511 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.485 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.492 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.469 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.487 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.487 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.498 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.478 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 955, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 955, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.481 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.475 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.475 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.47 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.5 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 812, column 62
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.538 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 777 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 786, column 14
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 784 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 792, column 14
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 786 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.556 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 788 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 796, column 14
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 788 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.503 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (1) passed to quil.core/text at line 781 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.499 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 958, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.468 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.481 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Invalid number format [1...] on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 815, column 62
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.479 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.487 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.464 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 961, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.473 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 963, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.48 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 571 and column 3 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 965, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 571 and column 3 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 966, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 558 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 966, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.482 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.484 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.481 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.51 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.475 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.471 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 542 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.499 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 534 and column 18 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 967, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 534 and column 18 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 967, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 534 and column 18 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 967, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 542, column 45
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 542, column 45
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (6) passed to josefk.core/draw-triangle at line 793 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.559 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 563 and column 1 on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 973, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.463 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.51 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.545 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.507 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 547 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.511 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.231 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/clear? at line 315 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/cljs/josefk/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3138.invoke (compiler.cljc:1344)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1381)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval3582$fn__3583.invoke (closure.clj:478)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    cljs.closure$eval3595$fn__3596.invoke (closure.clj:492)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1674)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15804.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15850.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15801.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15604.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15613.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15607.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15625.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712$fn__15717.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (2) passed to josefk.core/clear? at line 318 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/cljs/josefk/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3138.invoke (compiler.cljc:1344)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1381)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval3582$fn__3583.invoke (closure.clj:478)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    cljs.closure$eval3595$fn__3596.invoke (closure.clj:492)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1674)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15804.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15850.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15801.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15604.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15613.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15607.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15625.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712$fn__15717.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (2) passed to josefk.core/clear? at line 318 src/cljs/josefk/core.cljs
+WARNING: app-state at line 28 is being replaced at line 318 src/cljs/josefk/core.cljs
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src/cljs/josefk/core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3138.invoke (compiler.cljc:1344)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1381)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval3582$fn__3583.invoke (closure.clj:478)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    cljs.closure$eval3595$fn__3596.invoke (closure.clj:492)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1674)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15804.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15850.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15801.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15604.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15613.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15607.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15625.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712$fn__15717.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 591 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.859 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/def at line 318 src/cljs/josefk/core.cljs
+WARNING: Wrong number of args (3) passed to quil.core/ellipse at line 591 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.739 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/def at line 318 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.741 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/num at line 194 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.69 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+WARNING: Use of undeclared Var josefk.core/num at line 194 src/cljs/josefk/core.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.63 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.56 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file /Users/kevinzeidler/josefk/src/cljs/josefk/core.cljs, line 482, column 24
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.597 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.553 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.556 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.504 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.508 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.537 seconds.[0m
+notifying browser that file changed:  /josefk/core.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.531 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.3 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.341 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.581 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.548 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.55 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.203 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.23 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
