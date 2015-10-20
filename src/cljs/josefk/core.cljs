@@ -364,7 +364,6 @@
         (do
           (sab/html [:div
                      [:div
-                      [:h3 "Hello. I'm a register machine. *bleep bloop*"]
                       [:h1 (r/well {} (str (get-in @app-state [:values (get-route :current-target)])))]
                       ]
                      [:h3
