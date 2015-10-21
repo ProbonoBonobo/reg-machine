@@ -371,11 +371,9 @@
 
                                 :onClick #(do (butt-stuff 1))}
                        "1"] " "
-
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff 2))}
                        "2"] " "
-
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff 3))}
                        "3"] " "
@@ -387,14 +385,11 @@
                        "/"] " " ]
                      [:h3
                       [:button {:href    "#"
-
                                 :onClick #(do (butt-stuff 4))}
                        "4"] " "
-
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff 5))}
                        "5"] " "
-
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff 6))}
                        "6"] " "
@@ -407,15 +402,13 @@
                      [:h3
                       [:button {:href    "#"
 
-                                :onClick #(do (butt-stuff 4))}
+                                :onClick #(do (butt-stuff 7))}
                        "7"] " "
-
                       [:button {:href    "#"
-                                :onClick #(do (butt-stuff 5))}
+                                :onClick #(do (butt-stuff 8))}
                        "8"] " "
-
                       [:button {:href    "#"
-                                :onClick #(do (butt-stuff 6))}
+                                :onClick #(do (butt-stuff 9))}
                        "9"] " "
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff "equals"))}
@@ -423,16 +416,6 @@
                       [:button {:href    "#"
                                 :onClick #(do (butt-stuff "clear"))}
                        "clear"] " " ]
-
-                      ;[:button {:href    "#"
-                      ;          :onClick #(do
-                      ;                     (but app-state target-register '.)
-                      ;                     )}
-                      ;
-                      ; "."] " "]
-
-
-
 
                      [:div [:p ""]]
                      (table {:striped? true :bordered? true :condensed? false :hover? true}
