@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Demo: jQuery Ajax Example with JSON Response</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+		<script src="jquery-1.11.3.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 
 		<script type="text/javascript">

@@ -6,13 +6,14 @@
 		<title>Demo: jQuery Ajax Example with JSON Response</title>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="/ichabod/serverside.php" type="text/json"></script>
 
 		<script type="text/javascript">
 $(document).ready(function(){
 	  $(':submit').on('click', function() { // This event fires when a button is clicked
 		      var button = $(this).val();
 		          $.ajax({ // ajax call starts
-				        url: 'serverside.php', // JQuery loads serverside.php
+				        url: '/ichabod/serverside.php', // JQuery loads serverside.php
 					      data: 'button=' + $(this).val(), // Send value of the clicked button
 					            dataType: 'json', // Choosing a JSON datatype
 						        })

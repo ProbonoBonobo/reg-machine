@@ -7693,3 +7693,66 @@ notifying browser that file changed:  resources/public/js/app.js
 notifying browser that file changed:  resources/public/js/out/goog/deps.js
 notifying browser that file changed:  /josefk/core.js
 notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.305 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.353 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.26 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.24 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.247 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.241 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.282 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.324 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.251 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js

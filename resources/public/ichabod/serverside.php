@@ -1,5 +1,7 @@
-<?php
- 
+<?
+ header('Cache-Control: no-cache, must-revalidate');
+ header('Expires: Mon, 26 Jul 2020 05:00:00 GMT');
+ header('Content-type: application/json');
  session_start();
 // Get value of clicked button
 $button = $_GET['button'];
