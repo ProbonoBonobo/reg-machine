@@ -11,21 +11,17 @@
             [ring.adapter.jetty :refer [run-jetty]])
   (:gen-class))
 
-(deftemplate page (io/resource "register-machine.html") []
+(deftemplate page (io/resource "index.html") []
   [:body] (if is-dev? inject-devmode-html identity))
+(deftemplate app (io/resource "register-machine.html") []
+             [:body] (if is-dev? inject-devmode-html identity))
 
 (defroutes routes
-  (resources "/register-machine.html")
+  (resources "/")
   (resources "/react" {:root "react"})
-  (GET "/register-machine.html" req (page))
-           (GET "/register-machine.html" req (page)))
+  (GET "/" req (page))
+           (GET "/register-machine.html" req (app)))
 
-;(defroutes regmachine-routes
-;           (resources "register-machine.html")
-;           (resources "/react" {:root "react"})
-;          (GET "/register-machine.html" []
-;              (response/redirect "/register-machine.html")
-;              (route/resources "/register-machine.html")))
 
 (def http-handler
   (if is-dev?

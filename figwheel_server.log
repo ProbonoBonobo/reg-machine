@@ -7429,3 +7429,267 @@ notifying browser that file changed:  resources/public/js/app.js
 notifying browser that file changed:  resources/public/js/out/goog/deps.js
 notifying browser that file changed:  /josefk/core.js
 notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.313 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.188 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.211 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.222 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.17 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+Figwheel: focusing on build-ids (main)
+[0mCompiling "main.js" from ["resources/public/js/out/cljs"]...
+[31mCompiling "main.js" failed.[0m
+java.io.FileNotFoundException: The file out/cljs/core/async/impl/ioc_helpers.cljs does not exist.
+ at cljs.compiler$compile_file$fn__3138.invoke (compiler.cljc:1345)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.closure$compile_file.invoke (closure.clj:426)
+    cljs.closure$compile_from_jar.invoke (closure.clj:466)
+    cljs.closure$eval3586$fn__3587.invoke (closure.clj:485)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    cljs.closure$get_compiled_cljs.invoke (closure.clj:548)
+    cljs.closure$cljs_dependencies.invoke (closure.clj:619)
+    cljs.closure$add_dependencies.doInvoke (closure.clj:642)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.core$apply.invoke (core.clj:632)
+    cljs.closure$build.invoke (closure.clj:1679)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15804.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15850.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15801.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15604.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15613.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15607.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15625.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712$fn__15717.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712.invoke (auto.clj:178)
+    clojure.core.async.impl.ioc_macros$run_state_machine.invoke (ioc_macros.clj:940)
+    clojure.core.async.impl.ioc_macros$run_state_machine_wrapped.invoke (ioc_macros.clj:944)
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.243 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.31 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.358 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.233 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.329 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.35 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.297 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.255 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/cljs" "src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.312 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /cljs/core/async/impl/channels.js
+notifying browser that file changed:  /cljs/core/async/impl/dispatch.js
+notifying browser that file changed:  /cljs/core.js
+notifying browser that file changed:  /cljs/core/async.js
+notifying browser that file changed:  /cljs/core/async/impl/buffers.js
+notifying browser that file changed:  /cljs/core/async/impl/protocols.js
+notifying browser that file changed:  /cljs/pprint.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /cljs/repl.js
+notifying browser that file changed:  /cljs/core/async/impl/ioc_helpers.js
+notifying browser that file changed:  /cljs/reader.js
+notifying browser that file changed:  /cljs/core/async/impl/timers.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.275 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.288 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.27 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.255 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.223 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+WARNING: Use of undeclared Var josefk.core/reg-machine at line 10 resources/public/js/out/josefk/main.cljs
+WARNING: Use of undeclared Var josefk.core/reg-machine at line 14 resources/public/js/out/josefk/main.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.334 seconds.[0m
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["resources/public/js/out/josefk" "resources/public/js/out/josefk"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.273 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js

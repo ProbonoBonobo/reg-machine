@@ -32,56 +32,60 @@
 
   :uberjar-name "josefk.jar"
 
-  :cljsbuild {:builds {:app {:source-paths ["src/cljs"]
+  :cljsbuild {:builds {;:main  {:source-paths ["resources/public/js/out/cljs"]}
+                       :app {:source-paths ["resources/public/js/out/josefk"]
                              :compiler {:output-to     "resources/public/js/app.js"
                                         :output-dir    "resources/public/js/out"
-                                        :source-map    "resources/public/js/out/josefk/main.js.map"
+                                        :source-map    "resources/public/js/out/josefk/app.js.map"
                                         :preamble      ["resources/public/js/out/react.inc.js"]
                                         :optimizations :none
                                         :pretty-print  true}}}}
 
-  :profiles {:dev {:source-paths ["env/dev/clj"]
-                   :test-paths ["test/clj"]
+  :profiles {:dev     {:source-paths     ["env/dev/clj"]
+                       ;:test-paths ["test/clj"]
 
-                   :min-lein-version "2.0.0"
+                       :min-lein-version "2.0.0"
 
-                   :dependencies [[figwheel "0.2.5"]
-                                  [figwheel-sidecar "0.2.5"]
-                                  [com.cemerick/piggieback "0.1.5"]
-                                  [weasel "0.6.0"]
-                                  [sablono "0.3.5"]]
+                       :dependencies     [[figwheel "0.2.5"]
+                                          [figwheel-sidecar "0.2.5"]
+                                          [com.cemerick/piggieback "0.1.5"]
+                                          [weasel "0.6.0"]
+                                          [sablono "0.3.5"]]
 
-                   :repl-options {:init-ns josefk.server
-                                  :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
+                       :repl-options     {:init-ns          josefk.server
+                                          :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
-                   :plugins [[lein-figwheel "0.2.5"]]
+                       :plugins          [[lein-figwheel "0.2.5"]]
 
-                   :figwheel {:http-server-root "public"
-                              :server-port 3449
-                              :css-dirs ["resources/public/css"]
-                              :ring-handler josefk.server/http-handler}
+                       :figwheel         {:http-server-root "public"
+                                          :server-port      3449
+                                          :css-dirs         ["resources/public/css"]
+                                          :ring-handler     josefk.server/http-handler}
 
-                   :env {:is-dev true}
+                       :env              {:is-dev true}
 
-                   :cljsbuild {:test-commands { "test" ["phantomjs" "env/test/js/unit-test.js" "env/test/unit-test.html"] }
-                               :builds {:app {:source-paths ["env/dev/cljs"]}
-                                        :test {:source-paths ["src/cljs" "test/cljs"]
-                                               :compiler {:output-to     "resources/public/js/app_test.js"
-                                                          :output-dir    "resources/public/js/test"
-                                                          :source-map    "resources/public/js/test.js.map"
-                                                          :preamble      ["react/react.min.js"]
-                                                          :optimizations :whitespace
-                                                          :pretty-print  false}}}
-                               }}
+                       :cljsbuild        {:test-commands {"test" ["phantomjs" "env/test/js/unit-test.js" "env/test/unit-test.html"]}
+                                          :builds        {:app {:source-paths ["resources/public/js/out/josefk"]}
+                                                          :test {:source-paths ["src/cljs" "test/cljs"]
+                                                                 :compiler {:output-to     "resources/public/js/app_test.js"
+                                                                            :output-dir    "resources/public/js/test"
+                                                                            :source-map    "resources/public/js/test.js.map"
+                                                                            :preamble      ["resources/public/js/out/react.inc.js"]
+                                                                            :optimizations :whitespace
+                                                                            :pretty-print  false}}}
+                                                          }}
+
 
              :uberjar {:source-paths ["env/prod/clj"]
-                       :hooks [leiningen.cljsbuild]
-                       :env {:production true}
-                       :omit-source true
-                       :aot :all
-                       :main josefk.server
-                       :cljsbuild {:builds {:app
-                                            {:source-paths ["env/prod/cljs"]
-                                             :compiler
-                                             {:optimizations :advanced
-                                              :pretty-print false}}}}}})
+                       :hooks        [leiningen.cljsbuild]
+                       :env          {:production true}
+                       :omit-source  true
+                       :aot          :all
+                       :main         josefk.server
+                       :cljsbuild    {:builds {:app
+                                               {:source-paths ["env/prod/cljs"]
+                                                :compiler
+                                                              {:output-to "resources/public/js/reg_machine.js"
+                                                               :output-dir "resources/public/js"
+                                                               :optimizations :advanced
+                                                               :pretty-print  false}}}}}})
