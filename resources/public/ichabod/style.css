@@ -1,0 +1,116 @@
+div#wines {
+   font-family: "Input Mono", serif;
+}
+
+body {
+	font-style: italic;
+	text-align: center;
+
+}
+
+.wines p:first-child {
+	background-color: yellow;
+
+}
+
+/*body p:first-child {
+  background-color: red;
+  position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+*/
+#theater {
+	background-color: #845E79;
+	width: 800px;
+   height: 500px;
+   background-size: contain;  
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin-left:10%;
+
+/*  -webkit-box-align:center;
+  -webkit-box-pack:center;
+  display:-webkit-box;	*/
+}
+#theater #left_arrow {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+
+
+
+}
+#theater #right_arrow {
+	position: relative;
+	top: 50%;
+	right: 50%;
+	z-index: 3;
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+
+
+}
+
+#left_arrow, #current_image, #right_arrow {
+	display:inline-block;
+}
+
+
+#multiplex {
+	height: 110px;
+	width: 800px;
+	margin-left: 9.8%;
+
+}
+#rew, #prev, #curr, #next, #ff { display: inline-block; *display: inline; vertical-align: top; margin-left: 0px; margin-right: -4px;}
+
+#multiplex #rew {
+	background: #845E79;
+	width: 160px;
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+#multiplex #prev {
+	background: #A22A18;
+	width: 160px;
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#multiplex #curr {
+	background: #3143A7;
+    width: 160px;
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#multiplex #next {
+	background: #EE300E;
+    width: 160px;
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#multiplex #ff {
+	background: #44868C;
+    width: 160px;
+	height: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+

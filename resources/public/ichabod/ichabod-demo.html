@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Demo: jQuery Ajax Example with JSON Response</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript">
+$(document).ready(function(){
+	  $(':submit').on('click', function() { // This event fires when a button is clicked
+		      var button = $(this).val();
+		          $.ajax({ // ajax call starts
+				        url: 'serverside.php', // JQuery loads serverside.php
+					      data: 'button=' + $(this).val(), // Send value of the clicked button
+					            dataType: 'json', // Choosing a JSON datatype
+						        })
+			      .done(function(data) { // Variable data contains the data we get from serverside
+				            $('#wines').html(''); // Clear #wines div
+				            $('#pos').html('');
+				          function mod(n, m) { return ((n % m) + m) % m; }
+					    				
+					          if (button == 'next') { // If clicked buttons value is all, we post every wine
+					          	  
+					          	  	document.getElementById("rew").style.backgroundImage = "url('" + data.revolver[data.tick]+ "')";
+					          	  	document.getElementById("prev").style.backgroundImage = "url('" + data.revolver[data.prev] + "')";
+					          	  	document.getElementById("curr").style.backgroundImage = "url('" + data.revolver[data.curr] + "')";
+					          	  	document.getElementById("theater").style.backgroundImage = "url('" + data.revolver[data.curr] + "')";
+					          	  	document.getElementById("next").style.backgroundImage = "url('" + data.revolver[data.next] + "')";
+					          	  	document.getElementById("ff").style.backgroundImage = "url('" + data.revolver[data.tock] + "')";
+					          	  	         	  
+							         //$('#theater').append('<div id="current_image"><img src = \'' + data.revolver[2] + '\' /></div>')
+							    //        	//$('#multiplex').append('<div id="rew"><img src = \'' + data.revolver[0] + '\' /></div>');
+									 	// $('#multiplex').append('<div id="prev"><img src = \'' + data.revolver[1] + '\' /></div>');
+									 	// $('#multiplex').append('<div id="curr"><img src = \'' + data.revolver[2] + '\' /></div>');
+									 	// $('#multiplex').append('<div id="next"><img src = \'' + data.revolver[3] + '\' /></div>');
+									 	// $('#multiplex').append('<div id="ff"><img src = \'' + data.revolver[4] + '\' /></div>');
+
+										   $('#wines').append('<div id="pos">Current: ' + data.curr + '</div>');
+										   $('#wines').append('<div id="pos">Vector: ' + data.repeller + " " + data.attractor + " " + data.tick + " " + data.prev + " " + data.curr + " " + data.next + " " + data.tock + '</div>');
+									        }
+						        else if (button == 'prev') { // If clicked buttons value is red, we post only red wines
+								        document.getElementById("rew").style.backgroundImage = "url('" + data.revolver[mod(data.curr-2,10)] + "')";
+					          	  	document.getElementById("prev").style.backgroundImage = "url('" + data.revolver[mod(data.curr-1,10)] + "')";
+					          	  	document.getElementById("curr").style.backgroundImage = "url('" + data.revolver[data.curr] + "')";
+					          	  	document.getElementById("theater").style.backgroundImage = "url('" + data.revolver[data.curr] + "')";
+					          	  	document.getElementById("next").style.backgroundImage = "url('" + data.revolver[mod(data.curr+1,10)] + "')";
+					          	  	document.getElementById("ff").style.backgroundImage = "url('" + data.revolver[mod(data.curr+2,10)] + "')";
+									      
+									      $('#wines').append('<div id="pos">Current: ' + data.curr + '</div>');
+									      $('#wines').append('<div id="pos">Vector: ' + data.gyre + '</div>');
+									  }
+							    //  else if (button == 'all') { // If clicked buttons value is white, we post only white wines
+								   //            for (var i in data) {
+										 //                $('#wines').append('<p><img src=\'' + data[i] + '\' /></p>');
+											// 	        }
+									            
+									  //           $('#wines').append('<div id="pos">Current: ' + data.curr + '</div>');
+									  //       }
+							         });
+			          return false; // keeps the page from not refreshing 
+				    });
+});
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="theater">
+			<div id="left_arrow">
+			<form method="post" action="">
+						<button value="next" type="submit"><img src="arrow 6.png"></button>
+					</form>
+				</div>
+			<div id="current_image"></div>
+			<div id="right_arrow">
+			<form method="post" action="">
+						<button value="prev" type="submit"><img src="arrow 6.png"></button>
+					</form>
+				</div>
+		</div>
+		<div id="multiplex">
+			<div id="rew"></div>
+			<div id="prev"></div>
+			<div id="curr"></div>
+			<div id="next"></div>
+			<div id="ff"></div>
+		</div>
+
+		
+
+			<form method="post" action="">
+						<button value="prev" type="submit">Prev</button>
+										<button value="next" type="submit">Next</button>
+										<button value="reset" type="submit">Reset</button>
+											</form>
+											   
+												
+												<div id="wines">
+														<!-- Javascript will print data in here -->
+															</div>
+	</body>
+</html>
+

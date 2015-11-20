@@ -1,0 +1,39 @@
+.progress {
+	background-color: #ff2323;
+}
+
+.push-nav .navigation a:hover {
+	color: #ff2323;
+}
+
+.separator { 
+	background: #ff2323;
+}
+
+.separator-small { 
+	background: #ff2323;
+}
+
+.poster.accent:before {
+	background: #ff2323;
+}
+
+.border-shape {
+	border: 1px solid rgba(255, 35, 35, .3);
+}
+
+.progress-bar {
+	border-bottom: 1px dotted rgba(255, 35, 35, .5);
+}
+
+.progress-bar.start:before {
+	background: #ff2323;
+}
+
+.progress-bar.finish:before {
+	background: #ff2323;
+}
+
+.filters li:before {
+	background: #ff2323;
+}

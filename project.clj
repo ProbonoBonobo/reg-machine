@@ -35,8 +35,8 @@
   :cljsbuild {:builds {:app {:source-paths ["src/cljs"]
                              :compiler {:output-to     "resources/public/js/app.js"
                                         :output-dir    "resources/public/js/out"
-                                        :source-map    "resources/public/js/out.js.map"
-                                        :preamble      ["react/react.min.js"]
+                                        :source-map    "resources/public/js/out/josefk/main.js.map"
+                                        :preamble      ["resources/public/js/out/react.inc.js"]
                                         :optimizations :none
                                         :pretty-print  true}}}}
 

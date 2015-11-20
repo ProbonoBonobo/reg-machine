@@ -7132,3 +7132,300 @@ notifying browser that file changed:  resources/public/js/app.js
 notifying browser that file changed:  resources/public/js/out/goog/deps.js
 notifying browser that file changed:  /josefk/core.js
 notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.356 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.355 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.292 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.339 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.286 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.261 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.324 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.371 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.423 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+sending changed CSS file: resources/public/css/style.css
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.292 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+sending changed CSS file: resources/public/css/style.css
+sending changed CSS file: resources/public/css/style.css
+sending changed CSS file: resources/public/css/style.css
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.368 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+sending changed CSS file: resources/public/css/style.css
+sending changed CSS file: resources/public/css/style.css
+sending changed CSS file: resources/public/css/style.css
+sending changed CSS file: resources/public/css/style.css
+sending changed CSS file: resources/public/css/style.css
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.276 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+sending changed CSS file: resources/public/css/style.css
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.419 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.331 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.363 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.339 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.239 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.248 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.226 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.284 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.304 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.266 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.24 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.344 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.329 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.455 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.36 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.375 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.73 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.247 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.25 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.22 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.24 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.229 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.24 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.379 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.256 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.235 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.25 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.233 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
+Figwheel: focusing on build-ids (app)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs" "env/dev/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.363 seconds.[0m
+notifying browser that file changed:  resources/public/js/app.js
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  /josefk/core.js
+notifying browser that file changed:  /josefk/main.js
