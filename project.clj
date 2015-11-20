@@ -83,9 +83,10 @@
                        :aot          :all
                        :main         josefk.server
                        :cljsbuild    {:builds {:app
-                                               {:source-paths ["env/prod/cljs"]
+                                               {:source-paths ["resources/public/js/out/josefk"]
                                                 :compiler
-                                                              {:output-to "resources/public/js/reg_machine.js"
-                                                               :output-dir "resources/public/js"
-                                                               :optimizations :none
-                                                               :pretty-print  false}}}}}})
+                                                              {:output-to "resources/public/js/app.js"
+                                                               :output-dir    "resources/public/js/out"
+                                                               :source-map    "resources/public/js/out/josefk/app.js.map"
+                                                               :preamble      ["resources/public/js/out/react.inc.js"]
+                                                               :optimizations :none}}}}}})
