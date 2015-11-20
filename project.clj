@@ -87,5 +87,5 @@
                                                 :compiler
                                                               {:output-to "resources/public/js/reg_machine.js"
                                                                :output-dir "resources/public/js"
-                                                               :optimizations :advanced
+                                                               :optimizations :none
                                                                :pretty-print  false}}}}}})
