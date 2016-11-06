@@ -18,29 +18,29 @@ return cljs.core.disj.call(null,features__$1,new cljs.core.Keyword(null,"no-safe
 quil.middlewares.deprecated_options.deprecated_options = (function quil$middlewares$deprecated_options$deprecated_options(options){
 var options__$1 = cljs.core.update_in.call(null,options,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"features","features",-1146962336)], null),quil.middlewares.deprecated_options.check_features_vector);
 return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,cljs.core.remove.call(null,cljs.core.nil_QMARK_,(function (){var iter__25531__auto__ = ((function (options__$1){
-return (function quil$middlewares$deprecated_options$deprecated_options_$_iter__56138(s__56139){
+return (function quil$middlewares$deprecated_options$deprecated_options_$_iter__67833(s__67834){
 return (new cljs.core.LazySeq(null,((function (options__$1){
 return (function (){
-var s__56139__$1 = s__56139;
+var s__67834__$1 = s__67834;
 while(true){
-var temp__4657__auto__ = cljs.core.seq.call(null,s__56139__$1);
+var temp__4657__auto__ = cljs.core.seq.call(null,s__67834__$1);
 if(temp__4657__auto__){
-var s__56139__$2 = temp__4657__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__56139__$2)){
-var c__25529__auto__ = cljs.core.chunk_first.call(null,s__56139__$2);
+var s__67834__$2 = temp__4657__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__67834__$2)){
+var c__25529__auto__ = cljs.core.chunk_first.call(null,s__67834__$2);
 var size__25530__auto__ = cljs.core.count.call(null,c__25529__auto__);
-var b__56141 = cljs.core.chunk_buffer.call(null,size__25530__auto__);
-if((function (){var i__56140 = (0);
+var b__67836 = cljs.core.chunk_buffer.call(null,size__25530__auto__);
+if((function (){var i__67835 = (0);
 while(true){
-if((i__56140 < size__25530__auto__)){
-var vec__56154 = cljs.core._nth.call(null,c__25529__auto__,i__56140);
-var name = cljs.core.nth.call(null,vec__56154,(0),null);
-var value = cljs.core.nth.call(null,vec__56154,(1),null);
-cljs.core.chunk_append.call(null,b__56141,(function (){var temp__4655__auto__ = quil.middlewares.deprecated_options.deprecated.call(null,name);
+if((i__67835 < size__25530__auto__)){
+var vec__67849 = cljs.core._nth.call(null,c__25529__auto__,i__67835);
+var name = cljs.core.nth.call(null,vec__67849,(0),null);
+var value = cljs.core.nth.call(null,vec__67849,(1),null);
+cljs.core.chunk_append.call(null,b__67836,(function (){var temp__4655__auto__ = quil.middlewares.deprecated_options.deprecated.call(null,name);
 if(cljs.core.truth_(temp__4655__auto__)){
-var vec__56157 = temp__4655__auto__;
-var version = cljs.core.nth.call(null,vec__56157,(0),null);
-var message = cljs.core.nth.call(null,vec__56157,(1),null);
+var vec__67852 = temp__4655__auto__;
+var version = cljs.core.nth.call(null,vec__67852,(0),null);
+var message = cljs.core.nth.call(null,vec__67852,(1),null);
 cljs.core.println.call(null,name,"option was removed in Quil",version,".",message);
 
 return null;
@@ -49,8 +49,8 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 }
 })());
 
-var G__56166 = (i__56140 + (1));
-i__56140 = G__56166;
+var G__67861 = (i__67835 + (1));
+i__67835 = G__67861;
 continue;
 } else {
 return true;
@@ -58,26 +58,26 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__56141),quil$middlewares$deprecated_options$deprecated_options_$_iter__56138.call(null,cljs.core.chunk_rest.call(null,s__56139__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__67836),quil$middlewares$deprecated_options$deprecated_options_$_iter__67833.call(null,cljs.core.chunk_rest.call(null,s__67834__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__56141),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__67836),null);
 }
 } else {
-var vec__56160 = cljs.core.first.call(null,s__56139__$2);
-var name = cljs.core.nth.call(null,vec__56160,(0),null);
-var value = cljs.core.nth.call(null,vec__56160,(1),null);
+var vec__67855 = cljs.core.first.call(null,s__67834__$2);
+var name = cljs.core.nth.call(null,vec__67855,(0),null);
+var value = cljs.core.nth.call(null,vec__67855,(1),null);
 return cljs.core.cons.call(null,(function (){var temp__4655__auto__ = quil.middlewares.deprecated_options.deprecated.call(null,name);
 if(cljs.core.truth_(temp__4655__auto__)){
-var vec__56163 = temp__4655__auto__;
-var version = cljs.core.nth.call(null,vec__56163,(0),null);
-var message = cljs.core.nth.call(null,vec__56163,(1),null);
+var vec__67858 = temp__4655__auto__;
+var version = cljs.core.nth.call(null,vec__67858,(0),null);
+var message = cljs.core.nth.call(null,vec__67858,(1),null);
 cljs.core.println.call(null,name,"option was removed in Quil",version,".",message);
 
 return null;
 } else {
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [name,value], null);
 }
-})(),quil$middlewares$deprecated_options$deprecated_options_$_iter__56138.call(null,cljs.core.rest.call(null,s__56139__$2)));
+})(),quil$middlewares$deprecated_options$deprecated_options_$_iter__67833.call(null,cljs.core.rest.call(null,s__67834__$2)));
 }
 } else {
 return null;
@@ -92,4 +92,4 @@ return iter__25531__auto__.call(null,options__$1);
 })()));
 });
 
-//# sourceMappingURL=deprecated_options.js.map?rel=1477762306055
+//# sourceMappingURL=deprecated_options.js.map?rel=1478399650948

@@ -42,30 +42,30 @@ return cljs.core.PersistentArrayMap.EMPTY;
 });
 return cljs.core.reduce.call(null,merge,cljs.core.PersistentArrayMap.EMPTY,maps);
 });
-var ufv___55358 = schema.utils.use_fn_validation;
-var output_schema55353_55359 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.Any], null);
-var input_schema55354_55360 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"x","x",-555367584,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null)))], null);
-var input_checker55355_55361 = schema.core.checker.call(null,input_schema55354_55360);
-var output_checker55356_55362 = schema.core.checker.call(null,output_schema55353_55359);
+var ufv___66662 = schema.utils.use_fn_validation;
+var output_schema66657_66663 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.Any], null);
+var input_schema66658_66664 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"x","x",-555367584,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null)))], null);
+var input_checker66659_66665 = schema.core.checker.call(null,input_schema66658_66664);
+var output_checker66660_66666 = schema.core.checker.call(null,output_schema66657_66663);
 /**
  * Inputs: [x :- s/Any]
  *   Returns: [s/Any]
  */
-om_bootstrap.util.collectify = ((function (ufv___55358,output_schema55353_55359,input_schema55354_55360,input_checker55355_55361,output_checker55356_55362){
-return (function om_bootstrap$util$collectify(G__55357){
-var validate__37921__auto__ = ufv___55358.get_cell();
-if(cljs.core.truth_(validate__37921__auto__)){
-var args__37922__auto___55363 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__55357], null);
-var temp__4657__auto___55364 = input_checker55355_55361.call(null,args__37922__auto___55363);
-if(cljs.core.truth_(temp__4657__auto___55364)){
-var error__37923__auto___55365 = temp__4657__auto___55364;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"collectify","collectify",-1779603030,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null)], null)),cljs.core.pr_str.call(null,error__37923__auto___55365)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema55354_55360,new cljs.core.Keyword(null,"value","value",305978217),args__37922__auto___55363,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55365], null));
+om_bootstrap.util.collectify = ((function (ufv___66662,output_schema66657_66663,input_schema66658_66664,input_checker66659_66665,output_checker66660_66666){
+return (function om_bootstrap$util$collectify(G__66661){
+var validate__30368__auto__ = ufv___66662.get_cell();
+if(cljs.core.truth_(validate__30368__auto__)){
+var args__30369__auto___66667 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__66661], null);
+var temp__4657__auto___66668 = input_checker66659_66665.call(null,args__30369__auto___66667);
+if(cljs.core.truth_(temp__4657__auto___66668)){
+var error__30370__auto___66669 = temp__4657__auto___66668;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"collectify","collectify",-1779603030,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null)], null)),cljs.core.pr_str.call(null,error__30370__auto___66669)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema66658_66664,new cljs.core.Keyword(null,"value","value",305978217),args__30369__auto___66667,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66669], null));
 } else {
 }
 } else {
 }
 
-var o__37924__auto__ = (function (){var x = G__55357;
+var o__30371__auto__ = (function (){var x = G__66661;
 while(true){
 if(cljs.core.sequential_QMARK_.call(null,x)){
 return x;
@@ -75,21 +75,21 @@ return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMP
 break;
 }
 })();
-if(cljs.core.truth_(validate__37921__auto__)){
-var temp__4657__auto___55366 = output_checker55356_55362.call(null,o__37924__auto__);
-if(cljs.core.truth_(temp__4657__auto___55366)){
-var error__37923__auto___55367 = temp__4657__auto___55366;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"collectify","collectify",-1779603030,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null)], null)),cljs.core.pr_str.call(null,error__37923__auto___55367)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema55353_55359,new cljs.core.Keyword(null,"value","value",305978217),o__37924__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55367], null));
+if(cljs.core.truth_(validate__30368__auto__)){
+var temp__4657__auto___66670 = output_checker66660_66666.call(null,o__30371__auto__);
+if(cljs.core.truth_(temp__4657__auto___66670)){
+var error__30370__auto___66671 = temp__4657__auto___66670;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"collectify","collectify",-1779603030,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null)], null)),cljs.core.pr_str.call(null,error__30370__auto___66671)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema66657_66663,new cljs.core.Keyword(null,"value","value",305978217),o__30371__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66671], null));
 } else {
 }
 } else {
 }
 
-return o__37924__auto__;
-});})(ufv___55358,output_schema55353_55359,input_schema55354_55360,input_checker55355_55361,output_checker55356_55362))
+return o__30371__auto__;
+});})(ufv___66662,output_schema66657_66663,input_schema66658_66664,input_checker66659_66665,output_checker66660_66666))
 ;
 
-schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.collectify),schema.core.make_fn_schema.call(null,output_schema55353_55359,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema55354_55360], null)));
+schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.collectify),schema.core.make_fn_schema.call(null,output_schema66657_66663,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema66658_66664], null)));
 /**
  * This is the same as om.core/get-props. We added it to get around
  *   the new precondition in Om 0.8.0.
@@ -97,55 +97,55 @@ schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.
 om_bootstrap.util.get_props = (function om_bootstrap$util$get_props(x){
 return (x.props["__om_cursor"]);
 });
-var ufv___55373 = schema.utils.use_fn_validation;
-var output_schema55368_55374 = schema.core.Bool;
-var input_schema55369_55375 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"x","x",-555367584,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
-var input_checker55370_55376 = schema.core.checker.call(null,input_schema55369_55375);
-var output_checker55371_55377 = schema.core.checker.call(null,output_schema55368_55374);
+var ufv___66677 = schema.utils.use_fn_validation;
+var output_schema66672_66678 = schema.core.Bool;
+var input_schema66673_66679 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"x","x",-555367584,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
+var input_checker66674_66680 = schema.core.checker.call(null,input_schema66673_66679);
+var output_checker66675_66681 = schema.core.checker.call(null,output_schema66672_66678);
 /**
  * Inputs: [x]
  *   Returns: s/Bool
  */
-om_bootstrap.util.om_component_QMARK_ = ((function (ufv___55373,output_schema55368_55374,input_schema55369_55375,input_checker55370_55376,output_checker55371_55377){
-return (function om_bootstrap$util$om_component_QMARK_(G__55372){
-var validate__37921__auto__ = ufv___55373.get_cell();
-if(cljs.core.truth_(validate__37921__auto__)){
-var args__37922__auto___55378 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__55372], null);
-var temp__4657__auto___55379 = input_checker55370_55376.call(null,args__37922__auto___55378);
-if(cljs.core.truth_(temp__4657__auto___55379)){
-var error__37923__auto___55380 = temp__4657__auto___55379;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"om-component?","om-component?",534068525,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null)], null)),cljs.core.pr_str.call(null,error__37923__auto___55380)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema55369_55375,new cljs.core.Keyword(null,"value","value",305978217),args__37922__auto___55378,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55380], null));
+om_bootstrap.util.om_component_QMARK_ = ((function (ufv___66677,output_schema66672_66678,input_schema66673_66679,input_checker66674_66680,output_checker66675_66681){
+return (function om_bootstrap$util$om_component_QMARK_(G__66676){
+var validate__30368__auto__ = ufv___66677.get_cell();
+if(cljs.core.truth_(validate__30368__auto__)){
+var args__30369__auto___66682 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__66676], null);
+var temp__4657__auto___66683 = input_checker66674_66680.call(null,args__30369__auto___66682);
+if(cljs.core.truth_(temp__4657__auto___66683)){
+var error__30370__auto___66684 = temp__4657__auto___66683;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"om-component?","om-component?",534068525,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null)], null)),cljs.core.pr_str.call(null,error__30370__auto___66684)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema66673_66679,new cljs.core.Keyword(null,"value","value",305978217),args__30369__auto___66682,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66684], null));
 } else {
 }
 } else {
 }
 
-var o__37924__auto__ = (function (){var x = G__55372;
+var o__30371__auto__ = (function (){var x = G__66676;
 while(true){
 return cljs.core.boolean$.call(null,om_bootstrap.util.get_props.call(null,x));
 break;
 }
 })();
-if(cljs.core.truth_(validate__37921__auto__)){
-var temp__4657__auto___55381 = output_checker55371_55377.call(null,o__37924__auto__);
-if(cljs.core.truth_(temp__4657__auto___55381)){
-var error__37923__auto___55382 = temp__4657__auto___55381;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"om-component?","om-component?",534068525,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null)], null)),cljs.core.pr_str.call(null,error__37923__auto___55382)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema55368_55374,new cljs.core.Keyword(null,"value","value",305978217),o__37924__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55382], null));
+if(cljs.core.truth_(validate__30368__auto__)){
+var temp__4657__auto___66685 = output_checker66675_66681.call(null,o__30371__auto__);
+if(cljs.core.truth_(temp__4657__auto___66685)){
+var error__30370__auto___66686 = temp__4657__auto___66685;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"om-component?","om-component?",534068525,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null)], null)),cljs.core.pr_str.call(null,error__30370__auto___66686)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema66672_66678,new cljs.core.Keyword(null,"value","value",305978217),o__30371__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66686], null));
 } else {
 }
 } else {
 }
 
-return o__37924__auto__;
-});})(ufv___55373,output_schema55368_55374,input_schema55369_55375,input_checker55370_55376,output_checker55371_55377))
+return o__30371__auto__;
+});})(ufv___66677,output_schema66672_66678,input_schema66673_66679,input_checker66674_66680,output_checker66675_66681))
 ;
 
-schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.om_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema55368_55374,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema55369_55375], null)));
-var ufv___55388 = schema.utils.use_fn_validation;
-var output_schema55383_55389 = schema.core.Bool;
-var input_schema55384_55390 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"child","child",-2030468224,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
-var input_checker55385_55391 = schema.core.checker.call(null,input_schema55384_55390);
-var output_checker55386_55392 = schema.core.checker.call(null,output_schema55383_55389);
+schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.om_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema66672_66678,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema66673_66679], null)));
+var ufv___66692 = schema.utils.use_fn_validation;
+var output_schema66687_66693 = schema.core.Bool;
+var input_schema66688_66694 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"child","child",-2030468224,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
+var input_checker66689_66695 = schema.core.checker.call(null,input_schema66688_66694);
+var output_checker66690_66696 = schema.core.checker.call(null,output_schema66687_66693);
 /**
  * Inputs: [child]
  *   Returns: s/Bool
@@ -153,46 +153,46 @@ var output_checker55386_55392 = schema.core.checker.call(null,output_schema55383
  *   TODO: Once Om updates its externs to include this file, we can
  *   remove the janky aget call.
  */
-om_bootstrap.util.strict_valid_component_QMARK_ = ((function (ufv___55388,output_schema55383_55389,input_schema55384_55390,input_checker55385_55391,output_checker55386_55392){
-return (function om_bootstrap$util$strict_valid_component_QMARK_(G__55387){
-var validate__37921__auto__ = ufv___55388.get_cell();
-if(cljs.core.truth_(validate__37921__auto__)){
-var args__37922__auto___55393 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__55387], null);
-var temp__4657__auto___55394 = input_checker55385_55391.call(null,args__37922__auto___55393);
-if(cljs.core.truth_(temp__4657__auto___55394)){
-var error__37923__auto___55395 = temp__4657__auto___55394;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"strict-valid-component?","strict-valid-component?",130165335,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"TODO: Once Om updates its externs to include this file, we can\n  remove the janky aget call."], null)),cljs.core.pr_str.call(null,error__37923__auto___55395)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema55384_55390,new cljs.core.Keyword(null,"value","value",305978217),args__37922__auto___55393,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55395], null));
+om_bootstrap.util.strict_valid_component_QMARK_ = ((function (ufv___66692,output_schema66687_66693,input_schema66688_66694,input_checker66689_66695,output_checker66690_66696){
+return (function om_bootstrap$util$strict_valid_component_QMARK_(G__66691){
+var validate__30368__auto__ = ufv___66692.get_cell();
+if(cljs.core.truth_(validate__30368__auto__)){
+var args__30369__auto___66697 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__66691], null);
+var temp__4657__auto___66698 = input_checker66689_66695.call(null,args__30369__auto___66697);
+if(cljs.core.truth_(temp__4657__auto___66698)){
+var error__30370__auto___66699 = temp__4657__auto___66698;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"strict-valid-component?","strict-valid-component?",130165335,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"TODO: Once Om updates its externs to include this file, we can\n  remove the janky aget call."], null)),cljs.core.pr_str.call(null,error__30370__auto___66699)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema66688_66694,new cljs.core.Keyword(null,"value","value",305978217),args__30369__auto___66697,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66699], null));
 } else {
 }
 } else {
 }
 
-var o__37924__auto__ = (function (){var child = G__55387;
+var o__30371__auto__ = (function (){var child = G__66691;
 while(true){
 return (React["isValidElement"]).call(null,child);
 break;
 }
 })();
-if(cljs.core.truth_(validate__37921__auto__)){
-var temp__4657__auto___55396 = output_checker55386_55392.call(null,o__37924__auto__);
-if(cljs.core.truth_(temp__4657__auto___55396)){
-var error__37923__auto___55397 = temp__4657__auto___55396;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"strict-valid-component?","strict-valid-component?",130165335,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"TODO: Once Om updates its externs to include this file, we can\n  remove the janky aget call."], null)),cljs.core.pr_str.call(null,error__37923__auto___55397)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema55383_55389,new cljs.core.Keyword(null,"value","value",305978217),o__37924__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55397], null));
+if(cljs.core.truth_(validate__30368__auto__)){
+var temp__4657__auto___66700 = output_checker66690_66696.call(null,o__30371__auto__);
+if(cljs.core.truth_(temp__4657__auto___66700)){
+var error__30370__auto___66701 = temp__4657__auto___66700;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"strict-valid-component?","strict-valid-component?",130165335,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"TODO: Once Om updates its externs to include this file, we can\n  remove the janky aget call."], null)),cljs.core.pr_str.call(null,error__30370__auto___66701)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema66687_66693,new cljs.core.Keyword(null,"value","value",305978217),o__30371__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66701], null));
 } else {
 }
 } else {
 }
 
-return o__37924__auto__;
-});})(ufv___55388,output_schema55383_55389,input_schema55384_55390,input_checker55385_55391,output_checker55386_55392))
+return o__30371__auto__;
+});})(ufv___66692,output_schema66687_66693,input_schema66688_66694,input_checker66689_66695,output_checker66690_66696))
 ;
 
-schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.strict_valid_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema55383_55389,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema55384_55390], null)));
-var ufv___55403 = schema.utils.use_fn_validation;
-var output_schema55398_55404 = schema.core.Bool;
-var input_schema55399_55405 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"child","child",-2030468224,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
-var input_checker55400_55406 = schema.core.checker.call(null,input_schema55399_55405);
-var output_checker55401_55407 = schema.core.checker.call(null,output_schema55398_55404);
+schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.strict_valid_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema66687_66693,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema66688_66694], null)));
+var ufv___66707 = schema.utils.use_fn_validation;
+var output_schema66702_66708 = schema.core.Bool;
+var input_schema66703_66709 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"child","child",-2030468224,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
+var input_checker66704_66710 = schema.core.checker.call(null,input_schema66703_66709);
+var output_checker66705_66711 = schema.core.checker.call(null,output_schema66702_66708);
 /**
  * Inputs: [child]
  *   Returns: s/Bool
@@ -200,21 +200,21 @@ var output_checker55401_55407 = schema.core.checker.call(null,output_schema55398
  *   Returns true if the supplied argument is a valid React component,
  *   false otherwise.
  */
-om_bootstrap.util.valid_component_QMARK_ = ((function (ufv___55403,output_schema55398_55404,input_schema55399_55405,input_checker55400_55406,output_checker55401_55407){
-return (function om_bootstrap$util$valid_component_QMARK_(G__55402){
-var validate__37921__auto__ = ufv___55403.get_cell();
-if(cljs.core.truth_(validate__37921__auto__)){
-var args__37922__auto___55408 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__55402], null);
-var temp__4657__auto___55409 = input_checker55400_55406.call(null,args__37922__auto___55408);
-if(cljs.core.truth_(temp__4657__auto___55409)){
-var error__37923__auto___55410 = temp__4657__auto___55409;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"valid-component?","valid-component?",-519675438,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied argument is a valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__37923__auto___55410)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema55399_55405,new cljs.core.Keyword(null,"value","value",305978217),args__37922__auto___55408,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55410], null));
+om_bootstrap.util.valid_component_QMARK_ = ((function (ufv___66707,output_schema66702_66708,input_schema66703_66709,input_checker66704_66710,output_checker66705_66711){
+return (function om_bootstrap$util$valid_component_QMARK_(G__66706){
+var validate__30368__auto__ = ufv___66707.get_cell();
+if(cljs.core.truth_(validate__30368__auto__)){
+var args__30369__auto___66712 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__66706], null);
+var temp__4657__auto___66713 = input_checker66704_66710.call(null,args__30369__auto___66712);
+if(cljs.core.truth_(temp__4657__auto___66713)){
+var error__30370__auto___66714 = temp__4657__auto___66713;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"valid-component?","valid-component?",-519675438,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied argument is a valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__30370__auto___66714)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema66703_66709,new cljs.core.Keyword(null,"value","value",305978217),args__30369__auto___66712,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66714], null));
 } else {
 }
 } else {
 }
 
-var o__37924__auto__ = (function (){var child = G__55402;
+var o__30371__auto__ = (function (){var child = G__66706;
 while(true){
 var or__24751__auto__ = typeof child === 'string';
 if(or__24751__auto__){
@@ -230,26 +230,26 @@ return om_bootstrap.util.strict_valid_component_QMARK_.call(null,child);
 break;
 }
 })();
-if(cljs.core.truth_(validate__37921__auto__)){
-var temp__4657__auto___55411 = output_checker55401_55407.call(null,o__37924__auto__);
-if(cljs.core.truth_(temp__4657__auto___55411)){
-var error__37923__auto___55412 = temp__4657__auto___55411;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"valid-component?","valid-component?",-519675438,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied argument is a valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__37923__auto___55412)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema55398_55404,new cljs.core.Keyword(null,"value","value",305978217),o__37924__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55412], null));
+if(cljs.core.truth_(validate__30368__auto__)){
+var temp__4657__auto___66715 = output_checker66705_66711.call(null,o__30371__auto__);
+if(cljs.core.truth_(temp__4657__auto___66715)){
+var error__30370__auto___66716 = temp__4657__auto___66715;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"valid-component?","valid-component?",-519675438,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied argument is a valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__30370__auto___66716)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema66702_66708,new cljs.core.Keyword(null,"value","value",305978217),o__30371__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66716], null));
 } else {
 }
 } else {
 }
 
-return o__37924__auto__;
-});})(ufv___55403,output_schema55398_55404,input_schema55399_55405,input_checker55400_55406,output_checker55401_55407))
+return o__30371__auto__;
+});})(ufv___66707,output_schema66702_66708,input_schema66703_66709,input_checker66704_66710,output_checker66705_66711))
 ;
 
-schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.valid_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema55398_55404,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema55399_55405], null)));
-var ufv___55418 = schema.utils.use_fn_validation;
-var output_schema55413_55419 = schema.core.Bool;
-var input_schema55414_55420 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"children","children",699969545,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
-var input_checker55415_55421 = schema.core.checker.call(null,input_schema55414_55420);
-var output_checker55416_55422 = schema.core.checker.call(null,output_schema55413_55419);
+schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.valid_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema66702_66708,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema66703_66709], null)));
+var ufv___66722 = schema.utils.use_fn_validation;
+var output_schema66717_66723 = schema.core.Bool;
+var input_schema66718_66724 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"children","children",699969545,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("schema.core","Any","schema.core/Any",-1891898271,null)], null)))], null);
+var input_checker66719_66725 = schema.core.checker.call(null,input_schema66718_66724);
+var output_checker66720_66726 = schema.core.checker.call(null,output_schema66717_66723);
 /**
  * Inputs: [children]
  *   Returns: s/Bool
@@ -257,41 +257,41 @@ var output_checker55416_55422 = schema.core.checker.call(null,output_schema55413
  *   Returns true if the supplied sequence contains some valid React component,
  *   false otherwise.
  */
-om_bootstrap.util.some_valid_component_QMARK_ = ((function (ufv___55418,output_schema55413_55419,input_schema55414_55420,input_checker55415_55421,output_checker55416_55422){
-return (function om_bootstrap$util$some_valid_component_QMARK_(G__55417){
-var validate__37921__auto__ = ufv___55418.get_cell();
-if(cljs.core.truth_(validate__37921__auto__)){
-var args__37922__auto___55423 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__55417], null);
-var temp__4657__auto___55424 = input_checker55415_55421.call(null,args__37922__auto___55423);
-if(cljs.core.truth_(temp__4657__auto___55424)){
-var error__37923__auto___55425 = temp__4657__auto___55424;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"some-valid-component?","some-valid-component?",-171767082,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied sequence contains some valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__37923__auto___55425)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema55414_55420,new cljs.core.Keyword(null,"value","value",305978217),args__37922__auto___55423,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55425], null));
+om_bootstrap.util.some_valid_component_QMARK_ = ((function (ufv___66722,output_schema66717_66723,input_schema66718_66724,input_checker66719_66725,output_checker66720_66726){
+return (function om_bootstrap$util$some_valid_component_QMARK_(G__66721){
+var validate__30368__auto__ = ufv___66722.get_cell();
+if(cljs.core.truth_(validate__30368__auto__)){
+var args__30369__auto___66727 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__66721], null);
+var temp__4657__auto___66728 = input_checker66719_66725.call(null,args__30369__auto___66727);
+if(cljs.core.truth_(temp__4657__auto___66728)){
+var error__30370__auto___66729 = temp__4657__auto___66728;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"some-valid-component?","some-valid-component?",-171767082,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied sequence contains some valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__30370__auto___66729)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema66718_66724,new cljs.core.Keyword(null,"value","value",305978217),args__30369__auto___66727,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66729], null));
 } else {
 }
 } else {
 }
 
-var o__37924__auto__ = (function (){var children = G__55417;
+var o__30371__auto__ = (function (){var children = G__66721;
 while(true){
 return cljs.core.boolean$.call(null,cljs.core.some.call(null,om_bootstrap.util.valid_component_QMARK_,children));
 break;
 }
 })();
-if(cljs.core.truth_(validate__37921__auto__)){
-var temp__4657__auto___55426 = output_checker55416_55422.call(null,o__37924__auto__);
-if(cljs.core.truth_(temp__4657__auto___55426)){
-var error__37923__auto___55427 = temp__4657__auto___55426;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"some-valid-component?","some-valid-component?",-171767082,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied sequence contains some valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__37923__auto___55427)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema55413_55419,new cljs.core.Keyword(null,"value","value",305978217),o__37924__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___55427], null));
+if(cljs.core.truth_(validate__30368__auto__)){
+var temp__4657__auto___66730 = output_checker66720_66726.call(null,o__30371__auto__);
+if(cljs.core.truth_(temp__4657__auto___66730)){
+var error__30370__auto___66731 = temp__4657__auto___66730;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"some-valid-component?","some-valid-component?",-171767082,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Bool","s/Bool",195910545,null),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns true if the supplied sequence contains some valid React component,\n  false otherwise."], null)),cljs.core.pr_str.call(null,error__30370__auto___66731)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema66717_66723,new cljs.core.Keyword(null,"value","value",305978217),o__30371__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___66731], null));
 } else {
 }
 } else {
 }
 
-return o__37924__auto__;
-});})(ufv___55418,output_schema55413_55419,input_schema55414_55420,input_checker55415_55421,output_checker55416_55422))
+return o__30371__auto__;
+});})(ufv___66722,output_schema66717_66723,input_schema66718_66724,input_checker66719_66725,output_checker66720_66726))
 ;
 
-schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.some_valid_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema55413_55419,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema55414_55420], null)));
+schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.util.some_valid_component_QMARK_),schema.core.make_fn_schema.call(null,output_schema66717_66723,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema66718_66724], null)));
 /**
  * Generates a new function that calls each supplied side-effecting
  *   function.
@@ -305,26 +305,26 @@ return and__24739__auto__;
 }
 })())){
 return (function() { 
-var G__55428__delegate = function (args){
+var G__66732__delegate = function (args){
 cljs.core.apply.call(null,l,args);
 
 return cljs.core.apply.call(null,r,args);
 };
-var G__55428 = function (var_args){
+var G__66732 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__55429__i = 0, G__55429__a = new Array(arguments.length -  0);
-while (G__55429__i < G__55429__a.length) {G__55429__a[G__55429__i] = arguments[G__55429__i + 0]; ++G__55429__i;}
-  args = new cljs.core.IndexedSeq(G__55429__a,0);
+var G__66733__i = 0, G__66733__a = new Array(arguments.length -  0);
+while (G__66733__i < G__66733__a.length) {G__66733__a[G__66733__i] = arguments[G__66733__i + 0]; ++G__66733__i;}
+  args = new cljs.core.IndexedSeq(G__66733__a,0);
 } 
-return G__55428__delegate.call(this,args);};
-G__55428.cljs$lang$maxFixedArity = 0;
-G__55428.cljs$lang$applyTo = (function (arglist__55430){
-var args = cljs.core.seq(arglist__55430);
-return G__55428__delegate(args);
+return G__66732__delegate.call(this,args);};
+G__66732.cljs$lang$maxFixedArity = 0;
+G__66732.cljs$lang$applyTo = (function (arglist__66734){
+var args = cljs.core.seq(arglist__66734);
+return G__66732__delegate(args);
 });
-G__55428.cljs$core$IFn$_invoke$arity$variadic = G__55428__delegate;
-return G__55428;
+G__66732.cljs$core$IFn$_invoke$arity$variadic = G__66732__delegate;
+return G__66732;
 })()
 ;
 } else {
@@ -368,14 +368,14 @@ return cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"child
  */
 om_bootstrap.util.merge_props = (function om_bootstrap$util$merge_props(var_args){
 var args__25833__auto__ = [];
-var len__25826__auto___55432 = arguments.length;
-var i__25827__auto___55433 = (0);
+var len__25826__auto___66736 = arguments.length;
+var i__25827__auto___66737 = (0);
 while(true){
-if((i__25827__auto___55433 < len__25826__auto___55432)){
-args__25833__auto__.push((arguments[i__25827__auto___55433]));
+if((i__25827__auto___66737 < len__25826__auto___66736)){
+args__25833__auto__.push((arguments[i__25827__auto___66737]));
 
-var G__55434 = (i__25827__auto___55433 + (1));
-i__25827__auto___55433 = G__55434;
+var G__66738 = (i__25827__auto___66737 + (1));
+i__25827__auto___66737 = G__66738;
 continue;
 } else {
 }
@@ -407,8 +407,8 @@ return ret;
 
 om_bootstrap.util.merge_props.cljs$lang$maxFixedArity = (0);
 
-om_bootstrap.util.merge_props.cljs$lang$applyTo = (function (seq55431){
-return om_bootstrap.util.merge_props.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq55431));
+om_bootstrap.util.merge_props.cljs$lang$applyTo = (function (seq66735){
+return om_bootstrap.util.merge_props.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq66735));
 });
 
 /**
@@ -416,57 +416,57 @@ return om_bootstrap.util.merge_props.cljs$core$IFn$_invoke$arity$variadic(cljs.c
  */
 om_bootstrap.util.copy_js = (function om_bootstrap$util$copy_js(arr){
 var ret = {};
-var seq__55443_55447 = cljs.core.seq.call(null,cljs.core.js_keys.call(null,arr));
-var chunk__55444_55448 = null;
-var count__55445_55449 = (0);
-var i__55446_55450 = (0);
+var seq__66747_66751 = cljs.core.seq.call(null,cljs.core.js_keys.call(null,arr));
+var chunk__66748_66752 = null;
+var count__66749_66753 = (0);
+var i__66750_66754 = (0);
 while(true){
-if((i__55446_55450 < count__55445_55449)){
-var k_55451 = cljs.core._nth.call(null,chunk__55444_55448,i__55446_55450);
-if(cljs.core.truth_(arr.hasOwnProperty(k_55451))){
-(ret[k_55451] = (arr[k_55451]));
+if((i__66750_66754 < count__66749_66753)){
+var k_66755 = cljs.core._nth.call(null,chunk__66748_66752,i__66750_66754);
+if(cljs.core.truth_(arr.hasOwnProperty(k_66755))){
+(ret[k_66755] = (arr[k_66755]));
 } else {
 }
 
-var G__55452 = seq__55443_55447;
-var G__55453 = chunk__55444_55448;
-var G__55454 = count__55445_55449;
-var G__55455 = (i__55446_55450 + (1));
-seq__55443_55447 = G__55452;
-chunk__55444_55448 = G__55453;
-count__55445_55449 = G__55454;
-i__55446_55450 = G__55455;
+var G__66756 = seq__66747_66751;
+var G__66757 = chunk__66748_66752;
+var G__66758 = count__66749_66753;
+var G__66759 = (i__66750_66754 + (1));
+seq__66747_66751 = G__66756;
+chunk__66748_66752 = G__66757;
+count__66749_66753 = G__66758;
+i__66750_66754 = G__66759;
 continue;
 } else {
-var temp__4657__auto___55456 = cljs.core.seq.call(null,seq__55443_55447);
-if(temp__4657__auto___55456){
-var seq__55443_55457__$1 = temp__4657__auto___55456;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__55443_55457__$1)){
-var c__25562__auto___55458 = cljs.core.chunk_first.call(null,seq__55443_55457__$1);
-var G__55459 = cljs.core.chunk_rest.call(null,seq__55443_55457__$1);
-var G__55460 = c__25562__auto___55458;
-var G__55461 = cljs.core.count.call(null,c__25562__auto___55458);
-var G__55462 = (0);
-seq__55443_55447 = G__55459;
-chunk__55444_55448 = G__55460;
-count__55445_55449 = G__55461;
-i__55446_55450 = G__55462;
+var temp__4657__auto___66760 = cljs.core.seq.call(null,seq__66747_66751);
+if(temp__4657__auto___66760){
+var seq__66747_66761__$1 = temp__4657__auto___66760;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__66747_66761__$1)){
+var c__25562__auto___66762 = cljs.core.chunk_first.call(null,seq__66747_66761__$1);
+var G__66763 = cljs.core.chunk_rest.call(null,seq__66747_66761__$1);
+var G__66764 = c__25562__auto___66762;
+var G__66765 = cljs.core.count.call(null,c__25562__auto___66762);
+var G__66766 = (0);
+seq__66747_66751 = G__66763;
+chunk__66748_66752 = G__66764;
+count__66749_66753 = G__66765;
+i__66750_66754 = G__66766;
 continue;
 } else {
-var k_55463 = cljs.core.first.call(null,seq__55443_55457__$1);
-if(cljs.core.truth_(arr.hasOwnProperty(k_55463))){
-(ret[k_55463] = (arr[k_55463]));
+var k_66767 = cljs.core.first.call(null,seq__66747_66761__$1);
+if(cljs.core.truth_(arr.hasOwnProperty(k_66767))){
+(ret[k_66767] = (arr[k_66767]));
 } else {
 }
 
-var G__55464 = cljs.core.next.call(null,seq__55443_55457__$1);
-var G__55465 = null;
-var G__55466 = (0);
-var G__55467 = (0);
-seq__55443_55447 = G__55464;
-chunk__55444_55448 = G__55465;
-count__55445_55449 = G__55466;
-i__55446_55450 = G__55467;
+var G__66768 = cljs.core.next.call(null,seq__66747_66761__$1);
+var G__66769 = null;
+var G__66770 = (0);
+var G__66771 = (0);
+seq__66747_66751 = G__66768;
+chunk__66748_66752 = G__66769;
+count__66749_66753 = G__66770;
+i__66750_66754 = G__66771;
 continue;
 }
 } else {
@@ -478,23 +478,23 @@ break;
 return ret;
 });
 om_bootstrap.util.create_element = (function om_bootstrap$util$create_element(var_args){
-var args55468 = [];
-var len__25826__auto___55471 = arguments.length;
-var i__25827__auto___55472 = (0);
+var args66772 = [];
+var len__25826__auto___66775 = arguments.length;
+var i__25827__auto___66776 = (0);
 while(true){
-if((i__25827__auto___55472 < len__25826__auto___55471)){
-args55468.push((arguments[i__25827__auto___55472]));
+if((i__25827__auto___66776 < len__25826__auto___66775)){
+args66772.push((arguments[i__25827__auto___66776]));
 
-var G__55473 = (i__25827__auto___55472 + (1));
-i__25827__auto___55472 = G__55473;
+var G__66777 = (i__25827__auto___66776 + (1));
+i__25827__auto___66776 = G__66777;
 continue;
 } else {
 }
 break;
 }
 
-var G__55470 = args55468.length;
-switch (G__55470) {
+var G__66774 = args66772.length;
+switch (G__66774) {
 case 1:
 return om_bootstrap.util.create_element.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -504,7 +504,7 @@ return om_bootstrap.util.create_element.cljs$core$IFn$_invoke$arity$2((arguments
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args55468.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args66772.length)].join('')));
 
 }
 });
@@ -566,23 +566,23 @@ return om_bootstrap.util.create_element.call(null,child,cljs.core.clj__GT_js.cal
  *   in the Om constructor.
  */
 om_bootstrap.util.clone_with_props = (function om_bootstrap$util$clone_with_props(var_args){
-var args55475 = [];
-var len__25826__auto___55478 = arguments.length;
-var i__25827__auto___55479 = (0);
+var args66779 = [];
+var len__25826__auto___66782 = arguments.length;
+var i__25827__auto___66783 = (0);
 while(true){
-if((i__25827__auto___55479 < len__25826__auto___55478)){
-args55475.push((arguments[i__25827__auto___55479]));
+if((i__25827__auto___66783 < len__25826__auto___66782)){
+args66779.push((arguments[i__25827__auto___66783]));
 
-var G__55480 = (i__25827__auto___55479 + (1));
-i__25827__auto___55479 = G__55480;
+var G__66784 = (i__25827__auto___66783 + (1));
+i__25827__auto___66783 = G__66784;
 continue;
 } else {
 }
 break;
 }
 
-var G__55477 = args55475.length;
-switch (G__55477) {
+var G__66781 = args66779.length;
+switch (G__66781) {
 case 1:
 return om_bootstrap.util.clone_with_props.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -592,7 +592,7 @@ return om_bootstrap.util.clone_with_props.cljs$core$IFn$_invoke$arity$2((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args55475.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args66779.length)].join('')));
 
 }
 });
@@ -621,4 +621,4 @@ return om_bootstrap.util.clone_basic_react.call(null,child,extra_props);
 om_bootstrap.util.clone_with_props.cljs$lang$maxFixedArity = 2;
 
 
-//# sourceMappingURL=util.js.map?rel=1477762304717
+//# sourceMappingURL=util.js.map?rel=1478399640613

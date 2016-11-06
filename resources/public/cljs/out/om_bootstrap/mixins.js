@@ -5,11 +5,11 @@ goog.require('cljs.core.async');
 goog.require('om.core');
 goog.require('om_tools.mixin');
 goog.require('schema.core');
-var ufv___56947 = schema.utils.use_fn_validation;
-var output_schema56940_56948 = schema.core.make_fn_schema.call(null,schema.core.Any,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.PersistentVector.EMPTY], null));
-var input_schema56941_56949 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"target","target",1893533248,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null))),schema.core.one.call(null,schema.core.Str,cljs.core.with_meta(new cljs.core.Symbol(null,"event-type","event-type",1960254340,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Str","s/Str",907974338,null)], null))),schema.core.one.call(null,schema.core.make_fn_schema.call(null,schema.core.Any,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,new cljs.core.Symbol(null,"arg0","arg0",-1024593414,null))], null)], null)),cljs.core.with_meta(new cljs.core.Symbol(null,"callback","callback",935395299,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),cljs.core.list(new cljs.core.Symbol("s","=>","s/=>",-813269628,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null))], null)))], null);
-var input_checker56942_56950 = schema.core.checker.call(null,input_schema56941_56949);
-var output_checker56943_56951 = schema.core.checker.call(null,output_schema56940_56948);
+var ufv___68642 = schema.utils.use_fn_validation;
+var output_schema68635_68643 = schema.core.make_fn_schema.call(null,schema.core.Any,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.PersistentVector.EMPTY], null));
+var input_schema68636_68644 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,cljs.core.with_meta(new cljs.core.Symbol(null,"target","target",1893533248,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)], null))),schema.core.one.call(null,schema.core.Str,cljs.core.with_meta(new cljs.core.Symbol(null,"event-type","event-type",1960254340,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),new cljs.core.Symbol("s","Str","s/Str",907974338,null)], null))),schema.core.one.call(null,schema.core.make_fn_schema.call(null,schema.core.Any,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [schema.core.one.call(null,schema.core.Any,new cljs.core.Symbol(null,"arg0","arg0",-1024593414,null))], null)], null)),cljs.core.with_meta(new cljs.core.Symbol(null,"callback","callback",935395299,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"schema","schema",-1582001791),cljs.core.list(new cljs.core.Symbol("s","=>","s/=>",-813269628,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null))], null)))], null);
+var input_checker68637_68645 = schema.core.checker.call(null,input_schema68636_68644);
+var output_checker68638_68646 = schema.core.checker.call(null,output_schema68635_68643);
 /**
  * Inputs: [target :- s/Any event-type :- s/Str callback :- (s/=> s/Any s/Any)]
  *   Returns: (s/=> s/Any)
@@ -18,129 +18,129 @@ var output_checker56943_56951 = schema.core.checker.call(null,output_schema56940
  * `event-type`. Returns a function of no arguments that, when called,
  * unregisters the callback.
  */
-om_bootstrap.mixins.event_listener = ((function (ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951){
-return (function om_bootstrap$mixins$event_listener(G__56944,G__56945,G__56946){
-var validate__37921__auto__ = ufv___56947.get_cell();
-if(cljs.core.truth_(validate__37921__auto__)){
-var args__37922__auto___56952 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__56944,G__56945,G__56946], null);
-var temp__4657__auto___56953 = input_checker56942_56950.call(null,args__37922__auto___56952);
-if(cljs.core.truth_(temp__4657__auto___56953)){
-var error__37923__auto___56954 = temp__4657__auto___56953;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"event-listener","event-listener",809979412,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),cljs.core.list(new cljs.core.Symbol("s","=>","s/=>",-813269628,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)),new cljs.core.Keyword(null,"doc","doc",1913296891),"Registers the callback on the supplied target for events of type\n   `event-type`. Returns a function of no arguments that, when called,\n   unregisters the callback."], null)),cljs.core.pr_str.call(null,error__37923__auto___56954)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema56941_56949,new cljs.core.Keyword(null,"value","value",305978217),args__37922__auto___56952,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___56954], null));
+om_bootstrap.mixins.event_listener = ((function (ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646){
+return (function om_bootstrap$mixins$event_listener(G__68639,G__68640,G__68641){
+var validate__30368__auto__ = ufv___68642.get_cell();
+if(cljs.core.truth_(validate__30368__auto__)){
+var args__30369__auto___68647 = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [G__68639,G__68640,G__68641], null);
+var temp__4657__auto___68648 = input_checker68637_68645.call(null,args__30369__auto___68647);
+if(cljs.core.truth_(temp__4657__auto___68648)){
+var error__30370__auto___68649 = temp__4657__auto___68648;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Input to %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"event-listener","event-listener",809979412,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),cljs.core.list(new cljs.core.Symbol("s","=>","s/=>",-813269628,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)),new cljs.core.Keyword(null,"doc","doc",1913296891),"Registers the callback on the supplied target for events of type\n   `event-type`. Returns a function of no arguments that, when called,\n   unregisters the callback."], null)),cljs.core.pr_str.call(null,error__30370__auto___68649)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),input_schema68636_68644,new cljs.core.Keyword(null,"value","value",305978217),args__30369__auto___68647,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___68649], null));
 } else {
 }
 } else {
 }
 
-var o__37924__auto__ = (function (){var target = G__56944;
-var event_type = G__56945;
-var callback = G__56946;
+var o__30371__auto__ = (function (){var target = G__68639;
+var event_type = G__68640;
+var callback = G__68641;
 while(true){
 if(cljs.core.truth_(target.addEventListener)){
 target.addEventListener(event_type,callback,false);
 
-return ((function (validate__37921__auto__,ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951){
+return ((function (validate__30368__auto__,ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646){
 return (function (){
 return target.removeEventListener(event_type,callback,false);
 });
-;})(validate__37921__auto__,ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951))
+;})(validate__30368__auto__,ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646))
 } else {
 if(cljs.core.truth_(target.attachEvent)){
 var event_type__$1 = [cljs.core.str("on"),cljs.core.str(event_type)].join('');
 target.attachEvent(event_type__$1,callback);
 
-return ((function (event_type__$1,validate__37921__auto__,ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951){
+return ((function (event_type__$1,validate__30368__auto__,ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646){
 return (function (){
 return target.detachEvent(event_type__$1,callback);
 });
-;})(event_type__$1,validate__37921__auto__,ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951))
+;})(event_type__$1,validate__30368__auto__,ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646))
 } else {
-return ((function (validate__37921__auto__,ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951){
+return ((function (validate__30368__auto__,ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646){
 return (function (){
 return null;
 });
-;})(validate__37921__auto__,ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951))
+;})(validate__30368__auto__,ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646))
 
 }
 }
 break;
 }
 })();
-if(cljs.core.truth_(validate__37921__auto__)){
-var temp__4657__auto___56955 = output_checker56943_56951.call(null,o__37924__auto__);
-if(cljs.core.truth_(temp__4657__auto___56955)){
-var error__37923__auto___56956 = temp__4657__auto___56955;
-throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"event-listener","event-listener",809979412,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),cljs.core.list(new cljs.core.Symbol("s","=>","s/=>",-813269628,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)),new cljs.core.Keyword(null,"doc","doc",1913296891),"Registers the callback on the supplied target for events of type\n   `event-type`. Returns a function of no arguments that, when called,\n   unregisters the callback."], null)),cljs.core.pr_str.call(null,error__37923__auto___56956)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema56940_56948,new cljs.core.Keyword(null,"value","value",305978217),o__37924__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__37923__auto___56956], null));
+if(cljs.core.truth_(validate__30368__auto__)){
+var temp__4657__auto___68650 = output_checker68638_68646.call(null,o__30371__auto__);
+if(cljs.core.truth_(temp__4657__auto___68650)){
+var error__30370__auto___68651 = temp__4657__auto___68650;
+throw cljs.core.ex_info.call(null,schema.utils.format_STAR_.call(null,"Output of %s does not match schema: %s",cljs.core.with_meta(new cljs.core.Symbol(null,"event-listener","event-listener",809979412,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"schema","schema",-1582001791),cljs.core.list(new cljs.core.Symbol("s","=>","s/=>",-813269628,null),new cljs.core.Symbol("s","Any","s/Any",1277490110,null)),new cljs.core.Keyword(null,"doc","doc",1913296891),"Registers the callback on the supplied target for events of type\n   `event-type`. Returns a function of no arguments that, when called,\n   unregisters the callback."], null)),cljs.core.pr_str.call(null,error__30370__auto___68651)),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword("schema.core","error","schema.core/error",1991454308),new cljs.core.Keyword(null,"schema","schema",-1582001791),output_schema68635_68643,new cljs.core.Keyword(null,"value","value",305978217),o__30371__auto__,new cljs.core.Keyword(null,"error","error",-978969032),error__30370__auto___68651], null));
 } else {
 }
 } else {
 }
 
-return o__37924__auto__;
-});})(ufv___56947,output_schema56940_56948,input_schema56941_56949,input_checker56942_56950,output_checker56943_56951))
+return o__30371__auto__;
+});})(ufv___68642,output_schema68635_68643,input_schema68636_68644,input_checker68637_68645,output_checker68638_68646))
 ;
 
-schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.mixins.event_listener),schema.core.make_fn_schema.call(null,output_schema56940_56948,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema56941_56949], null)));
+schema.utils.declare_class_schema_BANG_.call(null,schema.utils.fn_schema_bearer.call(null,om_bootstrap.mixins.event_listener),schema.core.make_fn_schema.call(null,output_schema68635_68643,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [input_schema68636_68644], null)));
 /**
  * Handles a sequence of listeners for the component, and removes them
  * from the document when the component is unmounted.
  */
 om_bootstrap.mixins.set_listener_mixin = ({"componentWillMount": (function (){
-var this56957 = this;
-return ((function (this56957){
+var this68652 = this;
+return ((function (this68652){
 return (function (owner){
 return owner.listeners = [];
-});})(this56957))
-.call(null,this56957);
+});})(this68652))
+.call(null,this68652);
 }), "componentWillUnmount": (function (){
-var this56958 = this;
-return ((function (this56958){
+var this68653 = this;
+return ((function (this68653){
 return (function (owner){
-var seq__56963 = cljs.core.seq.call(null,owner.listeners);
-var chunk__56964 = null;
-var count__56965 = (0);
-var i__56966 = (0);
+var seq__68658 = cljs.core.seq.call(null,owner.listeners);
+var chunk__68659 = null;
+var count__68660 = (0);
+var i__68661 = (0);
 while(true){
-if((i__56966 < count__56965)){
-var l = cljs.core._nth.call(null,chunk__56964,i__56966);
+if((i__68661 < count__68660)){
+var l = cljs.core._nth.call(null,chunk__68659,i__68661);
 l.call(null);
 
-var G__56967 = seq__56963;
-var G__56968 = chunk__56964;
-var G__56969 = count__56965;
-var G__56970 = (i__56966 + (1));
-seq__56963 = G__56967;
-chunk__56964 = G__56968;
-count__56965 = G__56969;
-i__56966 = G__56970;
+var G__68662 = seq__68658;
+var G__68663 = chunk__68659;
+var G__68664 = count__68660;
+var G__68665 = (i__68661 + (1));
+seq__68658 = G__68662;
+chunk__68659 = G__68663;
+count__68660 = G__68664;
+i__68661 = G__68665;
 continue;
 } else {
-var temp__4657__auto__ = cljs.core.seq.call(null,seq__56963);
+var temp__4657__auto__ = cljs.core.seq.call(null,seq__68658);
 if(temp__4657__auto__){
-var seq__56963__$1 = temp__4657__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__56963__$1)){
-var c__25562__auto__ = cljs.core.chunk_first.call(null,seq__56963__$1);
-var G__56971 = cljs.core.chunk_rest.call(null,seq__56963__$1);
-var G__56972 = c__25562__auto__;
-var G__56973 = cljs.core.count.call(null,c__25562__auto__);
-var G__56974 = (0);
-seq__56963 = G__56971;
-chunk__56964 = G__56972;
-count__56965 = G__56973;
-i__56966 = G__56974;
+var seq__68658__$1 = temp__4657__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__68658__$1)){
+var c__25562__auto__ = cljs.core.chunk_first.call(null,seq__68658__$1);
+var G__68666 = cljs.core.chunk_rest.call(null,seq__68658__$1);
+var G__68667 = c__25562__auto__;
+var G__68668 = cljs.core.count.call(null,c__25562__auto__);
+var G__68669 = (0);
+seq__68658 = G__68666;
+chunk__68659 = G__68667;
+count__68660 = G__68668;
+i__68661 = G__68669;
 continue;
 } else {
-var l = cljs.core.first.call(null,seq__56963__$1);
+var l = cljs.core.first.call(null,seq__68658__$1);
 l.call(null);
 
-var G__56975 = cljs.core.next.call(null,seq__56963__$1);
-var G__56976 = null;
-var G__56977 = (0);
-var G__56978 = (0);
-seq__56963 = G__56975;
-chunk__56964 = G__56976;
-count__56965 = G__56977;
-i__56966 = G__56978;
+var G__68670 = cljs.core.next.call(null,seq__68658__$1);
+var G__68671 = null;
+var G__68672 = (0);
+var G__68673 = (0);
+seq__68658 = G__68670;
+chunk__68659 = G__68671;
+count__68660 = G__68672;
+i__68661 = G__68673;
 continue;
 }
 } else {
@@ -149,47 +149,47 @@ return null;
 }
 break;
 }
-});})(this56958))
-.call(null,this56958);
-}), "set_listener": (function (target56960,event_type56961,callback56962){
-var this56959 = this;
-return ((function (this56959){
+});})(this68653))
+.call(null,this68653);
+}), "set_listener": (function (target68655,event_type68656,callback68657){
+var this68654 = this;
+return ((function (this68654){
 return (function (owner,target,event_type,callback){
 var remove_fn = om_bootstrap.mixins.event_listener.call(null,target,event_type,callback);
 return owner.listeners.push(remove_fn);
-});})(this56959))
-.call(null,this56959,target56960,event_type56961,callback56962);
+});})(this68654))
+.call(null,this68654,target68655,event_type68656,callback68657);
 })});
 /**
  * Handles a sequence of timeouts for the component, and removes them
  * from the document when the component is unmounted.
  */
 om_bootstrap.mixins.set_timeout_mixin = ({"componentWillMount": (function (){
-var this56980 = this;
-return ((function (this56980){
+var this68675 = this;
+return ((function (this68675){
 return (function (owner){
 return owner.timeouts = [];
-});})(this56980))
-.call(null,this56980);
+});})(this68675))
+.call(null,this68675);
 }), "componentWillUnmount": (function (){
-var this56981 = this;
-return ((function (this56981){
+var this68676 = this;
+return ((function (this68676){
 return (function (owner){
-return owner.timeouts.map(((function (this56981){
-return (function (p1__56979_SHARP_){
-return clearTimeout(p1__56979_SHARP_);
-});})(this56981))
+return owner.timeouts.map(((function (this68676){
+return (function (p1__68674_SHARP_){
+return clearTimeout(p1__68674_SHARP_);
+});})(this68676))
 );
-});})(this56981))
-.call(null,this56981);
-}), "set_timeout": (function (f56983,timeout56984){
-var this56982 = this;
-return ((function (this56982){
+});})(this68676))
+.call(null,this68676);
+}), "set_timeout": (function (f68678,timeout68679){
+var this68677 = this;
+return ((function (this68677){
 return (function (owner,f,timeout){
 var timeout__$1 = setTimeout(f,timeout);
 return owner.timeouts.push(timeout__$1);
-});})(this56982))
-.call(null,this56982,f56983,timeout56984);
+});})(this68677))
+.call(null,this68677,f68678,timeout68679);
 })});
 /**
  * Accepts two DOM elements; returns true if the supplied node is
@@ -204,8 +204,8 @@ return false;
 if(cljs.core._EQ_.call(null,root,node__$1)){
 return true;
 } else {
-var G__56985 = node__$1.parentNode;
-node__$1 = G__56985;
+var G__68680 = node__$1.parentNode;
+node__$1 = G__68680;
 continue;
 
 }
@@ -247,51 +247,51 @@ om_bootstrap.mixins.unbind_root_close_handlers_BANG_ = (function om_bootstrap$mi
 var temp__4657__auto__ = owner.dropdownListeners;
 if(cljs.core.truth_(temp__4657__auto__)){
 var listeners = temp__4657__auto__;
-var seq__56990_56994 = cljs.core.seq.call(null,listeners);
-var chunk__56991_56995 = null;
-var count__56992_56996 = (0);
-var i__56993_56997 = (0);
+var seq__68685_68689 = cljs.core.seq.call(null,listeners);
+var chunk__68686_68690 = null;
+var count__68687_68691 = (0);
+var i__68688_68692 = (0);
 while(true){
-if((i__56993_56997 < count__56992_56996)){
-var l_56998 = cljs.core._nth.call(null,chunk__56991_56995,i__56993_56997);
-l_56998.call(null);
+if((i__68688_68692 < count__68687_68691)){
+var l_68693 = cljs.core._nth.call(null,chunk__68686_68690,i__68688_68692);
+l_68693.call(null);
 
-var G__56999 = seq__56990_56994;
-var G__57000 = chunk__56991_56995;
-var G__57001 = count__56992_56996;
-var G__57002 = (i__56993_56997 + (1));
-seq__56990_56994 = G__56999;
-chunk__56991_56995 = G__57000;
-count__56992_56996 = G__57001;
-i__56993_56997 = G__57002;
+var G__68694 = seq__68685_68689;
+var G__68695 = chunk__68686_68690;
+var G__68696 = count__68687_68691;
+var G__68697 = (i__68688_68692 + (1));
+seq__68685_68689 = G__68694;
+chunk__68686_68690 = G__68695;
+count__68687_68691 = G__68696;
+i__68688_68692 = G__68697;
 continue;
 } else {
-var temp__4657__auto___57003__$1 = cljs.core.seq.call(null,seq__56990_56994);
-if(temp__4657__auto___57003__$1){
-var seq__56990_57004__$1 = temp__4657__auto___57003__$1;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__56990_57004__$1)){
-var c__25562__auto___57005 = cljs.core.chunk_first.call(null,seq__56990_57004__$1);
-var G__57006 = cljs.core.chunk_rest.call(null,seq__56990_57004__$1);
-var G__57007 = c__25562__auto___57005;
-var G__57008 = cljs.core.count.call(null,c__25562__auto___57005);
-var G__57009 = (0);
-seq__56990_56994 = G__57006;
-chunk__56991_56995 = G__57007;
-count__56992_56996 = G__57008;
-i__56993_56997 = G__57009;
+var temp__4657__auto___68698__$1 = cljs.core.seq.call(null,seq__68685_68689);
+if(temp__4657__auto___68698__$1){
+var seq__68685_68699__$1 = temp__4657__auto___68698__$1;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__68685_68699__$1)){
+var c__25562__auto___68700 = cljs.core.chunk_first.call(null,seq__68685_68699__$1);
+var G__68701 = cljs.core.chunk_rest.call(null,seq__68685_68699__$1);
+var G__68702 = c__25562__auto___68700;
+var G__68703 = cljs.core.count.call(null,c__25562__auto___68700);
+var G__68704 = (0);
+seq__68685_68689 = G__68701;
+chunk__68686_68690 = G__68702;
+count__68687_68691 = G__68703;
+i__68688_68692 = G__68704;
 continue;
 } else {
-var l_57010 = cljs.core.first.call(null,seq__56990_57004__$1);
-l_57010.call(null);
+var l_68705 = cljs.core.first.call(null,seq__68685_68699__$1);
+l_68705.call(null);
 
-var G__57011 = cljs.core.next.call(null,seq__56990_57004__$1);
-var G__57012 = null;
-var G__57013 = (0);
-var G__57014 = (0);
-seq__56990_56994 = G__57011;
-chunk__56991_56995 = G__57012;
-count__56992_56996 = G__57013;
-i__56993_56997 = G__57014;
+var G__68706 = cljs.core.next.call(null,seq__68685_68699__$1);
+var G__68707 = null;
+var G__68708 = (0);
+var G__68709 = (0);
+seq__68685_68689 = G__68706;
+chunk__68686_68690 = G__68707;
+count__68687_68691 = G__68708;
+i__68688_68692 = G__68709;
 continue;
 }
 } else {
@@ -314,29 +314,29 @@ return null;
  *   changes.
  */
 om_bootstrap.mixins.dropdown_mixin = ({"getInitialState": (function (){
-var this57015 = this;
-return ((function (this57015){
+var this68710 = this;
+return ((function (this68710){
 return (function (_){
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"open?","open?",1238443125),false], null);
-});})(this57015))
-.call(null,this57015);
+});})(this68710))
+.call(null,this68710);
 }), "componentWillUnmount": (function (){
-var this57016 = this;
-return ((function (this57016){
+var this68711 = this;
+return ((function (this68711){
 return (function (owner){
 return om_bootstrap.mixins.unbind_root_close_handlers_BANG_.call(null,owner);
-});})(this57016))
-.call(null,this57016);
+});})(this68711))
+.call(null,this68711);
 }), "isDropdownOpen": (function (){
-var this57017 = this;
-return ((function (this57017){
+var this68712 = this;
+return ((function (this68712){
 return (function (owner){
 return om.core.get_state.call(null,owner,new cljs.core.Keyword(null,"open?","open?",1238443125));
-});})(this57017))
-.call(null,this57017);
-}), "setDropdownState": (function (open_QMARK_57019){
-var this57018 = this;
-return ((function (this57018){
+});})(this68712))
+.call(null,this68712);
+}), "setDropdownState": (function (open_QMARK_68714){
+var this68713 = this;
+return ((function (this68713){
 return (function (owner,open_QMARK_){
 if(cljs.core.truth_(open_QMARK_)){
 om_bootstrap.mixins.bind_root_close_handlers_BANG_.call(null,owner);
@@ -345,8 +345,8 @@ om_bootstrap.mixins.unbind_root_close_handlers_BANG_.call(null,owner);
 }
 
 return om.core.set_state_BANG_.call(null,owner,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"open?","open?",1238443125)], null),open_QMARK_);
-});})(this57018))
-.call(null,this57018,open_QMARK_57019);
+});})(this68713))
+.call(null,this68713,open_QMARK_68714);
 })});
 /**
  * Mixin that enables collapsible Panels. Similar to the Dropdown
@@ -354,15 +354,15 @@ return om.core.set_state_BANG_.call(null,owner,new cljs.core.PersistentVector(nu
  * is opened and closen by clicking on the header.
  */
 om_bootstrap.mixins.collapsible_mixin = ({"getInitialState": (function (){
-var this57020 = this;
-return ((function (this57020){
+var this68715 = this;
+return ((function (this68715){
 return (function (_){
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"collapsed?","collapsed?",-1661420674),true], null);
-});})(this57020))
-.call(null,this57020);
+});})(this68715))
+.call(null,this68715);
 }), "isPanelCollapsed": (function (){
-var this57021 = this;
-return ((function (this57021){
+var this68716 = this;
+return ((function (this68716){
 return (function (owner){
 var collapsed_QMARK_ = om.core.get_state.call(null,owner,new cljs.core.Keyword(null,"collapsed?","collapsed?",-1661420674));
 if((collapsed_QMARK_ == null)){
@@ -372,15 +372,15 @@ return true;
 } else {
 return collapsed_QMARK_;
 }
-});})(this57021))
-.call(null,this57021);
+});})(this68716))
+.call(null,this68716);
 }), "toggleCollapsed": (function (){
-var this57022 = this;
-return ((function (this57022){
+var this68717 = this;
+return ((function (this68717){
 return (function (owner){
 return om.core.update_state_BANG_.call(null,owner,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"collapsed?","collapsed?",-1661420674)], null),cljs.core.not);
-});})(this57022))
-.call(null,this57022);
+});})(this68717))
+.call(null,this68717);
 })});
 
-//# sourceMappingURL=mixins.js.map?rel=1477762308328
+//# sourceMappingURL=mixins.js.map?rel=1478399653348

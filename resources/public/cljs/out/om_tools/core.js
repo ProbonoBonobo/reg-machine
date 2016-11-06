@@ -18,7 +18,7 @@ if(cljs.core.truth_(owner)){
 var get_state = (function (){
 return om.core.get_state.call(null,owner);
 });
-if(typeof om_tools.core.t_om_tools$core56928 !== 'undefined'){
+if(typeof om_tools.core.t_om_tools$core68623 !== 'undefined'){
 } else {
 
 /**
@@ -29,31 +29,31 @@ if(typeof om_tools.core.t_om_tools$core56928 !== 'undefined'){
  * @implements {cljs.core.IDeref}
  * @implements {cljs.core.IWithMeta}
 */
-om_tools.core.t_om_tools$core56928 = (function (state_proxy,owner,get_state,meta56929){
+om_tools.core.t_om_tools$core68623 = (function (state_proxy,owner,get_state,meta68624){
 this.state_proxy = state_proxy;
 this.owner = owner;
 this.get_state = get_state;
-this.meta56929 = meta56929;
+this.meta68624 = meta68624;
 this.cljs$lang$protocol_mask$partition0$ = 425984;
 this.cljs$lang$protocol_mask$partition1$ = 98304;
 })
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = ((function (get_state){
-return (function (_56930,meta56929__$1){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = ((function (get_state){
+return (function (_68625,meta68624__$1){
 var self__ = this;
-var _56930__$1 = this;
-return (new om_tools.core.t_om_tools$core56928(self__.state_proxy,self__.owner,self__.get_state,meta56929__$1));
+var _68625__$1 = this;
+return (new om_tools.core.t_om_tools$core68623(self__.state_proxy,self__.owner,self__.get_state,meta68624__$1));
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$IMeta$_meta$arity$1 = ((function (get_state){
-return (function (_56930){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$IMeta$_meta$arity$1 = ((function (get_state){
+return (function (_68625){
 var self__ = this;
-var _56930__$1 = this;
-return self__.meta56929;
+var _68625__$1 = this;
+return self__.meta68624;
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$IDeref$_deref$arity$1 = ((function (get_state){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$IDeref$_deref$arity$1 = ((function (get_state){
 return (function (_){
 var self__ = this;
 var ___$1 = this;
@@ -61,7 +61,7 @@ return self__.get_state.call(null);
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$IReset$_reset_BANG_$arity$2 = ((function (get_state){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$IReset$_reset_BANG_$arity$2 = ((function (get_state){
 return (function (_,v){
 var self__ = this;
 var ___$1 = this;
@@ -69,7 +69,7 @@ return om.core.set_state_BANG_.call(null,self__.owner,v);
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$ISwap$_swap_BANG_$arity$2 = ((function (get_state){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$ISwap$_swap_BANG_$arity$2 = ((function (get_state){
 return (function (s,f){
 var self__ = this;
 var s__$1 = this;
@@ -77,7 +77,7 @@ return cljs.core._reset_BANG_.call(null,s__$1,f.call(null,self__.get_state.call(
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$ISwap$_swap_BANG_$arity$3 = ((function (get_state){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$ISwap$_swap_BANG_$arity$3 = ((function (get_state){
 return (function (s,f,x){
 var self__ = this;
 var s__$1 = this;
@@ -85,7 +85,7 @@ return cljs.core._reset_BANG_.call(null,s__$1,f.call(null,self__.get_state.call(
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$ISwap$_swap_BANG_$arity$4 = ((function (get_state){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$ISwap$_swap_BANG_$arity$4 = ((function (get_state){
 return (function (s,f,x,y){
 var self__ = this;
 var s__$1 = this;
@@ -93,7 +93,7 @@ return cljs.core._reset_BANG_.call(null,s__$1,f.call(null,self__.get_state.call(
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.prototype.cljs$core$ISwap$_swap_BANG_$arity$5 = ((function (get_state){
+om_tools.core.t_om_tools$core68623.prototype.cljs$core$ISwap$_swap_BANG_$arity$5 = ((function (get_state){
 return (function (s,f,x,y,more){
 var self__ = this;
 var s__$1 = this;
@@ -101,31 +101,31 @@ return cljs.core._reset_BANG_.call(null,s__$1,cljs.core.apply.call(null,f,self__
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.getBasis = ((function (get_state){
+om_tools.core.t_om_tools$core68623.getBasis = ((function (get_state){
 return (function (){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null,"state-proxy","state-proxy",1999831324,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"arglists","arglists",1661989754),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"owner","owner",1247919588,null)], null))),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns an atom-like object for reading and writing Om component\n   state.\n\n   Note: Behavior may exactly not match atoms when deref'ing\n   immediately following a reset!/swap! because Om processes state\n   changes asynchronously in separate render phases."], null)),new cljs.core.Symbol(null,"owner","owner",1247919588,null),new cljs.core.Symbol(null,"get-state","get-state",-1081972112,null),new cljs.core.Symbol(null,"meta56929","meta56929",1454917561,null)], null);
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null,"state-proxy","state-proxy",1999831324,null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"arglists","arglists",1661989754),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"owner","owner",1247919588,null)], null))),new cljs.core.Keyword(null,"doc","doc",1913296891),"Returns an atom-like object for reading and writing Om component\n   state.\n\n   Note: Behavior may exactly not match atoms when deref'ing\n   immediately following a reset!/swap! because Om processes state\n   changes asynchronously in separate render phases."], null)),new cljs.core.Symbol(null,"owner","owner",1247919588,null),new cljs.core.Symbol(null,"get-state","get-state",-1081972112,null),new cljs.core.Symbol(null,"meta68624","meta68624",475787728,null)], null);
 });})(get_state))
 ;
 
-om_tools.core.t_om_tools$core56928.cljs$lang$type = true;
+om_tools.core.t_om_tools$core68623.cljs$lang$type = true;
 
-om_tools.core.t_om_tools$core56928.cljs$lang$ctorStr = "om-tools.core/t_om_tools$core56928";
+om_tools.core.t_om_tools$core68623.cljs$lang$ctorStr = "om-tools.core/t_om_tools$core68623";
 
-om_tools.core.t_om_tools$core56928.cljs$lang$ctorPrWriter = ((function (get_state){
+om_tools.core.t_om_tools$core68623.cljs$lang$ctorPrWriter = ((function (get_state){
 return (function (this__25357__auto__,writer__25358__auto__,opt__25359__auto__){
-return cljs.core._write.call(null,writer__25358__auto__,"om-tools.core/t_om_tools$core56928");
+return cljs.core._write.call(null,writer__25358__auto__,"om-tools.core/t_om_tools$core68623");
 });})(get_state))
 ;
 
-om_tools.core.__GT_t_om_tools$core56928 = ((function (get_state){
-return (function om_tools$core$state_proxy_$___GT_t_om_tools$core56928(state_proxy__$1,owner__$1,get_state__$1,meta56929){
-return (new om_tools.core.t_om_tools$core56928(state_proxy__$1,owner__$1,get_state__$1,meta56929));
+om_tools.core.__GT_t_om_tools$core68623 = ((function (get_state){
+return (function om_tools$core$state_proxy_$___GT_t_om_tools$core68623(state_proxy__$1,owner__$1,get_state__$1,meta68624){
+return (new om_tools.core.t_om_tools$core68623(state_proxy__$1,owner__$1,get_state__$1,meta68624));
 });})(get_state))
 ;
 
 }
 
-return (new om_tools.core.t_om_tools$core56928(om_tools$core$state_proxy,owner,get_state,cljs.core.PersistentArrayMap.EMPTY));
+return (new om_tools.core.t_om_tools$core68623(om_tools$core$state_proxy,owner,get_state,cljs.core.PersistentArrayMap.EMPTY));
 } else {
 return null;
 }
@@ -136,23 +136,23 @@ return null;
  * Used to prevent no-op updates from entering render queue
  */
 om_tools.core.set_state_QMARK__BANG_ = (function om_tools$core$set_state_QMARK__BANG_(var_args){
-var args56931 = [];
-var len__25826__auto___56934 = arguments.length;
-var i__25827__auto___56935 = (0);
+var args68626 = [];
+var len__25826__auto___68629 = arguments.length;
+var i__25827__auto___68630 = (0);
 while(true){
-if((i__25827__auto___56935 < len__25826__auto___56934)){
-args56931.push((arguments[i__25827__auto___56935]));
+if((i__25827__auto___68630 < len__25826__auto___68629)){
+args68626.push((arguments[i__25827__auto___68630]));
 
-var G__56936 = (i__25827__auto___56935 + (1));
-i__25827__auto___56935 = G__56936;
+var G__68631 = (i__25827__auto___68630 + (1));
+i__25827__auto___68630 = G__68631;
 continue;
 } else {
 }
 break;
 }
 
-var G__56933 = args56931.length;
-switch (G__56933) {
+var G__68628 = args68626.length;
+switch (G__68628) {
 case 2:
 return om_tools.core.set_state_QMARK__BANG_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -162,7 +162,7 @@ return om_tools.core.set_state_QMARK__BANG_.cljs$core$IFn$_invoke$arity$3((argum
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args56931.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args68626.length)].join('')));
 
 }
 });
@@ -186,4 +186,4 @@ return om.core.set_state_BANG_.call(null,owner,korks,v);
 om_tools.core.set_state_QMARK__BANG_.cljs$lang$maxFixedArity = 3;
 
 
-//# sourceMappingURL=core.js.map?rel=1477762308206
+//# sourceMappingURL=core.js.map?rel=1478399653227

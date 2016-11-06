@@ -3,4 +3,4 @@ goog.provide('om_tools.mixin');
 goog.require('cljs.core');
 goog.require('om.core');
 
-//# sourceMappingURL=mixin.js.map?rel=1477762308151
+//# sourceMappingURL=mixin.js.map?rel=1478399653166
