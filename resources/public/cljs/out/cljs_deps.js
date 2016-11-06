@@ -64,15 +64,15 @@ goog.addDependency("../reagent/dom.js", ['reagent.dom'], ['reagent.impl.util', '
 goog.addDependency("../reagent/core.js", ['reagent.core'], ['reagent.impl.util', 'reagent.dom.server', 'reagent.interop', 'reagent.ratom', 'cljs.core', 'reagent.impl.template', 'reagent.impl.batching', 'reagent.impl.component', 'reagent.debug', 'reagent.dom']);
 goog.addDependency("../cljs/spec/impl/gen.js", ['cljs.spec.impl.gen'], ['cljs.core']);
 goog.addDependency("../cljs/spec.js", ['cljs.spec'], ['cljs.core', 'goog.object', 'cljs.spec.impl.gen', 'clojure.string', 'clojure.walk']);
+goog.addDependency("../om_bootstrap/table.js", ['om_bootstrap.table'], ['schema.core', 'om_tools.dom', 'cljs.core', 'om_bootstrap.util', 'om.core', 'om_bootstrap.types']);
+goog.addDependency("../cljs/js.js", ['cljs.js'], ['cljs.compiler', 'cljs.tools.reader', 'cljs.core', 'goog.crypt.base64', 'cljs.tools.reader.reader_types', 'cljs.env', 'goog.string.StringBuffer', 'cljs.tagged_literals', 'cljs.analyzer', 'cljs.source_map', 'clojure.string', 'clojure.walk', 'cljs.core$macros']);
 goog.addDependency("../cljs/repl.js", ['cljs.repl'], ['cljs.core', 'cljs.spec']);
 goog.addDependency("../figwheel/client.js", ['figwheel.client'], ['goog.userAgent.product', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'figwheel.client.file_reloading', 'figwheel.client.utils', 'cljs.repl', 'figwheel.client.heads_up', 'figwheel.client.socket', 'clojure.string', 'cljs.reader']);
 goog.addDependency("../om_bootstrap/grid.js", ['om_bootstrap.grid'], ['schema.core', 'om_tools.dom', 'cljs.core', 'om_bootstrap.util', 'om_bootstrap.types']);
-goog.addDependency("../cljs/js.js", ['cljs.js'], ['cljs.compiler', 'cljs.tools.reader', 'cljs.core', 'goog.crypt.base64', 'cljs.tools.reader.reader_types', 'cljs.env', 'goog.string.StringBuffer', 'cljs.tagged_literals', 'cljs.analyzer', 'cljs.source_map', 'clojure.string', 'clojure.walk', 'cljs.core$macros']);
 goog.addDependency("../sablono/core.js", ['sablono.core'], ['goog.dom', 'sablono.util', 'goog.string', 'cljs.core', 'cljsjs.react', 'sablono.interpreter', 'clojure.string']);
 goog.addDependency("../quil/middlewares/navigation_3d.js", ['quil.middlewares.navigation_3d'], ['cljs.core', 'quil.core']);
 goog.addDependency("../quil/middlewares/navigation_2d.js", ['quil.middlewares.navigation_2d'], ['cljs.core', 'quil.core']);
 goog.addDependency("../quil/middleware.js", ['quil.middleware'], ['cljs.core', 'quil.middlewares.navigation_3d', 'quil.middlewares.navigation_2d', 'quil.middlewares.fun_mode']);
-goog.addDependency("../om_bootstrap/table.js", ['om_bootstrap.table'], ['schema.core', 'om_tools.dom', 'cljs.core', 'om_bootstrap.util', 'om.core', 'om_bootstrap.types']);
 goog.addDependency("../om_bootstrap/random.js", ['om_bootstrap.random'], ['schema.core', 'om_tools.dom', 'om_tools.core', 'cljs.core', 'om_bootstrap.mixins', 'om_bootstrap.util', 'om.core', 'om_bootstrap.types']);
 goog.addDependency("../succulent/core.js", ['succulent.core'], ['cljs.tools.reader', 'om_tools.dom', 'om_bootstrap.grid', 'reagent.core', 'cljs.js', 'cljs.core', 'om.dom', 'sablono.core', 'quil.core', 'quil.middleware', 'om.core', 'om_bootstrap.button', 'om_bootstrap.table', 'om_bootstrap.random']);
 goog.addDependency("../592AE7B.js", ['figwheel.connect.dev'], ['cljs.core', 'figwheel.client', 'figwheel.client.utils', 'succulent.core']);

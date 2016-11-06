@@ -12457,3 +12457,2743 @@ notifying browser that file changed:  out/succulent/core.js
 [32mSuccessfully compiled "resources/public/cljs/main.js" in 1.247 seconds.[0m
 notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
 notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.71 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/goog/deps.js
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 1.201 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:547  column:22  ----[0m
+
+  [1mEOF while reading, starting at line 547 and column 22[0m
+
+  [36m545[0m  [36m(.addEventListener js/window "keypress"[0m
+  [36m546[0m  [36m                   (fn [e][0m
+  [33m547[0m  [1m                     (let [character (.-key e)[0m
+  [0m   [0m  [33m                     ^--- EOF while reading, starting at line 547 and column 22[0m
+  [36m548[0m  [36m                           ascii-code (.-keyCode e)[0m
+  [36m549[0m  [36m                           keyCode (.-code e)[0m
+  [36m550[0m  [36m                           is-number? (not (js/isNaN (js/parseInt character)))[0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.907 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/goog/deps.js
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 1.213 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:546  column:8  ----[0m
+
+  [1mEOF while reading, starting at line 546 and column 8[0m
+
+  [36m545[0m  [36m(defn tag [num][0m
+  [33m546[0m  [1m  (let [opcodes #{42 43 45 47}[0m
+  [0m   [0m  [33m       ^--- EOF while reading, starting at line 546 and column 8[0m
+  [36m547[0m  [36m        [0m
+  [36m548[0m  [36m(.addEventListener js/window "keypress"[0m
+  [36m549[0m  [36m                   (fn [e][0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 1.329 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:547  column:49  ----[0m
+
+  [1mDuplicate key: 54[0m
+
+  [36m545[0m  [36m(defn tag [num][0m
+  [36m546[0m  [36m  (let [operators #{42 43 45 47}[0m
+  [33m547[0m  [1m        numbers #{48 49 50 51 52 53 54 54 56 57}[0m
+  [0m   [0m  [33m                                                ^--- Duplicate key: 54[0m
+  [36m548[0m  [36m(.addEventListener js/window "keypress"[0m
+  [36m549[0m  [36m                   (fn [e][0m
+  [36m550[0m  [36m                     (let [character (.-key e)[0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 1.15 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:547  column:49  ----[0m
+
+  [1mDuplicate key: 54[0m
+
+  [36m545[0m  [36m(defn tag [num][0m
+  [36m546[0m  [36m  (let [operators #{42 43 45 47}[0m
+  [33m547[0m  [1m        numbers #{48 49 50 51 52 53 54 54 56 57}[0m
+  [0m   [0m  [33m                                                ^--- Duplicate key: 54[0m
+  [36m548[0m  [36m        equals [0m
+  [36m549[0m  [36m(.addEventListener js/window "keypress"[0m
+  [36m550[0m  [36m                   (fn [e][0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 1.541 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:547  column:49  ----[0m
+
+  [1mDuplicate key: 54[0m
+
+  [36m545[0m  [36m(defn tag [num][0m
+  [36m546[0m  [36m  (let [operators #{42 43 45 47}[0m
+  [33m547[0m  [1m        numbers #{48 49 50 51 52 53 54 54 56 57}[0m
+  [0m   [0m  [33m                                                ^--- Duplicate key: 54[0m
+  [36m548[0m  [36m        equals 61][0m
+  [36m549[0m  [36m    (cond (contains? operators num) :operator[0m
+  [36m550[0m  [36m          (contains? numbers num) :number[0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.763 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.506 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/goog/deps.js
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.467 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 2.356 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 2.839 seconds.[0m
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.518 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/goog/deps.js
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 2.128 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.354 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/goog/deps.js
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.426 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.652 seconds.[0m
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.331 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.714 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.313 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.112 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :accumulator {:op "" :r1 "" :r2 "" :r3 "" :null ""}[0m
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:61  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:92  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                                                           ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:66  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [33m66[0m  [1m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:67  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [33m67[0m  [1m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:69  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [33m69[0m  [1m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:70  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [33m70[0m  [1m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:71  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [33m71[0m  [1m         (get (get-in @db [:semaphoreA :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:72  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m(swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m(swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m       (get (get-in @db [:semaphoreA :registers])[0m
+  [33m72[0m  [1m            (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var succulent.core/db[0m
+  [36m73[0m  [36m(swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m(swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m       (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m       (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:73  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [33m73[0m  [1m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:74  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [33m74[0m  [1m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:75  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [33m75[0m  [1m         (get (get-in @db [:semaphoreB :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:76  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [33m76[0m  [1m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:79  column:26  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [33m79[0m  [1m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:80  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [33m80[0m  [1m        threadpool (get-in @db [:mutex :threads])[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:82  column:32  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [33m82[0m  [1m        active-thread (get-in @db [:threads current-owner])[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var succulent.core/db[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:83  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m79[0m  [36m(let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m      threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m      current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m      active-thread (get-in @db [:threads current-owner])[0m
+  [33m83[0m  [1m      semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var succulent.core/db[0m
+  [36m84[0m  [36m      semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m      semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m      semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m      active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m  (cond[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:84  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m80[0m  [36m    threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m84[0m  [1m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:85  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [33m85[0m  [1m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                      ^--- Use of undeclared Var succulent.core/db[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:86  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m86[0m  [1m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [36m91[0m  [36m  (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:90  column:46  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [33m90[0m  [1m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var succulent.core/db[0m
+  [36m91[0m  [36m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code ""}))[0m
+  [36m94[0m  [36m(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:91  column:42  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [33m91[0m  [1m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code ""}))[0m
+  [36m94[0m  [36m(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+  [36m96[0m  [36m;                 :curr '()[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.95 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :accumulator {:op "" :r1 "" :r2 "" :r3 "" :null ""}[0m
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:61  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:92  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                                                           ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:66  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [33m66[0m  [1m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:67  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [33m67[0m  [1m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:69  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [33m69[0m  [1m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:70  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [33m70[0m  [1m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:71  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [33m71[0m  [1m         (get (get-in @db [:semaphoreA :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:72  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m(swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m(swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m       (get (get-in @db [:semaphoreA :registers])[0m
+  [33m72[0m  [1m            (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var succulent.core/db[0m
+  [36m73[0m  [36m(swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m(swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m       (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m       (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:73  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [33m73[0m  [1m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:74  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [33m74[0m  [1m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:75  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [33m75[0m  [1m         (get (get-in @db [:semaphoreB :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:76  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [33m76[0m  [1m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:79  column:26  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [33m79[0m  [1m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:80  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [33m80[0m  [1m        threadpool (get-in @db [:mutex :threads])[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:82  column:32  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [33m82[0m  [1m        active-thread (get-in @db [:threads current-owner])[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var succulent.core/db[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:83  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m79[0m  [36m(let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m      threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m      current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m      active-thread (get-in @db [:threads current-owner])[0m
+  [33m83[0m  [1m      semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var succulent.core/db[0m
+  [36m84[0m  [36m      semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m      semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m      semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m      active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m  (cond[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:84  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m80[0m  [36m    threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m84[0m  [1m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:85  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [33m85[0m  [1m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                      ^--- Use of undeclared Var succulent.core/db[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:86  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m86[0m  [1m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [36m91[0m  [36m  (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:90  column:46  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [33m90[0m  [1m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var succulent.core/db[0m
+  [36m91[0m  [36m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code ""}))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:91  column:42  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [33m91[0m  [1m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code ""}))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+  [36m96[0m  [36m;                 :curr '()[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:565  column:56  ----[0m
+
+  [1mUse of undeclared Var succulent.core/keypress[0m
+
+  [36m561[0m  [36m                         (swap! keyboard-input assoc-in [:ascii-code] (js/String ascii-code))[0m
+  [36m562[0m  [36m                         (swap! keyboard-input assoc-in [:tag] (tag ascii-code))[0m
+  [36m563[0m  [36m                         ;(reset! keypress (Input. e))[0m
+  [36m564[0m  [36m                         (.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))[0m
+  [33m565[0m  [1m                         (.log js/console "keypress: " keypress)[0m
+  [0m   [0m  [33m                                                       ^--- Use of undeclared Var succulent.core/keypress[0m
+  [36m566[0m  [36m                         (.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])[0m
+  [36m567[0m  [36m                                                         ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])[0m
+  [36m568[0m  [36m                                                         ", [:tag] " (get-in @keyboard-input [:tag])))))[0m
+  [36m569[0m  [36m(defn render! [][0m
+  [36m570[0m  [36m  (.render js/ReactDOM[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 2.067 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :accumulator {:op "" :r1 "" :r2 "" :r3 "" :null ""}[0m
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:61  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:92  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                                                           ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:66  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [33m66[0m  [1m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:67  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [33m67[0m  [1m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:69  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [33m69[0m  [1m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:70  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [33m70[0m  [1m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:71  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [33m71[0m  [1m         (get (get-in @db [:semaphoreA :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:72  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m(swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m(swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m       (get (get-in @db [:semaphoreA :registers])[0m
+  [33m72[0m  [1m            (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var succulent.core/db[0m
+  [36m73[0m  [36m(swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m(swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m       (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m       (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:73  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [33m73[0m  [1m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:74  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [33m74[0m  [1m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:75  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [33m75[0m  [1m         (get (get-in @db [:semaphoreB :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:76  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [33m76[0m  [1m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:79  column:26  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [33m79[0m  [1m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:80  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [33m80[0m  [1m        threadpool (get-in @db [:mutex :threads])[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:82  column:32  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [33m82[0m  [1m        active-thread (get-in @db [:threads current-owner])[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var succulent.core/db[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:83  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m79[0m  [36m(let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m      threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m      current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m      active-thread (get-in @db [:threads current-owner])[0m
+  [33m83[0m  [1m      semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var succulent.core/db[0m
+  [36m84[0m  [36m      semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m      semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m      semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m      active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m  (cond[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:84  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m80[0m  [36m    threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m84[0m  [1m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:85  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [33m85[0m  [1m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                      ^--- Use of undeclared Var succulent.core/db[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:86  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m86[0m  [1m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [36m91[0m  [36m  (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:90  column:46  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [33m90[0m  [1m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var succulent.core/db[0m
+  [36m91[0m  [36m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code ""}))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:91  column:42  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [33m91[0m  [1m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code ""}))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+  [36m96[0m  [36m;                 :curr '()[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:565  column:56  ----[0m
+
+  [1mUse of undeclared Var succulent.core/keypress[0m
+
+  [36m561[0m  [36m                         (swap! keyboard-input assoc-in [:ascii-code] (js/String ascii-code))[0m
+  [36m562[0m  [36m                         (swap! keyboard-input assoc-in [:tag] (js/String (tag ascii-code)))[0m
+  [36m563[0m  [36m                         ;(reset! keypress (Input. e))[0m
+  [36m564[0m  [36m                         (.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))[0m
+  [33m565[0m  [1m                         (.log js/console "keypress: " keypress)[0m
+  [0m   [0m  [33m                                                       ^--- Use of undeclared Var succulent.core/keypress[0m
+  [36m566[0m  [36m                         (.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])[0m
+  [36m567[0m  [36m                                                         ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])[0m
+  [36m568[0m  [36m                                                         ", [:tag] " (get-in @keyboard-input [:tag])))))[0m
+  [36m569[0m  [36m(defn render! [][0m
+  [36m570[0m  [36m  (.render js/ReactDOM[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 2.003 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :accumulator {:op "" :r1 "" :r2 "" :r3 "" :null ""}[0m
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:61  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:92  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                                                           ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:66  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [33m66[0m  [1m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:67  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [33m67[0m  [1m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:69  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [33m69[0m  [1m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:70  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [33m70[0m  [1m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:71  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [33m71[0m  [1m         (get (get-in @db [:semaphoreA :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:72  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m(swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m(swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m       (get (get-in @db [:semaphoreA :registers])[0m
+  [33m72[0m  [1m            (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var succulent.core/db[0m
+  [36m73[0m  [36m(swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m(swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m       (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m       (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:73  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [33m73[0m  [1m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:74  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [33m74[0m  [1m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:75  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [33m75[0m  [1m         (get (get-in @db [:semaphoreB :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:76  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [33m76[0m  [1m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:79  column:26  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [33m79[0m  [1m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:80  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [33m80[0m  [1m        threadpool (get-in @db [:mutex :threads])[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:82  column:32  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [33m82[0m  [1m        active-thread (get-in @db [:threads current-owner])[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var succulent.core/db[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:83  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m79[0m  [36m(let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m      threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m      current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m      active-thread (get-in @db [:threads current-owner])[0m
+  [33m83[0m  [1m      semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var succulent.core/db[0m
+  [36m84[0m  [36m      semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m      semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m      semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m      active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m  (cond[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:84  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m80[0m  [36m    threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m84[0m  [1m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:85  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [33m85[0m  [1m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                      ^--- Use of undeclared Var succulent.core/db[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:86  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m86[0m  [1m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [36m91[0m  [36m  (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:90  column:46  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [33m90[0m  [1m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var succulent.core/db[0m
+  [36m91[0m  [36m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:91  column:42  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [33m91[0m  [1m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+  [36m96[0m  [36m;                 :curr '()[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 0.826 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:93  column:62  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m91[0m  [36m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [36m92[0m  [36m[0m
+  [33m93[0m  [1m(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""))[0m
+  [0m  [0m  [33m                                                             ^--- Unmatched delimiter )[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+  [36m96[0m  [36m;                 :curr '()[0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :accumulator {:op "" :r1 "" :r2 "" :r3 "" :null ""}[0m
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:61  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:92  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m61[0m  [36m;                 :opcode 0}))[0m
+  [36m62[0m  [36m[0m
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m65[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                                                           ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:66  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [33m66[0m  [1m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:67  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m63[0m  [36m(defn siginterrupt [][0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [33m67[0m  [1m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:69  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m65[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [33m69[0m  [1m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:70  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [33m70[0m  [1m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:71  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m67[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [33m71[0m  [1m         (get (get-in @db [:semaphoreA :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:72  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m(swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m(swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m       (get (get-in @db [:semaphoreA :registers])[0m
+  [33m72[0m  [1m            (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var succulent.core/db[0m
+  [36m73[0m  [36m(swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m(swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m       (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m       (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:73  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [33m73[0m  [1m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:74  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m70[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [33m74[0m  [1m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:75  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m71[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [33m75[0m  [1m         (get (get-in @db [:semaphoreB :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:76  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m72[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m73[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m74[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [33m76[0m  [1m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:79  column:26  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m75[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [33m79[0m  [1m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:80  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m76[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m77[0m  [36m[0m
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [33m80[0m  [1m        threadpool (get-in @db [:mutex :threads])[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:82  column:32  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m78[0m  [36m(defn href [resource][0m
+  [36m79[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [33m82[0m  [1m        active-thread (get-in @db [:threads current-owner])[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var succulent.core/db[0m
+  [36m83[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:83  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m79[0m  [36m(let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m80[0m  [36m      threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m      current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m      active-thread (get-in @db [:threads current-owner])[0m
+  [33m83[0m  [1m      semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var succulent.core/db[0m
+  [36m84[0m  [36m      semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m      semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m      semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m      active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m  (cond[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:84  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m80[0m  [36m    threadpool (get-in @db [:mutex :threads])[0m
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m84[0m  [1m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:85  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m81[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [33m85[0m  [1m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                      ^--- Use of undeclared Var succulent.core/db[0m
+  [36m86[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:86  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m82[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m83[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m84[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m85[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m86[0m  [1m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m87[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m(cond[0m
+  [36m89[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [36m91[0m  [36m  (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:90  column:46  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m86[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [33m90[0m  [1m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var succulent.core/db[0m
+  [36m91[0m  [36m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""}))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:91  column:42  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m87[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m88[0m  [36m    (cond[0m
+  [36m89[0m  [36m      (= resource :active-thread) active-thread[0m
+  [36m90[0m  [36m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [33m91[0m  [1m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m92[0m  [36m[0m
+  [36m93[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""}))[0m
+  [36m94[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m95[0m  [36m;(def io (r/atom {:target nil[0m
+  [36m96[0m  [36m;                 :curr '()[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:565  column:56  ----[0m
+
+  [1mUse of undeclared Var succulent.core/keypress[0m
+
+  [36m561[0m  [36m                         (swap! keyboard-input assoc-in [:ascii-code] (js/String ascii-code))[0m
+  [36m562[0m  [36m                         (swap! keyboard-input assoc-in [:tag] (js/String (tag ascii-code)))[0m
+  [36m563[0m  [36m                         ;(reset! keypress (Input. e))[0m
+  [36m564[0m  [36m                         (.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))[0m
+  [33m565[0m  [1m                         (.log js/console "keypress: " keypress)[0m
+  [0m   [0m  [33m                                                       ^--- Use of undeclared Var succulent.core/keypress[0m
+  [36m566[0m  [36m                         (.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])[0m
+  [36m567[0m  [36m                                                         ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])[0m
+  [36m568[0m  [36m                                                         ", [:tag] " (get-in @keyboard-input [:tag])))))[0m
+  [36m569[0m  [36m(defn render! [][0m
+  [36m570[0m  [36m  (.render js/ReactDOM[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 2.049 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:63  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m59[0m  [36m;                 :accumulator {:op "" :r1 "" :r2 "" :r3 "" :null ""}[0m
+  [36m60[0m  [36m;                 :opcode 0}))[0m
+  [36m61[0m  [36m[0m
+  [36m62[0m  [36m(defn siginterrupt [][0m
+  [33m63[0m  [1m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m65[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :opcode 0}))[0m
+  [36m61[0m  [36m[0m
+  [36m62[0m  [36m(defn siginterrupt [][0m
+  [36m63[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:61  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :opcode 0}))[0m
+  [36m61[0m  [36m[0m
+  [36m62[0m  [36m(defn siginterrupt [][0m
+  [36m63[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:64  column:92  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m60[0m  [36m;                 :opcode 0}))[0m
+  [36m61[0m  [36m[0m
+  [36m62[0m  [36m(defn siginterrupt [][0m
+  [36m63[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [33m64[0m  [1m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [0m  [0m  [33m                                                                                           ^--- Use of undeclared Var succulent.core/db[0m
+  [36m65[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:65  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m62[0m  [36m(defn siginterrupt [][0m
+  [36m63[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [33m65[0m  [1m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m70[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:66  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m62[0m  [36m(defn siginterrupt [][0m
+  [36m63[0m  [36m  (swap! db update-in [:mutex :state] bit-xor 1)[0m
+  [36m64[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m65[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [33m66[0m  [1m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m70[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:68  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m64[0m  [36m  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))[0m
+  [36m65[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [33m68[0m  [1m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m70[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m72[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m73[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:69  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m65[0m  [36m  (swap! db update-in [:semaphoreA :state] inc)[0m
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [33m69[0m  [1m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m70[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m72[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m73[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m74[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:70  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m66[0m  [36m  (swap! db update-in [:semaphoreB :state] inc)[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [33m70[0m  [1m         (get (get-in @db [:semaphoreA :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m72[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m73[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m74[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m75[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:71  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m68[0m  [36m(swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m(swap! db assoc-in [:semaphoreA :selected][0m
+  [36m70[0m  [36m       (get (get-in @db [:semaphoreA :registers])[0m
+  [33m71[0m  [1m            (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var succulent.core/db[0m
+  [36m72[0m  [36m(swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m73[0m  [36m(swap! db assoc-in [:semaphoreB :selected][0m
+  [36m74[0m  [36m       (get (get-in @db [:semaphoreB :registers])[0m
+  [36m75[0m  [36m       (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:72  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m68[0m  [36m  (swap! db update-in [:semaphoreA :locked?] not)[0m
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m70[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [33m72[0m  [1m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m73[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m74[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m75[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn href [resource][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:73  column:10  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m69[0m  [36m  (swap! db assoc-in [:semaphoreA :selected][0m
+  [36m70[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m72[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [33m73[0m  [1m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [0m  [0m  [33m         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m74[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m75[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn href [resource][0m
+  [36m78[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:74  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m70[0m  [36m         (get (get-in @db [:semaphoreA :registers])[0m
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m72[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m73[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [33m74[0m  [1m         (get (get-in @db [:semaphoreB :registers])[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m75[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn href [resource][0m
+  [36m78[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m79[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:75  column:24  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m71[0m  [36m              (mod (get-in @db [:semaphoreA :state]) 1)) )[0m
+  [36m72[0m  [36m  (swap! db update-in [:semaphoreB :locked?] not)[0m
+  [36m73[0m  [36m  (swap! db assoc-in [:semaphoreB :selected][0m
+  [36m74[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [33m75[0m  [1m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [0m  [0m  [33m                       ^--- Use of undeclared Var succulent.core/db[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn href [resource][0m
+  [36m78[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m79[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m80[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:78  column:26  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m74[0m  [36m         (get (get-in @db [:semaphoreB :registers])[0m
+  [36m75[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn href [resource][0m
+  [33m78[0m  [1m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [0m  [0m  [33m                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m79[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m80[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m81[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m82[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m83[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:79  column:29  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m75[0m  [36m         (mod (get-in @db [:semaphoreB :state]) 3)) ))[0m
+  [36m76[0m  [36m[0m
+  [36m77[0m  [36m(defn href [resource][0m
+  [36m78[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [33m79[0m  [1m        threadpool (get-in @db [:mutex :threads])[0m
+  [0m  [0m  [33m                            ^--- Use of undeclared Var succulent.core/db[0m
+  [36m80[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m81[0m  [36m        active-thread (get-in @db [:threads current-owner])[0m
+  [36m82[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m83[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m84[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:81  column:32  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m77[0m  [36m(defn href [resource][0m
+  [36m78[0m  [36m  (let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m79[0m  [36m        threadpool (get-in @db [:mutex :threads])[0m
+  [36m80[0m  [36m        current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [33m81[0m  [1m        active-thread (get-in @db [:threads current-owner])[0m
+  [0m  [0m  [33m                               ^--- Use of undeclared Var succulent.core/db[0m
+  [36m82[0m  [36m        semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m83[0m  [36m        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m84[0m  [36m        semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m85[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m86[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:82  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m78[0m  [36m(let [ref-ptr (get-in @db [:mutex :state])[0m
+  [36m79[0m  [36m      threadpool (get-in @db [:mutex :threads])[0m
+  [36m80[0m  [36m      current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m81[0m  [36m      active-thread (get-in @db [:threads current-owner])[0m
+  [33m82[0m  [1m      semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                        ^--- Use of undeclared Var succulent.core/db[0m
+  [36m83[0m  [36m      semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m84[0m  [36m      semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m85[0m  [36m      semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m86[0m  [36m      active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m87[0m  [36m  (cond[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:83  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m79[0m  [36m    threadpool (get-in @db [:mutex :threads])[0m
+  [36m80[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m81[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m82[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m83[0m  [1m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m84[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m85[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m86[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m87[0m  [36m(cond[0m
+  [36m88[0m  [36m  (= resource :active-thread) active-thread[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:84  column:27  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m80[0m  [36m    current-owner (get threadpool ref-ptr :out-of-bounds)[0m
+  [36m81[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m82[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m83[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [33m84[0m  [1m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [0m  [0m  [33m                      ^--- Use of undeclared Var succulent.core/db[0m
+  [36m85[0m  [36m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m86[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m87[0m  [36m(cond[0m
+  [36m88[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m89[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:85  column:35  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m81[0m  [36m    active-thread (get-in @db [:threads current-owner])[0m
+  [36m82[0m  [36m    semA-ptr (get-in @db [:threads active-thread :state])[0m
+  [36m83[0m  [36m    semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)[0m
+  [36m84[0m  [36m    semB-ptr (get-in @db [:threads active-thread :state])[0m
+  [33m85[0m  [1m    semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [0m  [0m  [33m                              ^--- Use of undeclared Var succulent.core/db[0m
+  [36m86[0m  [36m    active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m87[0m  [36m(cond[0m
+  [36m88[0m  [36m  (= resource :active-thread) active-thread[0m
+  [36m89[0m  [36m  (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [36m90[0m  [36m  (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:89  column:46  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m85[0m  [36m        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)[0m
+  [36m86[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m87[0m  [36m    (cond[0m
+  [36m88[0m  [36m      (= resource :active-thread) active-thread[0m
+  [33m89[0m  [1m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [0m  [0m  [33m                                             ^--- Use of undeclared Var succulent.core/db[0m
+  [36m90[0m  [36m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [36m91[0m  [36m[0m
+  [36m92[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""}))[0m
+  [36m93[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m94[0m  [36m;(def io (r/atom {:target nil[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:90  column:42  ----[0m
+
+  [1mUse of undeclared Var succulent.core/db[0m
+
+  [36m86[0m  [36m        active-target (if (zero? ref-ptr) semA-target semB-target)][0m
+  [36m87[0m  [36m    (cond[0m
+  [36m88[0m  [36m      (= resource :active-thread) active-thread[0m
+  [36m89[0m  [36m      (= resource :target-register) (get-in @db [:accumulator active-target])[0m
+  [33m90[0m  [1m      (= resource :accumulator) (get-in @db [:accumulator]))))[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var succulent.core/db[0m
+  [36m91[0m  [36m[0m
+  [36m92[0m  [36m(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""}))[0m
+  [36m93[0m  [36m;(def keypress (r/atom nil))[0m
+  [36m94[0m  [36m;(def io (r/atom {:target nil[0m
+  [36m95[0m  [36m;                 :curr '()[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:564  column:56  ----[0m
+
+  [1mUse of undeclared Var succulent.core/keypress[0m
+
+  [36m560[0m  [36m                         (swap! keyboard-input assoc-in [:ascii-code] (js/String ascii-code))[0m
+  [36m561[0m  [36m                         (swap! keyboard-input assoc-in [:tag] (js/String (tag ascii-code)))[0m
+  [36m562[0m  [36m                         ;(reset! keypress (Input. e))[0m
+  [36m563[0m  [36m                         (.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))[0m
+  [33m564[0m  [1m                         (.log js/console "keypress: " keypress)[0m
+  [0m   [0m  [33m                                                       ^--- Use of undeclared Var succulent.core/keypress[0m
+  [36m565[0m  [36m                         (.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])[0m
+  [36m566[0m  [36m                                                         ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])[0m
+  [36m567[0m  [36m                                                         ", [:tag] " (get-in @keyboard-input [:tag])))))[0m
+  [36m568[0m  [36m(defn render! [][0m
+  [36m569[0m  [36m  (.render js/ReactDOM[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.694 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:564  column:56  ----[0m
+
+  [1mUse of undeclared Var succulent.core/keypress[0m
+
+  [36m560[0m  [36m                         (swap! keyboard-input assoc-in [:ascii-code] (js/String ascii-code))[0m
+  [36m561[0m  [36m                         (swap! keyboard-input assoc-in [:tag] (js/String (tag ascii-code)))[0m
+  [36m562[0m  [36m                         ;(reset! keypress (Input. e))[0m
+  [36m563[0m  [36m                         (.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))[0m
+  [33m564[0m  [1m                         (.log js/console "keypress: " keypress)[0m
+  [0m   [0m  [33m                                                       ^--- Use of undeclared Var succulent.core/keypress[0m
+  [36m565[0m  [36m                         (.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])[0m
+  [36m566[0m  [36m                                                         ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])[0m
+  [36m567[0m  [36m                                                         ", [:tag] " (get-in @keyboard-input [:tag])))))[0m
+  [36m568[0m  [36m(defn render! [][0m
+  [36m569[0m  [36m  (.render js/ReactDOM[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.292 seconds.[0m
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.265 seconds.[0m
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.133 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.227 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 0.567 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:42  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 42 and column 1[0m
+
+  [36m41[0m  [36m;[0m
+  [33m42[0m  [1m(def db (atom {:mutex      {:state         0[0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 42 and column 1[0m
+  [36m43[0m  [36m                              :threads       [:semaphoreA :semaphoreB][0m
+  [36m44[0m  [36m                              :active-thread :semaphoreA}[0m
+  [36m45[0m  [36m                 :semaphoreA {[0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.898 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/goog/deps.js
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 0.747 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:159  column:3  ----[0m
+
+  [1mEOF while reading, starting at line 159 and column 3[0m
+
+  [36m157[0m  [36m    (contains? evaluators val)))[0m
+  [36m158[0m  [36m(defn num? [val][0m
+  [33m159[0m  [1m  (get-in[0m
+  [0m   [0m  [33m  ^--- EOF while reading, starting at line 159 and column 3[0m
+  [36m160[0m  [36m(defn shift? [val][0m
+  [36m161[0m  [36m  (= val "shiftin"))[0m
+  [36m162[0m  [36m(defn unshift? [val][0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 0.541 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:159  column:3  ----[0m
+
+  [1mEOF while reading, starting at line 159 and column 3[0m
+
+  [36m157[0m  [36m    (contains? evaluators val)))[0m
+  [36m158[0m  [36m(defn num? [val][0m
+  [33m159[0m  [1m  (get-in[0m
+  [0m   [0m  [33m  ^--- EOF while reading, starting at line 159 and column 3[0m
+  [36m160[0m  [36m(defn shift? [val][0m
+  [36m161[0m  [36m  (= val "shiftin"))[0m
+  [36m162[0m  [36m(defn unshift? [val][0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.29 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.376 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.288 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.31 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[31mFailed to compile "resources/public/cljs/main.js" in 0.906 seconds.[0m
+[36m----  Could not Read  src/succulent/core.cljs   line:324  column:71  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m322[0m  [36m                          (push val :to-fully-evaluated :output-register))) ;normal evaluation flushes all but the output register[0m
+  [36m323[0m  [36m                    (do (swap! app-state assoc-in [:opcode] 2)[0m
+  [33m324[0m  [1m                        (push "" :nothin-baby :shhh-just-the-wind))))));already evaluated, do nothing[0m
+  [0m   [0m  [33m                                                                      ^--- Unmatched delimiter )[0m
+  [36m325[0m  [36m(def opcode[0m
+  [36m326[0m  [36m  ;an experiment in rewriting "push" as a vector of methods: we're not really doing the von-neumann bottleneck[0m
+  [36m327[0m  [36m  ;any favors by dispatching on action tags. can we force the use of direct addressing by converting the cond[0m
+
+[36m----  Reader Error : Please see src/succulent/core.cljs  ----[0m
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.317 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.256 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:403  column:8  ----[0m
+
+  [1mUse of undeclared Var succulent.core/num?[0m
+
+  [36m399[0m  [36m        ans (show 'result)][0m
+  [36m400[0m  [36m    (swap! app-state assoc-in [:opval] num)[0m
+  [36m401[0m  [36m[0m
+  [36m402[0m  [36m    (cond[0m
+  [33m403[0m  [1m      (num? num) (if (empty? ans)[0m
+  [0m   [0m  [33m       ^--- Use of undeclared Var succulent.core/num?[0m
+  [36m404[0m  [36m                   (if (empty? y)[0m
+  [36m405[0m  [36m                     (if (empty? op)[0m
+  [36m406[0m  [36m                       (if (empty? x)[0m
+  [36m407[0m  [36m                         (apply (opcode 0) [num]) ;the first action[0m
+  [36m408[0m  [36m                         (apply (opcode 3) [num])) ;keep concatenating to x[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.309 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[36m----  Compiler Warning on   src/succulent/core.cljs   line:403  column:8  ----[0m
+
+  [1mUse of undeclared Var succulent.core/num?[0m
+
+  [36m399[0m  [36m        ans (show 'result)][0m
+  [36m400[0m  [36m    (swap! app-state assoc-in [:opval] num)[0m
+  [36m401[0m  [36m[0m
+  [36m402[0m  [36m    (cond[0m
+  [33m403[0m  [1m      (num? num) (if (empty? ans)[0m
+  [0m   [0m  [33m       ^--- Use of undeclared Var succulent.core/num?[0m
+  [36m404[0m  [36m                   (if (empty? y)[0m
+  [36m405[0m  [36m                     (if (empty? op)[0m
+  [36m406[0m  [36m                       (if (empty? x)[0m
+  [36m407[0m  [36m                         (apply (opcode 0) [num]) ;the first action[0m
+  [36m408[0m  [36m                         (apply (opcode 3) [num])) ;keep concatenating to x[0m
+
+[36m----  Compiler Warning : Please see src/succulent/core.cljs  ----[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.735 seconds.[0m
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.306 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js
+[0mCompiling "resources/public/cljs/main.js" from ["src"]...[0m
+[32mSuccessfully compiled "resources/public/cljs/main.js" in 1.607 seconds.[0m
+notifying browser that file changed:  resources/public/cljs/out/cljs_deps.js
+notifying browser that file changed:  out/succulent/core.js

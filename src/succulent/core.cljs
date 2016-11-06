@@ -15,9 +15,6 @@
   [cljs.js]))
 
 
-;
-
-
 (js/console.log "Booted")
 
 (defn bind-input [input-atom]
@@ -41,8 +38,8 @@
      :opval              ""
      :opcode             nil }))
 
-
-(def db (r/atom {:mutex      {:state         0
+;
+(def db (atom {:mutex      {:state         0
                               :threads       [:semaphoreA :semaphoreB]
                               :active-thread :semaphoreA}
                  :semaphoreA {
@@ -93,8 +90,8 @@
       (= resource :target-register) (get-in @db [:accumulator active-target])
       (= resource :accumulator) (get-in @db [:accumulator]))))
 
-(def keyboard-input (atom {:key-id "" :ascii-code ""}))
-(def keypress (r/atom nil))
+(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""}))
+;(def keypress (r/atom nil))
 ;(def io (r/atom {:target nil
 ;                 :curr '()
 ;                 :prev '()
@@ -159,7 +156,7 @@
   (let [evaluators (set ["equals" "="])]
     (contains? evaluators val)))
 (defn num? [val]
-  (number? val))
+  (js/isFinite (js/parseInt val)))
 (defn shift? [val]
   (= val "shiftin"))
 (defn unshift? [val]
@@ -257,7 +254,7 @@
 ;; no else case. just do nothing on undefined/badly-formed inputs (provided they don't break the calc)
 ;; null inputs call this procedure also, but push an empty string (i.e. do nothing)
 ;
-(defn bus-driver [val]
+(defn bus-driver [input]
 ;  ; the bus-driver's name is otto. he's a cool dude.
 ;  ; he handles state changes otto-matically.
 ;  ; attempts to do at a high level what a program control unit does in von neumann architecture.
@@ -275,11 +272,12 @@
         x (show 'x)
         y (show 'y)
         op (show 'op)
-        ans (show 'result)]
-
+        ans (show 'result)
+        tag (get-in @keyboard-input [:tag])
+        k (get-in @keyboard-input [:key-id])]
+    (.log js/console "Bus driver called with arg: " val)
     (cond
-      (clear? val) (swap! app-state assoc-in [:values] {:x "" :y "" :op "" :result "" :tape []} )
-      (num? val) (if (empty? ans)
+      (= tag :number) (if (empty? ans)
                    (if (empty? y)
                      (if (empty? op)
                        (if (empty? x)
@@ -293,9 +291,7 @@
                          (push val :to-non-empty :y-register))) ;keep concatenating to y
                    (do (swap! app-state assoc-in [:opcode] 5)
                        (push val :to-fresh-sparkly :x-register))) ;clear registers, reset target to x, put val there
-      (shift? val) (swap! app-state assoc-in [:shift-in] true) ;helper events for keyboard inputs
-      (unshift? val) (swap! app-state assoc-in [:shift-in] false)
-      (operator? val) (if (empty? ans)
+      (= tag :operator) (if (empty? ans)
                         (if (empty? y)
                           (if (empty? op)
                             (if (empty? x)
@@ -309,7 +305,7 @@
                               (push val :to-fully-evaluated :op-register))) ;chained expressions are ok (e.g. 5+3*8-2)
                         (do (swap! app-state assoc-in [:opcode] 8)
                             (push val :to-previously-evaluated :op-register))) ;resume chaining if the prev op was "equals"
-      (eval? val) (if (empty? ans)
+      (= tag :equals) (if (empty? ans)
                     (if (empty? y)
                       (if (empty? op)
                         (if (empty? x)
@@ -392,48 +388,48 @@
               (divert-route :current-target :result)))]))
 ;
 ;
-;(defn shortbus [num]
-;  ;let's try something crazy: call methods from the vector
-;  (let [address-bus (show 'address-bus)
-;        control-bus (show 'control-bus)
-;        data-bus (show 'data-bus)
-;        key-in (show 'key-in)
-;        x (show 'x)
-;        y (show 'y)
-;        op (show 'op)
-;        ans (show 'result)]
-;    (swap! app-state assoc-in [:opval] num)
-;
-;    (cond
-;      (num? num) (if (empty? ans)
-;                   (if (empty? y)
-;                     (if (empty? op)
-;                       (if (empty? x)
-;                         (apply (opcode 0) [num]) ;the first action
-;                         (apply (opcode 3) [num])) ;keep concatenating to x
-;                       (apply (opcode 1) [num])) ;update :current-target to y and assoc the new val
-;                     (apply (opcode 4) [num])) ;keep concatenating to y
-;                   (apply (opcode 5) [num])) ;clear registers, reset target to x, put val there
-;      (shift? num) (swap! app-state assoc-in [:shift-in] true) ;helper events for keyboard inputs
-;      (unshift? num) (swap! app-state assoc-in [:shift-in] false)
-;      (operator? num) (if (empty? ans)
-;                        (if (empty? y)
-;                          (if (empty? op)
-;                            (if (empty? x)
-;                              (apply (opcode -1) []) ;don't add voids
-;                              (apply (opcode 2) [num])) ;typical usual case for ops
-;                            (apply (opcode 2) [num])) ;if duplicate ops, we take most recent. same logic
-;                          (apply (opcode 6) [num])) ;chained expressions are ok (e.g. 5+3*8-2)
-;                        (apply (opcode 8) [num])) ;resume chaining if the prev op was "equals"
-;      (eval? val) (if (empty? ans)
-;                    (if (empty? y)
-;                      (if (empty? op)
-;                        (if (empty? x)
-;                          (apply (opcode -1) []) ;don't evaluate voids
-;                          (apply (opcode 10) [])) ;let x equal itself
-;                        (apply (opcode 11) [])) ;stupid edge case
-;                      (apply (opcode 7) [])) ;normal evaluation flushes all but the output register
-;                    (apply (opcode -1) []))))) ;already evaluated, do nothing
+(defn shortbus [num]
+  ;let's try something crazy: call methods from the vector
+  (let [address-bus (show 'address-bus)
+        control-bus (show 'control-bus)
+        data-bus (show 'data-bus)
+        key-in (show 'key-in)
+        x (show 'x)
+        y (show 'y)
+        op (show 'op)
+        ans (show 'result)]
+    (swap! app-state assoc-in [:opval] num)
+
+    (cond
+      (num? num) (if (empty? ans)
+                   (if (empty? y)
+                     (if (empty? op)
+                       (if (empty? x)
+                         (apply (opcode 0) [num]) ;the first action
+                         (apply (opcode 3) [num])) ;keep concatenating to x
+                       (apply (opcode 1) [num])) ;update :current-target to y and assoc the new val
+                     (apply (opcode 4) [num])) ;keep concatenating to y
+                   (apply (opcode 5) [num])) ;clear registers, reset target to x, put val there
+      (shift? num) (swap! app-state assoc-in [:shift-in] true) ;helper events for keyboard inputs
+      (unshift? num) (swap! app-state assoc-in [:shift-in] false)
+      (operator? num) (if (empty? ans)
+                        (if (empty? y)
+                          (if (empty? op)
+                            (if (empty? x)
+                              (apply (opcode -1) []) ;don't add voids
+                              (apply (opcode 2) [num])) ;typical usual case for ops
+                            (apply (opcode 2) [num])) ;if duplicate ops, we take most recent. same logic
+                          (apply (opcode 6) [num])) ;chained expressions are ok (e.g. 5+3*8-2)
+                        (apply (opcode 8) [num])) ;resume chaining if the prev op was "equals"
+      (eval? val) (if (empty? ans)
+                    (if (empty? y)
+                      (if (empty? op)
+                        (if (empty? x)
+                          (apply (opcode -1) []) ;don't evaluate voids
+                          (apply (opcode 10) [])) ;let x equal itself
+                        (apply (opcode 11) [])) ;stupid edge case
+                      (apply (opcode 7) [])) ;normal evaluation flushes all but the output register
+                    (apply (opcode -1) []))))) ;already evaluated, do nothing
 ;
 ;
 (defn butt-stuff [arg]
@@ -542,46 +538,32 @@
 ;  Object
 ;  (-keyCode [this] (.-keyCode this)))
 
-(.addEventListener js/window "keypress"
+(defn tag [ascii-code]
+  (let [num ascii-code
+        operators #{42 43 45 47}
+        numbers #{48 49 50 51 52 53 54 56 57}
+        equals 61]
+    (cond (contains? operators num) :operator
+          (contains? numbers num) :number
+          (= equals num) :equals
+          :else ("Value not in ascii range: " ascii-code))))
+    (.addEventListener js/window "keypress"
                    (fn [e]
                      (let [character (.-key e)
                            ascii-code (.-keyCode e)
                            keyCode (.-code e)
                            is-number? (not (js/isNaN (js/parseInt character)))
-                           is-operator? (op? ascii-code)
-                           shifted? (get-in @app-state [:shift-in])]
-                       ;(assoc-in @app-state [:input :label] (js/String character))
-                       ;(assoc-in @app-state [:input :code] (js/String ascii-code)))))
-
+                           is-operator? (op? ascii-code)]
 
                          (swap! keyboard-input assoc-in [:key-id] character)
                          (swap! keyboard-input assoc-in [:ascii-code] (js/String ascii-code))
-                         (swap! keyboard-input assoc-in [:tag] "data tag")
+                         (swap! keyboard-input assoc-in [:tag] (js/String (tag ascii-code)))
                          ;(reset! keypress (Input. e))
                          (.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))
-                         (.log js/console "keypress: " keypress))))
-                         ;(= character "+") (butt-stuff "add")
-                         ;(= ascii-code 48) (butt-stuff 0)
-                         ;(= ascii-code 49) (butt-stuff 1)
-                         ;(= ascii-code 50) (butt-stuff 2)
-                         ;(= ascii-code 51) (butt-stuff 3)
-                         ;(= ascii-code 52) (butt-stuff 4)
-                         ;(= ascii-code 53) (butt-stuff 5)
-                         ;(= ascii-code 54) (butt-stuff 6)
-                         ;(= ascii-code 55) (butt-stuff 7)
-                         ;(= ascii-code 56) (if (true? (get-in @app-state [:shift-in]))
-                         ;                    (butt-stuff "multiply")
-                         ;                    (butt-stuff 8))
-                         ;(= ascii-code 57) (butt-stuff 9)
-                         ;(= ascii-code 187) (if (true? (get-in @app-state [:shift-in]))
-                         ;                     (butt-stuff "add")
-                         ;                     (butt-stuff "equals"))
-                         ;(= ascii-code 189) (if (true? (not (get-in @app-state [:shift-in])))
-                         ;                     (butt-stuff "subtract"))
-                         ;(= ascii-code 191) (if (false? (get-in @app-state [:shift-in]))
-                         ;                     (butt-stuff "divide"))
-                         ;:else (swap! app-state assoc-in [:shift-in] false)))))
-
+                         (.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])
+                                                         ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])
+                                                         ", [:tag] " (get-in @keyboard-input [:tag]))
+                         (shortbus character))))
 (defn render! []
   (.render js/ReactDOM
            (a-simple-stateful-object app-state keyboard-input)
@@ -1030,7 +1012,7 @@
 
 (q/defsketch input
              :host "succulent"
-             :size [(.-innerWidth js/window) 500]
+             :size [1000 500]
              ; setup function called only once, during sketch initialization.
              :setup quil-setup
              ; update-state is called on each iteration before draw-state.

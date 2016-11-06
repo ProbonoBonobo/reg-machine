@@ -16,8 +16,8 @@ goog.require('om_bootstrap.random');
 goog.require('om_bootstrap.table');
 console.log("Booted");
 succulent.core.bind_input = (function succulent$core$bind_input(input_atom){
-return (function (p1__70910_SHARP_){
-return cljs.core.reset_BANG_.call(null,input_atom,p1__70910_SHARP_.target.value);
+return (function (p1__38370_SHARP_){
+return cljs.core.reset_BANG_.call(null,input_atom,p1__38370_SHARP_.target.value);
 });
 });
 succulent.core.some_component = (function succulent$core$some_component(){
@@ -25,7 +25,7 @@ var value_atom = reagent.core.atom.call(null,null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"on-change","on-change",-732046149),succulent.core.bind_input.call(null,value_atom)], null)], null);
 });
 succulent.core.app_state = cljs.core.atom.call(null,cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"opcode","opcode",-1329442167),new cljs.core.Keyword(null,"opval","opval",-1758688436),new cljs.core.Keyword(null,"data-bus","data-bus",-150915984),new cljs.core.Keyword(null,"address-bus","address-bus",-1061702415),new cljs.core.Keyword(null,"shift-in","shift-in",744085234),new cljs.core.Keyword(null,"values","values",372645556),new cljs.core.Keyword(null,"control-bus","control-bus",762248216),new cljs.core.Keyword(null,"primary-register","primary-register",700228088),new cljs.core.Keyword(null,"current-target","current-target",34322910),new cljs.core.Keyword(null,"secondary-register","secondary-register",536999519)],[null,"",new cljs.core.Keyword(null,"result","result",1415092211),new cljs.core.Keyword(null,"x","x",2099068185),false,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"x","x",2099068185),"",new cljs.core.Keyword(null,"y","y",-1757859776),"",new cljs.core.Keyword(null,"op","op",-1882987955),"",new cljs.core.Keyword(null,"result","result",1415092211),"",new cljs.core.Keyword(null,"tape","tape",-1034358222),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [""], null)], null),new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776)]));
-succulent.core.db = reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"mutex","mutex",745504759),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"state","state",-1988618099),(0),new cljs.core.Keyword(null,"threads","threads",-1717798734),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"semaphoreA","semaphoreA",-948329321),new cljs.core.Keyword(null,"semaphoreB","semaphoreB",-399834027)], null),new cljs.core.Keyword(null,"active-thread","active-thread",1610323599),new cljs.core.Keyword(null,"semaphoreA","semaphoreA",-948329321)], null),new cljs.core.Keyword(null,"semaphoreA","semaphoreA",-948329321),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"state","state",-1988618099),(0),new cljs.core.Keyword(null,"registers","registers",81921893),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),""], null),new cljs.core.Keyword(null,"available","available",-1470697127),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"op","op",-1882987955)], null),new cljs.core.Keyword(null,"selected","selected",574897764),new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword(null,"locked?","locked?",995448757),false], null),new cljs.core.Keyword(null,"semaphoreB","semaphoreB",-399834027),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"state","state",-1988618099),(2),new cljs.core.Keyword(null,"registers","registers",81921893),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"r1","r1",690974900),"",new cljs.core.Keyword(null,"r2","r2",252844174),"",new cljs.core.Keyword(null,"r3","r3",-2027148174),""], null),new cljs.core.Keyword(null,"available","available",-1470697127),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"r1","r1",690974900),new cljs.core.Keyword(null,"r2","r2",252844174),new cljs.core.Keyword(null,"r3","r3",-2027148174)], null),new cljs.core.Keyword(null,"selected","selected",574897764),new cljs.core.Keyword(null,"r3","r3",-2027148174),new cljs.core.Keyword(null,"locked?","locked?",995448757),true], null),new cljs.core.Keyword(null,"accumulator","accumulator",1546185501),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"op","op",-1882987955),"",new cljs.core.Keyword(null,"r1","r1",690974900),"",new cljs.core.Keyword(null,"r2","r2",252844174),"",new cljs.core.Keyword(null,"r3","r3",-2027148174),"",new cljs.core.Keyword(null,"null","null",-180137709),""], null),new cljs.core.Keyword(null,"opcode","opcode",-1329442167),(0)], null));
+succulent.core.db = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"mutex","mutex",745504759),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"state","state",-1988618099),(0),new cljs.core.Keyword(null,"threads","threads",-1717798734),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"semaphoreA","semaphoreA",-948329321),new cljs.core.Keyword(null,"semaphoreB","semaphoreB",-399834027)], null),new cljs.core.Keyword(null,"active-thread","active-thread",1610323599),new cljs.core.Keyword(null,"semaphoreA","semaphoreA",-948329321)], null),new cljs.core.Keyword(null,"semaphoreA","semaphoreA",-948329321),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"state","state",-1988618099),(0),new cljs.core.Keyword(null,"registers","registers",81921893),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"op","op",-1882987955),""], null),new cljs.core.Keyword(null,"available","available",-1470697127),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"op","op",-1882987955)], null),new cljs.core.Keyword(null,"selected","selected",574897764),new cljs.core.Keyword(null,"op","op",-1882987955),new cljs.core.Keyword(null,"locked?","locked?",995448757),false], null),new cljs.core.Keyword(null,"semaphoreB","semaphoreB",-399834027),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"state","state",-1988618099),(2),new cljs.core.Keyword(null,"registers","registers",81921893),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"r1","r1",690974900),"",new cljs.core.Keyword(null,"r2","r2",252844174),"",new cljs.core.Keyword(null,"r3","r3",-2027148174),""], null),new cljs.core.Keyword(null,"available","available",-1470697127),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"r1","r1",690974900),new cljs.core.Keyword(null,"r2","r2",252844174),new cljs.core.Keyword(null,"r3","r3",-2027148174)], null),new cljs.core.Keyword(null,"selected","selected",574897764),new cljs.core.Keyword(null,"r3","r3",-2027148174),new cljs.core.Keyword(null,"locked?","locked?",995448757),true], null),new cljs.core.Keyword(null,"accumulator","accumulator",1546185501),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"op","op",-1882987955),"",new cljs.core.Keyword(null,"r1","r1",690974900),"",new cljs.core.Keyword(null,"r2","r2",252844174),"",new cljs.core.Keyword(null,"r3","r3",-2027148174),"",new cljs.core.Keyword(null,"null","null",-180137709),""], null),new cljs.core.Keyword(null,"opcode","opcode",-1329442167),(0)], null));
 succulent.core.siginterrupt = (function succulent$core$siginterrupt(){
 cljs.core.swap_BANG_.call(null,succulent.core.db,cljs.core.update_in,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"mutex","mutex",745504759),new cljs.core.Keyword(null,"state","state",-1988618099)], null),cljs.core.bit_xor,(1));
 
@@ -67,8 +67,7 @@ return null;
 }
 }
 });
-succulent.core.keyboard_input = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"key-id","key-id",433432263),"",new cljs.core.Keyword(null,"ascii-code","ascii-code",2020922785),""], null));
-succulent.core.keypress = reagent.core.atom.call(null,null);
+succulent.core.keyboard_input = cljs.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"key-id","key-id",433432263),"",new cljs.core.Keyword(null,"ascii-code","ascii-code",2020922785),"",new cljs.core.Keyword(null,"tag","tag",-1290361223),""], null));
 succulent.core.flushRegister = (function succulent$core$flushRegister(m){
 return cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"values","values",372645556),m], null),"");
 });
@@ -139,7 +138,7 @@ var evaluators = cljs.core.set.call(null,new cljs.core.PersistentVector(null, 2,
 return cljs.core.contains_QMARK_.call(null,evaluators,val);
 });
 succulent.core.num_QMARK_ = (function succulent$core$num_QMARK_(val){
-return typeof val === 'number';
+return isFinite(parseInt(val));
 });
 succulent.core.shift_QMARK_ = (function succulent$core$shift_QMARK_(val){
 return cljs.core._EQ_.call(null,val,"shiftin");
@@ -316,7 +315,7 @@ return null;
 }
 }
 });
-succulent.core.bus_driver = (function succulent$core$bus_driver(val){
+succulent.core.bus_driver = (function succulent$core$bus_driver(input){
 var address_bus = succulent.core.show.call(null,new cljs.core.Symbol(null,"address-bus","address-bus",578829112,null));
 var control_bus = succulent.core.show.call(null,new cljs.core.Symbol(null,"control-bus","control-bus",-1892187553,null));
 var data_bus = succulent.core.show.call(null,new cljs.core.Symbol(null,"data-bus","data-bus",1489615543,null));
@@ -325,45 +324,40 @@ var x = succulent.core.show.call(null,new cljs.core.Symbol(null,"x","x",-5553675
 var y = succulent.core.show.call(null,new cljs.core.Symbol(null,"y","y",-117328249,null));
 var op = succulent.core.show.call(null,new cljs.core.Symbol(null,"op","op",-242456428,null));
 var ans = succulent.core.show.call(null,new cljs.core.Symbol(null,"result","result",-1239343558,null));
-if(cljs.core.truth_(succulent.core.clear_QMARK_.call(null,val))){
-return cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"values","values",372645556)], null),new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"x","x",2099068185),"",new cljs.core.Keyword(null,"y","y",-1757859776),"",new cljs.core.Keyword(null,"op","op",-1882987955),"",new cljs.core.Keyword(null,"result","result",1415092211),"",new cljs.core.Keyword(null,"tape","tape",-1034358222),cljs.core.PersistentVector.EMPTY], null));
-} else {
-if(cljs.core.truth_(succulent.core.num_QMARK_.call(null,val))){
+var tag = cljs.core.get_in.call(null,cljs.core.deref.call(null,succulent.core.keyboard_input),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tag","tag",-1290361223)], null));
+var k = cljs.core.get_in.call(null,cljs.core.deref.call(null,succulent.core.keyboard_input),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"key-id","key-id",433432263)], null));
+console.log("Bus driver called with arg: ",cljs.core.val);
+
+if(cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"number","number",1570378438))){
 if(cljs.core.empty_QMARK_.call(null,ans)){
 if(cljs.core.empty_QMARK_.call(null,y)){
 if(cljs.core.empty_QMARK_.call(null,op)){
 if(cljs.core.empty_QMARK_.call(null,x)){
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(0));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-empty","to-empty",111633409),new cljs.core.Keyword(null,"x-register","x-register",-2027223306));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-empty","to-empty",111633409),new cljs.core.Keyword(null,"x-register","x-register",-2027223306));
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(3));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-non-empty","to-non-empty",1774910489),new cljs.core.Keyword(null,"x-register","x-register",-2027223306));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-non-empty","to-non-empty",1774910489),new cljs.core.Keyword(null,"x-register","x-register",-2027223306));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(1));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-empty","to-empty",111633409),new cljs.core.Keyword(null,"y-register","y-register",757629795));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-empty","to-empty",111633409),new cljs.core.Keyword(null,"y-register","y-register",757629795));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(3));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-non-empty","to-non-empty",1774910489),new cljs.core.Keyword(null,"y-register","y-register",757629795));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-non-empty","to-non-empty",1774910489),new cljs.core.Keyword(null,"y-register","y-register",757629795));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(5));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-fresh-sparkly","to-fresh-sparkly",262748089),new cljs.core.Keyword(null,"x-register","x-register",-2027223306));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-fresh-sparkly","to-fresh-sparkly",262748089),new cljs.core.Keyword(null,"x-register","x-register",-2027223306));
 }
 } else {
-if(cljs.core.truth_(succulent.core.shift_QMARK_.call(null,val))){
-return cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"shift-in","shift-in",744085234)], null),true);
-} else {
-if(cljs.core.truth_(succulent.core.unshift_QMARK_.call(null,val))){
-return cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"shift-in","shift-in",744085234)], null),false);
-} else {
-if(cljs.core.truth_(succulent.core.operator_QMARK_.call(null,val))){
+if(cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"operator","operator",-1860875338))){
 if(cljs.core.empty_QMARK_.call(null,ans)){
 if(cljs.core.empty_QMARK_.call(null,y)){
 if(cljs.core.empty_QMARK_.call(null,op)){
@@ -374,25 +368,25 @@ return succulent.core.push.call(null,"",new cljs.core.Keyword(null,"nothin-baby"
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(2));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-empty","to-empty",111633409),new cljs.core.Keyword(null,"op-register","op-register",859209393));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-empty","to-empty",111633409),new cljs.core.Keyword(null,"op-register","op-register",859209393));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(2));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-non-empty","to-non-empty",1774910489),new cljs.core.Keyword(null,"op-register","op-register",859209393));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-non-empty","to-non-empty",1774910489),new cljs.core.Keyword(null,"op-register","op-register",859209393));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(6));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-fully-evaluated","to-fully-evaluated",453468989),new cljs.core.Keyword(null,"op-register","op-register",859209393));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-fully-evaluated","to-fully-evaluated",453468989),new cljs.core.Keyword(null,"op-register","op-register",859209393));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(8));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-previously-evaluated","to-previously-evaluated",-431967995),new cljs.core.Keyword(null,"op-register","op-register",859209393));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-previously-evaluated","to-previously-evaluated",-431967995),new cljs.core.Keyword(null,"op-register","op-register",859209393));
 }
 } else {
-if(cljs.core.truth_(succulent.core.eval_QMARK_.call(null,val))){
+if(cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"equals","equals",-463033970))){
 if(cljs.core.empty_QMARK_.call(null,ans)){
 if(cljs.core.empty_QMARK_.call(null,y)){
 if(cljs.core.empty_QMARK_.call(null,op)){
@@ -403,17 +397,17 @@ return succulent.core.push.call(null,"",new cljs.core.Keyword(null,"nothin-baby"
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(10));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-unevaluated","to-unevaluated",981072364),new cljs.core.Keyword(null,"output-register","output-register",-153573239));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-unevaluated","to-unevaluated",981072364),new cljs.core.Keyword(null,"output-register","output-register",-153573239));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(10));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-unevaluated","to-unevaluated",981072364),new cljs.core.Keyword(null,"output-register","output-register",-153573239));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-unevaluated","to-unevaluated",981072364),new cljs.core.Keyword(null,"output-register","output-register",-153573239));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(7));
 
-return succulent.core.push.call(null,val,new cljs.core.Keyword(null,"to-fully-evaluated","to-fully-evaluated",453468989),new cljs.core.Keyword(null,"output-register","output-register",-153573239));
+return succulent.core.push.call(null,cljs.core.val,new cljs.core.Keyword(null,"to-fully-evaluated","to-fully-evaluated",453468989),new cljs.core.Keyword(null,"output-register","output-register",-153573239));
 }
 } else {
 cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opcode","opcode",-1329442167)], null),(2));
@@ -422,9 +416,6 @@ return succulent.core.push.call(null,"",new cljs.core.Keyword(null,"nothin-baby"
 }
 } else {
 return null;
-}
-}
-}
 }
 }
 }
@@ -512,6 +503,87 @@ succulent.core.flushRegister.call(null,new cljs.core.Keyword(null,"op","op",-188
 
 return succulent.core.divert_route.call(null,new cljs.core.Keyword(null,"current-target","current-target",34322910),new cljs.core.Keyword(null,"result","result",1415092211));
 })], null));
+succulent.core.shortbus = (function succulent$core$shortbus(num){
+var address_bus = succulent.core.show.call(null,new cljs.core.Symbol(null,"address-bus","address-bus",578829112,null));
+var control_bus = succulent.core.show.call(null,new cljs.core.Symbol(null,"control-bus","control-bus",-1892187553,null));
+var data_bus = succulent.core.show.call(null,new cljs.core.Symbol(null,"data-bus","data-bus",1489615543,null));
+var key_in = succulent.core.show.call(null,new cljs.core.Symbol(null,"key-in","key-in",1778288722,null));
+var x = succulent.core.show.call(null,new cljs.core.Symbol(null,"x","x",-555367584,null));
+var y = succulent.core.show.call(null,new cljs.core.Symbol(null,"y","y",-117328249,null));
+var op = succulent.core.show.call(null,new cljs.core.Symbol(null,"op","op",-242456428,null));
+var ans = succulent.core.show.call(null,new cljs.core.Symbol(null,"result","result",-1239343558,null));
+cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opval","opval",-1758688436)], null),num);
+
+if(cljs.core.truth_(succulent.core.num_QMARK_.call(null,num))){
+if(cljs.core.empty_QMARK_.call(null,ans)){
+if(cljs.core.empty_QMARK_.call(null,y)){
+if(cljs.core.empty_QMARK_.call(null,op)){
+if(cljs.core.empty_QMARK_.call(null,x)){
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(0)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(3)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(1)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(4)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(5)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+if(cljs.core.truth_(succulent.core.shift_QMARK_.call(null,num))){
+return cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"shift-in","shift-in",744085234)], null),true);
+} else {
+if(cljs.core.truth_(succulent.core.unshift_QMARK_.call(null,num))){
+return cljs.core.swap_BANG_.call(null,succulent.core.app_state,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"shift-in","shift-in",744085234)], null),false);
+} else {
+if(cljs.core.truth_(succulent.core.operator_QMARK_.call(null,num))){
+if(cljs.core.empty_QMARK_.call(null,ans)){
+if(cljs.core.empty_QMARK_.call(null,y)){
+if(cljs.core.empty_QMARK_.call(null,op)){
+if(cljs.core.empty_QMARK_.call(null,x)){
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(-1)),cljs.core.PersistentVector.EMPTY);
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(2)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(2)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(6)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(8)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [num], null));
+}
+} else {
+if(cljs.core.truth_(succulent.core.eval_QMARK_.call(null,cljs.core.val))){
+if(cljs.core.empty_QMARK_.call(null,ans)){
+if(cljs.core.empty_QMARK_.call(null,y)){
+if(cljs.core.empty_QMARK_.call(null,op)){
+if(cljs.core.empty_QMARK_.call(null,x)){
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(-1)),cljs.core.PersistentVector.EMPTY);
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(10)),cljs.core.PersistentVector.EMPTY);
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(11)),cljs.core.PersistentVector.EMPTY);
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(7)),cljs.core.PersistentVector.EMPTY);
+}
+} else {
+return cljs.core.apply.call(null,succulent.core.opcode.call(null,(-1)),cljs.core.PersistentVector.EMPTY);
+}
+} else {
+return null;
+}
+}
+}
+}
+}
+});
 succulent.core.butt_stuff = (function succulent$core$butt_stuff(arg){
 cljs.core.swap_BANG_.call(null,succulent.core.keyboard_input,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"key-id","key-id",433432263)], null),[cljs.core.str(arg)].join(''));
 
@@ -519,8 +591,8 @@ return succulent.core.bus_driver.call(null,arg);
 });
 succulent.core.a_simple_stateful_object = (function succulent$core$a_simple_stateful_object(app_state,input){
 var target_register = cljs.core.get_in.call(null,cljs.core.deref.call(null,app_state),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"current-target","current-target",34322910)], null));
-return React.createElement("div",null,React.createElement("div",null,(function (){var attrs70914 = om_bootstrap.random.well.call(null,cljs.core.PersistentArrayMap.EMPTY,[cljs.core.str(cljs.core.get_in.call(null,cljs.core.deref.call(null,app_state),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [target_register], null)))].join(''));
-return cljs.core.apply.call(null,React.createElement,"h1",((cljs.core.map_QMARK_.call(null,attrs70914))?sablono.interpreter.attributes.call(null,attrs70914):null),cljs.core.remove.call(null,cljs.core.nil_QMARK_,((cljs.core.map_QMARK_.call(null,attrs70914))?cljs.core.PersistentVector.EMPTY:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs70914)], null))));
+return React.createElement("div",null,React.createElement("div",null,(function (){var attrs38374 = om_bootstrap.random.well.call(null,cljs.core.PersistentArrayMap.EMPTY,[cljs.core.str(cljs.core.get_in.call(null,cljs.core.deref.call(null,app_state),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [target_register], null)))].join(''));
+return cljs.core.apply.call(null,React.createElement,"h1",((cljs.core.map_QMARK_.call(null,attrs38374))?sablono.interpreter.attributes.call(null,attrs38374):null),cljs.core.remove.call(null,cljs.core.nil_QMARK_,((cljs.core.map_QMARK_.call(null,attrs38374))?cljs.core.PersistentVector.EMPTY:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [sablono.interpreter.interpret.call(null,attrs38374)], null))));
 })(),React.createElement("h3",null,React.createElement("button",({"href": "#", "onClick": ((function (target_register){
 return (function (){
 return succulent.core.butt_stuff.call(null,(1));
@@ -595,8 +667,8 @@ succulent.core.convert_to_int = (function succulent$core$convert_to_int(ascii_co
 return (ascii_code - (48));
 });
 succulent.core.NaN_QMARK_ = (function succulent$core$NaN_QMARK_(e){
-var ch_70917 = e.key;
-parseInt(ch_70917);
+var ch_38377 = e.key;
+parseInt(ch_38377);
 
 return isNaN();
 });
@@ -604,12 +676,32 @@ succulent.core.numeric_QMARK_ = (function succulent$core$numeric_QMARK_(e){
 return cljs.core.complement.call(null,succulent.core.NaN_QMARK_.call(null,e));
 });
 succulent.core.notop_QMARK_ = (function succulent$core$notop_QMARK_(ascii_code){
-return cljs.core.not_any_QMARK_.call(null,(function (p1__70918_SHARP_){
-return cljs.core._EQ_.call(null,ascii_code,p1__70918_SHARP_);
+return cljs.core.not_any_QMARK_.call(null,(function (p1__38378_SHARP_){
+return cljs.core._EQ_.call(null,ascii_code,p1__38378_SHARP_);
 }),cljs.core.list((42),(43),(45),(47)));
 });
 succulent.core.op_QMARK_ = (function succulent$core$op_QMARK_(ascii_code){
 return cljs.core.complement.call(null,succulent.core.notop_QMARK_.call(null,ascii_code));
+});
+succulent.core.tag = (function succulent$core$tag(ascii_code){
+var num = ascii_code;
+var operators = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, [(43),null,(47),null,(45),null,(42),null], null), null);
+var numbers = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 9, [(54),null,(48),null,(50),null,(56),null,(51),null,(57),null,(53),null,(52),null,(49),null], null), null);
+var equals = (61);
+if(cljs.core.contains_QMARK_.call(null,operators,num)){
+return new cljs.core.Keyword(null,"operator","operator",-1860875338);
+} else {
+if(cljs.core.contains_QMARK_.call(null,numbers,num)){
+return new cljs.core.Keyword(null,"number","number",1570378438);
+} else {
+if(cljs.core._EQ_.call(null,equals,num)){
+return new cljs.core.Keyword(null,"equals","equals",-463033970);
+} else {
+return "Value not in ascii range: ".call(null,ascii_code);
+
+}
+}
+}
 });
 window.addEventListener("keypress",(function (e){
 var character = e.key;
@@ -617,16 +709,17 @@ var ascii_code = e.keyCode;
 var keyCode = e.code;
 var is_number_QMARK_ = cljs.core.not.call(null,isNaN(parseInt(character)));
 var is_operator_QMARK_ = succulent.core.op_QMARK_.call(null,ascii_code);
-var shifted_QMARK_ = cljs.core.get_in.call(null,cljs.core.deref.call(null,succulent.core.app_state),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"shift-in","shift-in",744085234)], null));
 cljs.core.swap_BANG_.call(null,succulent.core.keyboard_input,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"key-id","key-id",433432263)], null),character);
 
 cljs.core.swap_BANG_.call(null,succulent.core.keyboard_input,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"ascii-code","ascii-code",2020922785)], null),String(ascii_code));
 
-cljs.core.swap_BANG_.call(null,succulent.core.keyboard_input,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tag","tag",-1290361223)], null),"data tag");
+cljs.core.swap_BANG_.call(null,succulent.core.keyboard_input,cljs.core.assoc_in,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tag","tag",-1290361223)], null),String(succulent.core.tag.call(null,ascii_code)));
 
 console.log("ascii-code: ",ascii_code," character: ",character," number? ",cljs.core.not.call(null,isNaN(parseInt(character))));
 
-return console.log("keypress: ",succulent.core.keypress);
+console.log("keyboard-input:   [:key-id] ",cljs.core.get_in.call(null,cljs.core.deref.call(null,succulent.core.keyboard_input),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"key-id","key-id",433432263)], null)),", [:ascii-code] ",cljs.core.get_in.call(null,cljs.core.deref.call(null,succulent.core.keyboard_input),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"ascii-code","ascii-code",2020922785)], null)),", [:tag] ",cljs.core.get_in.call(null,cljs.core.deref.call(null,succulent.core.keyboard_input),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tag","tag",-1290361223)], null)));
+
+return succulent.core.shortbus.call(null,character);
 }));
 succulent.core.render_BANG_ = (function succulent$core$render_BANG_(){
 return ReactDOM.render(succulent.core.a_simple_stateful_object.call(null,succulent.core.app_state,succulent.core.keyboard_input),document.getElementById("app"));
@@ -680,14 +773,14 @@ return cljs.core.comp.call(null,quil.core.text.call(null,s,(x1 * succulent.core.
 });
 succulent.core.print_to_console = (function succulent$core$print_to_console(var_args){
 var args__25833__auto__ = [];
-var len__25826__auto___70920 = arguments.length;
-var i__25827__auto___70921 = (0);
+var len__25826__auto___38380 = arguments.length;
+var i__25827__auto___38381 = (0);
 while(true){
-if((i__25827__auto___70921 < len__25826__auto___70920)){
-args__25833__auto__.push((arguments[i__25827__auto___70921]));
+if((i__25827__auto___38381 < len__25826__auto___38380)){
+args__25833__auto__.push((arguments[i__25827__auto___38381]));
 
-var G__70922 = (i__25827__auto___70921 + (1));
-i__25827__auto___70921 = G__70922;
+var G__38382 = (i__25827__auto___38381 + (1));
+i__25827__auto___38381 = G__38382;
 continue;
 } else {
 }
@@ -706,8 +799,8 @@ return cljs.core.comp.call(null,quil.core.text.call(null,txt,cljs.core.get.call(
 
 succulent.core.print_to_console.cljs$lang$maxFixedArity = (0);
 
-succulent.core.print_to_console.cljs$lang$applyTo = (function (seq70919){
-return succulent.core.print_to_console.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq70919));
+succulent.core.print_to_console.cljs$lang$applyTo = (function (seq38379){
+return succulent.core.print_to_console.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq38379));
 });
 
 succulent.core.quil_draw_state = (function succulent$core$quil_draw_state(state){
@@ -939,71 +1032,71 @@ return quil.core.text.call(null,succulent.core.print_to_console.call(null," ","[
 });
 succulent.core.input = (function succulent$core$input(){
 return quil.sketch.sketch.call(null,new cljs.core.Keyword(null,"host","host",-1558485167),"succulent",new cljs.core.Keyword(null,"update","update",1045576396),((cljs.core.fn_QMARK_.call(null,succulent.core.quil_update_state))?(function() { 
-var G__70923__delegate = function (args){
+var G__38383__delegate = function (args){
 return cljs.core.apply.call(null,succulent.core.quil_update_state,args);
 };
-var G__70923 = function (var_args){
+var G__38383 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__70924__i = 0, G__70924__a = new Array(arguments.length -  0);
-while (G__70924__i < G__70924__a.length) {G__70924__a[G__70924__i] = arguments[G__70924__i + 0]; ++G__70924__i;}
-  args = new cljs.core.IndexedSeq(G__70924__a,0);
+var G__38384__i = 0, G__38384__a = new Array(arguments.length -  0);
+while (G__38384__i < G__38384__a.length) {G__38384__a[G__38384__i] = arguments[G__38384__i + 0]; ++G__38384__i;}
+  args = new cljs.core.IndexedSeq(G__38384__a,0);
 } 
-return G__70923__delegate.call(this,args);};
-G__70923.cljs$lang$maxFixedArity = 0;
-G__70923.cljs$lang$applyTo = (function (arglist__70925){
-var args = cljs.core.seq(arglist__70925);
-return G__70923__delegate(args);
+return G__38383__delegate.call(this,args);};
+G__38383.cljs$lang$maxFixedArity = 0;
+G__38383.cljs$lang$applyTo = (function (arglist__38385){
+var args = cljs.core.seq(arglist__38385);
+return G__38383__delegate(args);
 });
-G__70923.cljs$core$IFn$_invoke$arity$variadic = G__70923__delegate;
-return G__70923;
+G__38383.cljs$core$IFn$_invoke$arity$variadic = G__38383__delegate;
+return G__38383;
 })()
-:succulent.core.quil_update_state),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [window.innerWidth,(500)], null),new cljs.core.Keyword(null,"setup","setup",1987730512),((cljs.core.fn_QMARK_.call(null,succulent.core.quil_setup))?(function() { 
-var G__70926__delegate = function (args){
+:succulent.core.quil_update_state),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(1000),(500)], null),new cljs.core.Keyword(null,"setup","setup",1987730512),((cljs.core.fn_QMARK_.call(null,succulent.core.quil_setup))?(function() { 
+var G__38386__delegate = function (args){
 return cljs.core.apply.call(null,succulent.core.quil_setup,args);
 };
-var G__70926 = function (var_args){
+var G__38386 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__70927__i = 0, G__70927__a = new Array(arguments.length -  0);
-while (G__70927__i < G__70927__a.length) {G__70927__a[G__70927__i] = arguments[G__70927__i + 0]; ++G__70927__i;}
-  args = new cljs.core.IndexedSeq(G__70927__a,0);
+var G__38387__i = 0, G__38387__a = new Array(arguments.length -  0);
+while (G__38387__i < G__38387__a.length) {G__38387__a[G__38387__i] = arguments[G__38387__i + 0]; ++G__38387__i;}
+  args = new cljs.core.IndexedSeq(G__38387__a,0);
 } 
-return G__70926__delegate.call(this,args);};
-G__70926.cljs$lang$maxFixedArity = 0;
-G__70926.cljs$lang$applyTo = (function (arglist__70928){
-var args = cljs.core.seq(arglist__70928);
-return G__70926__delegate(args);
+return G__38386__delegate.call(this,args);};
+G__38386.cljs$lang$maxFixedArity = 0;
+G__38386.cljs$lang$applyTo = (function (arglist__38388){
+var args = cljs.core.seq(arglist__38388);
+return G__38386__delegate(args);
 });
-G__70926.cljs$core$IFn$_invoke$arity$variadic = G__70926__delegate;
-return G__70926;
+G__38386.cljs$core$IFn$_invoke$arity$variadic = G__38386__delegate;
+return G__38386;
 })()
 :succulent.core.quil_setup),new cljs.core.Keyword(null,"middleware","middleware",1462115504),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [quil.middleware.fun_mode], null),new cljs.core.Keyword(null,"draw","draw",1358331674),((cljs.core.fn_QMARK_.call(null,succulent.core.quil_draw_state))?(function() { 
-var G__70929__delegate = function (args){
+var G__38389__delegate = function (args){
 return cljs.core.apply.call(null,succulent.core.quil_draw_state,args);
 };
-var G__70929 = function (var_args){
+var G__38389 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__70930__i = 0, G__70930__a = new Array(arguments.length -  0);
-while (G__70930__i < G__70930__a.length) {G__70930__a[G__70930__i] = arguments[G__70930__i + 0]; ++G__70930__i;}
-  args = new cljs.core.IndexedSeq(G__70930__a,0);
+var G__38390__i = 0, G__38390__a = new Array(arguments.length -  0);
+while (G__38390__i < G__38390__a.length) {G__38390__a[G__38390__i] = arguments[G__38390__i + 0]; ++G__38390__i;}
+  args = new cljs.core.IndexedSeq(G__38390__a,0);
 } 
-return G__70929__delegate.call(this,args);};
-G__70929.cljs$lang$maxFixedArity = 0;
-G__70929.cljs$lang$applyTo = (function (arglist__70931){
-var args = cljs.core.seq(arglist__70931);
-return G__70929__delegate(args);
+return G__38389__delegate.call(this,args);};
+G__38389.cljs$lang$maxFixedArity = 0;
+G__38389.cljs$lang$applyTo = (function (arglist__38391){
+var args = cljs.core.seq(arglist__38391);
+return G__38389__delegate(args);
 });
-G__70929.cljs$core$IFn$_invoke$arity$variadic = G__70929__delegate;
-return G__70929;
+G__38389.cljs$core$IFn$_invoke$arity$variadic = G__38389__delegate;
+return G__38389;
 })()
 :succulent.core.quil_draw_state));
 });
 goog.exportSymbol('succulent.core.input', succulent.core.input);
 
-if(cljs.core.truth_(cljs.core.some.call(null,(function (p1__34217__34218__auto__){
-return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"no-start","no-start",1381488856),p1__34217__34218__auto__);
+if(cljs.core.truth_(cljs.core.some.call(null,(function (p1__30240__30241__auto__){
+return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"no-start","no-start",1381488856),p1__30240__30241__auto__);
 }),null))){
 } else {
 quil.sketch.add_sketch_to_init_list.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"fn","fn",-1175266204),succulent.core.input,new cljs.core.Keyword(null,"host-id","host-id",742376279),"succulent"], null));
@@ -1016,4 +1109,4 @@ return succulent.core.render_BANG_.call(null);
 }));
 succulent.core.render_BANG_.call(null);
 
-//# sourceMappingURL=core.js.map?rel=1478399884562
+//# sourceMappingURL=core.js.map?rel=1478404006774
