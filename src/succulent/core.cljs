@@ -15,7 +15,6 @@
   [cljs.js]))
 
 
-(js/console.log "Booted")
 
 (defn bind-input [input-atom]
   #(reset! input-atom (-> %1 .-target .-value)))
@@ -40,58 +39,113 @@
 
 ;
 (def db (atom {:mutex      {:state         0
-                              :threads       [:semaphoreA :semaphoreB]
-                              :active-thread :semaphoreA}
+                              :threads       [[:semaphoreA] [:semaphoreB]]
+                              :active-thread [:semaphoreA]}
                  :semaphoreA {
+
                               :state     0
-                              :registers {:op ""}
-                              :available [:op]
-                              :selected  :op
-                              :locked?   false}
+                              :registers { :op { :val { :curr "" :prev [] }
+                                                 :curr 0  }}
+                              :available [[:semaphoreA :registers :op :val :curr]]
+                              :row  [:semaphoreA :registers :op :val :curr]
+                              :col  [:semaphoreA :registers :op :curr]
+                              :locked?   true}
                  :semaphoreB {
-                             :state 2
-                             :registers {:r1 ""
-                                         :r2 ""
-                                         :r3 ""}
+                               :state     0
+                               :registers { :r1 { :val { :curr ""  :prev [] }
+                                                  :curr 0  }
+                                            :r2 { :val { :curr ""  :prev [] }
+                                                  :curr 0  }
+                                            :r3 { :val { :curr ""  :prev [] }
+                                                  :curr 0  } }
+                               :available [[:semaphoreB :registers :r1 :val :curr]
+                                           [:semaphoreB :registers :r2 :val :curr]
+                                           [:semaphoreB :registers :r3 :val :curr]]
+                               :row [:semaphoreB :registers :r1 :val :curr]
+                               :col [:semaphoreB :registers :r1 :curr]
+                               :locked? true }
+                 :opcode 1}))
 
-                             :available [:r1 :r2 :r3]
-                             :selected :r3
-                             :locked? true }
-                 :accumulator {:op "" :r1 "" :r2 "" :r3 "" :null ""}
-                 :opcode 0}))
 
-(defn siginterrupt []
-  (swap! db update-in [:mutex :state] bit-xor 1)
-  (swap! db update-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))
-  (swap! db update-in [:semaphoreA :state] inc)
-  (swap! db update-in [:semaphoreB :state] inc)
 
-  (swap! db update-in [:semaphoreA :locked?] not)
-  (swap! db assoc-in [:semaphoreA :selected]
-         (get (get-in @db [:semaphoreA :registers])
-              (mod (get-in @db [:semaphoreA :state]) 1)) )
-  (swap! db update-in [:semaphoreB :locked?] not)
-  (swap! db assoc-in [:semaphoreB :selected]
-         (get (get-in @db [:semaphoreB :registers])
-         (mod (get-in @db [:semaphoreB :state]) 3)) ))
 
-(defn href [resource]
-  (let [ref-ptr (get-in @db [:mutex :state])
-        threadpool (get-in @db [:mutex :threads])
-        current-owner (get threadpool ref-ptr :out-of-bounds)
-        active-thread (get-in @db [:threads current-owner])
-        semA-ptr (get-in @db [:threads active-thread :state])
-        semA-target (get (get-in @db [:threads active-thread :registers]) semA-ptr :semA-out-of-bounds)
-        semB-ptr (get-in @db [:threads active-thread :state])
-        semB-target (get (get-in @db [:threads active-thread :registers]) semB-ptr :semB-out-of-bounds)
-        active-target (if (zero? ref-ptr) semA-target semB-target)]
-    (cond
-      (= resource :active-thread) active-thread
-      (= resource :target-register) (get-in @db [:accumulator active-target])
-      (= resource :accumulator) (get-in @db [:accumulator]))))
 
-(def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""}))
-;(def keypress (r/atom nil))
+
+
+
+
+
+(defn resolve [route]
+  (get-in @db route))
+
+(defn route-to [msg]
+  (cond (= msg :thread-ref)         (get-in @db [:mutex :active-thread])
+        (= msg :reg)                (into (route-to :thread-ref) [:row])
+        (= msg :current-register)   (resolve (route-to :reg))
+        (= msg :reg-ctr)            (into (route-to :thread-ref) [:col])
+        (= msg :current-index)      (resolve (route-to :reg-ctr))
+        (= msg :opcode)             [:opcode]
+        (= msg :semaphoreA) (resolve [:semaphoreA :row])
+        (= msg :semaphoreB) (resolve [:semaphoreB :row])
+        (= msg :r3)                 [:semaphoreB :registers :r3 :val :curr]
+        (= msg :r2)                 [:semaphoreB :registers :r2 :val :curr]
+        (= msg :r1)                 [:semaphoreB :registers :r1 :val :curr]
+        (= msg :op)                 [:semaphoreA :registers :op :val :curr]))
+
+
+(defn jump-to [msg]
+  (cond
+    (= msg :reg) (resolve (route-to :current-register))
+    (= msg :curr) (resolve (route-to :current-register))
+    (= msg :prev) (dec (jump-to :currrent-index))
+    (= msg :current-target)  (resolve (route-to :current-register))
+    (= msg :prev-target) (get (jump-to :reg) (jump-to :prev))
+    (= msg :next-target) (get (jump-to :reg) (jump-to :next))
+    (= msg :r3) (get-in @db [:semaphoreB :registers :r3 :val :curr])
+    (= msg :r2) (get-in @db [:semaphoreB :registers :r2 :val :curr])
+    (= msg :r1) (get-in @db [:semaphoreB :registers :r1 :val :curr])
+    (= msg :op) (get-in @db [:semaphoreA :registers :op :val :curr])
+    (= msg :active-register) (keyword (str "r" (inc (mod (get-in @db [:semaphoreB :state]) 3))))))
+
+  (def keyboard-input (atom {:key-id "" :ascii-code "" :tag ""}))
+
+(defn lock [thread]
+    (swap! db update-in (into [] (conj thread :locked?)) bit-or 1))
+
+(defn locked? [thread]
+  (resolve (conj thread :locked?)))
+
+(defn get-opcode []
+  (let [state-bit (get-in @db [:mutex :state])
+        is-nonempty? (> (count (jump-to :current-target)) 0)
+        is-locked? (locked? (route-to :thread-ref))]
+    (js/parseInt (str state-bit (apply bit-or (into [] (map {false 0 true 1} [is-nonempty? is-locked?])))) 2)))
+
+
+
+(defn unlock [thread]
+  (do
+      (swap! db update-in (conj thread :state) inc)
+      (swap! db update-in (conj thread :locked?) not)))
+
+(defn enq [e]
+  (let [current-thread (route-to :thread-ref)]
+    (cond (locked? current-thread) (do (unlock current-thread)
+                                       (swap! db assoc-in (route-to :current-register) (get-in e [:key-id]))))))
+(defn siginterrupt [v]
+  (if (odd? (get-opcode)) (do
+                            (lock (route-to :thread-ref))
+                            (swap! db update-in [:mutex :state] bit-xor 1)
+                            (swap! db assoc-in [:mutex :active-thread] (get (get-in @db [:mutex :threads]) (get-in @db [:mutex :state])))
+                            (swap! db update-in  (conj (route-to :thread-ref) :state) inc)
+                            (swap! db assoc-in (conj (route-to :thread-ref) :row)
+                                   (get (get-in @db  (conj (route-to :thread-ref) :available))
+                                        (mod (get-in @db  (conj  (route-to :thread-ref) :state)) (count (resolve (conj (route-to :thread-ref) :available))))))
+
+                            (swap! db update-in (route-to :current-register) str v))))
+
+
+              ;(def keypress (r/atom nil))
 ;(def io (r/atom {:target nil
 ;                 :curr '()
 ;                 :prev '()
@@ -120,30 +174,30 @@
 ;
 (defn flushRegister [m]
   ; Destructively clear the associated register.
-  (swap! app-state assoc-in [:values m] ""))
+  (swap! db assoc-in (route-to m) ""))
 ;
-(defn show [arg]
-  ; Return the current value of the associated register.
-  (cond (= arg 'x) (get-in @app-state [:values :x])
-        (= arg 'y) (get-in @app-state [:values :y])
-        (= arg 'op) (get-in @app-state [:values :op])
-        (= arg 'result) (get-in @app-state [:values :result])
-        (= arg 'current-target) (get-in @app-state [:current-target])
-        (= arg 'address-bus) (get-in @app-state [:values (get-in @app-state [:address-bus])])
-        (= arg 'data-bus) (get-in @app-state [:values (get-in @app-state [:data-bus])])
-        (= arg 'control-bus) (get-in @app-state [:values (get-in @app-state [:control-bus])])
-        (= arg 'key-in) (get-in @keyboard-input [:key-id])
-        (= arg 'tape) (get-in @app-state [:values :tape])))
+;(defn show [arg]
+;  ; Return the current value of the associated register.
+;  (cond (= arg 'x) (get-in @app-state [:values :x])
+;        (= arg 'y) (get-in @app-state [:values :y])
+;        (= arg 'op) (get-in @app-state [:values :op])
+;        (= arg 'result) (get-in @app-state [:values :result])
+;        (= arg 'current-target) (get-in @app-state [:current-target])
+;        (= arg 'address-bus) (get-in @app-state [:values (get-in @app-state [:address-bus])])
+;        (= arg 'data-bus) (get-in @app-state [:values (get-in @app-state [:data-bus])])
+;        (= arg 'control-bus) (get-in @app-state [:values (get-in @app-state [:control-bus])])
+;        (= arg 'key-in) (get-in @keyboard-input [:key-id])
+;        (= arg 'tape) (get-in @app-state [:values :tape])))
 ;
 ;
 (defn get-route [reg]
-  (get-in @app-state [reg]))
+  (resolve reg))
 (defn divert-route [reg newroute]
-  (swap! app-state assoc-in [reg] newroute))
+  (swap! db assoc-in [reg] newroute))
 (defn shunt [val reg]
-  (swap! app-state update-in [:values (get-route reg)] str val))
+  (swap! db update-in (route-to reg) str val))
 (defn put [val reg]
-  (swap! app-state assoc-in [:values (get-in @app-state [reg])] (if (keyword? val)
+  (swap! db assoc-in (route-to reg) (if (keyword? val)
                                                                   val           ;don't convert kws to strings
                                                                   (str val))))
 ;
@@ -161,291 +215,126 @@
   (= val "shiftin"))
 (defn unshift? [val]
   (= val "unshift"))
-(defn can-evaluate?[]  (cond (not-any? true? (into [] (map empty? (map str (map show ['x 'y 'op]))))) :as-usual
-                             (not-any? true? (into [] (map empty? (map str (map show ['y 'op 'data-bus]))))) :as-current-continuation
+(defn can-evaluate?[]  (cond (not-any? true? (into [] (map empty? (map str (map jump-to [:r1 :r2 :op]))))) :as-usual
+                             (not-any? true? (into [] (map empty? (map str (map jump-to [:r2 :op :r3]))))) :as-current-continuation
                              :else false))
-(defn dispatch [instruction]
-  (cond (= instruction "add") +
-        (= instruction "subtract") -
-        (= instruction "divide") /
-        (= instruction "multiply") *))
 
-(defn flip-address-switch []
-  (let [current-mode (get-in @app-state [:address-bus])]
-    (if (= current-mode :x)
-      (divert-route :address-bus :y)
-      (divert-route :address-bus :x))))
 
-;
-(defn push [val p q]
-  ; mechanical instructions for carrying out sequential push operations onto the machine
-  ; to update the machine non-destructively instead, convert registers to lists, cons an
-  ; empty string to each of the lists, and point the respective bus at the head of the list
-  ;
-  (let [dispatch (fn [instruction]
-                   (cond   (= instruction "add") +
-                           (= instruction "subtract") -
-                           (= instruction "divide") /
-                           (= instruction "multiply") *))]
-    (cond (= p :to-empty)
-          (cond (= q :x-register)
-                (do
-                  (divert-route :current-target :x)
-                  (put val :current-target))
-                (= q :y-register)
-                (do
-                  (divert-route :current-target :y)
-                  (put val :current-target))
-                (= q :op-register)
-                (put val :control-bus))
-          (= p :to-non-empty)
-          (cond (= q :x-register)
-                (shunt val :current-target)
-                (= q :y-register)
-                (shunt val :current-target)
-                (= q :op-register)
-                (put val :control-bus))
-          (and (= p :to-fresh-sparkly)
-               (= q :x-register))
-          (do (flushRegister :result)
-              (flushRegister :op)
-              (flushRegister :x)
-              (flushRegister :y)
-              (divert-route :current-target :x)
-              (push val :to-empty :x-register))
-          (and (= p :to-fully-evaluated)
-               (= q :op-register))
-          (do                                       ; Try not to assume a particular data type.
-            (put (apply (dispatch (show 'op))     ; Just serialize these jumps:
-                        [(js/parseFloat (show 'x))    ; 1) push expression to output-register (we know it's well-formed)
-                         (js/parseFloat (show 'y))])  ; 2) reduce it down
-                 :data-bus)                           ; 3) clear non-empty input registers
-            (flushRegister :x)                        ; 4) allocate space in x
-            (put (show 'data-bus) :primary-register)  ; 5) put it in the box
-            (flushRegister :result)
-            (flushRegister :y)
-            (flushRegister :op)
-            (divert-route :current-target :x)
-            (push val :to-empty :op-register))
-          (and (= p :to-fully-evaluated)
-               (= q :output-register))  ; same as above, only omitting the step where we copied result to x
-          (do (put (apply (dispatch (show 'op)) [(js/parseFloat (show 'x)) (js/parseFloat (show 'y))]) :data-bus)
-              (flushRegister :x)
-              (flushRegister :y)
-              (flushRegister :op)
-              (divert-route :current-target :result))
-          (and (= p :to-previously-evaluated)
-               (= q :op-register))  ; here steps 1-4 are invariant, simply proceed with 5th step
-          (do (put (show 'data-bus) :primary-register)
-              (put val :control-bus)
-              (flushRegister :result)
-              (divert-route :current-target :x))
-          (and (= p :to-unevaluated)
-               (= q :output-register)) ; here we shunt the x register to output but don't evaluate
-          (do (put (show 'x) :data-bus)
-              (flushRegister :x)
-              (divert-route :current-target :result))
-          (and (= p :to-unevaluated)
-               (= q :output-register))
-          (do (put (show 'x) :data-bus)
-              (flushRegister :x)
-              (flushRegister :op)
-              (divert-route :current-target :result)))))
-;; no else case. just do nothing on undefined/badly-formed inputs (provided they don't break the calc)
-;; null inputs call this procedure also, but push an empty string (i.e. do nothing)
-;
-(defn bus-driver [input]
-;  ; the bus-driver's name is otto. he's a cool dude.
-;  ; he handles state changes otto-matically.
-;  ; attempts to do at a high level what a program control unit does in von neumann architecture.
-;  ; otto's responsibilities are total: he updates the address bus, control bus, data bus, and numeric registers
-;  ; from initial input to final output.
-;  ; in theory, the bus registers enable indexical (i.e. stack-based) access to value registers, but registers
-;  ; are currently implemented as strings.  so the busses are basically just static pointers for now. if that changes,
-;  ; bus accessor methods can be written to effectively control the flow of time, reverse state, and
-;  ; even reverse the order of evaluation!
-;  ;
-  (let [address-bus (show 'address-bus)
-        control-bus (show 'control-bus)
-        data-bus (show 'data-bus)
-        key-in (show 'key-in)
-        x (show 'x)
-        y (show 'y)
-        op (show 'op)
-        ans (show 'result)
-        tag (get-in @keyboard-input [:tag])
-        k (get-in @keyboard-input [:key-id])]
-    (.log js/console "Bus driver called with arg: " val)
-    (cond
-      (= tag :number) (if (empty? ans)
-                   (if (empty? y)
-                     (if (empty? op)
-                       (if (empty? x)
-                         (do (swap! app-state assoc-in [:opcode] 0)
-                             (push val :to-empty :x-register)) ;the first action
-                         (do (swap! app-state assoc-in [:opcode] 3)
-                             (push val :to-non-empty :x-register))) ;keep concatenating to x
-                       (do (swap! app-state assoc-in [:opcode] 1)
-                           (push val :to-empty :y-register))) ;update :current-target to y and assoc the new val
-                     (do (swap! app-state assoc-in [:opcode] 3)
-                         (push val :to-non-empty :y-register))) ;keep concatenating to y
-                   (do (swap! app-state assoc-in [:opcode] 5)
-                       (push val :to-fresh-sparkly :x-register))) ;clear registers, reset target to x, put val there
-      (= tag :operator) (if (empty? ans)
-                        (if (empty? y)
-                          (if (empty? op)
-                            (if (empty? x)
-                              (do (swap! app-state assoc-in [:opcode] 4)
-                                  (push "" :nothin-baby :shhh-just-the-wind)) ;don't add voids
-                              (do (swap! app-state assoc-in [:opcode] 2)
-                                  (push val :to-empty :op-register))) ;this is the usual case
-                            (do (swap! app-state assoc-in [:opcode] 2)
-                                (push val :to-non-empty :op-register))) ;if duplicate ops, take most recent
-                          (do (swap! app-state assoc-in [:opcode] 6)
-                              (push val :to-fully-evaluated :op-register))) ;chained expressions are ok (e.g. 5+3*8-2)
-                        (do (swap! app-state assoc-in [:opcode] 8)
-                            (push val :to-previously-evaluated :op-register))) ;resume chaining if the prev op was "equals"
-      (= tag :equals) (if (empty? ans)
-                    (if (empty? y)
-                      (if (empty? op)
-                        (if (empty? x)
-                          (do (swap! app-state assoc-in [:opcode] 2)
-                              (push "" :nothin-baby :shhh-just-the-wind)) ;don't evaluate voids
-                          (do (swap! app-state assoc-in [:opcode] 10)
-                              (push val :to-unevaluated :output-register))) ;let x equal itself
-                        (do (swap! app-state assoc-in [:opcode] 10)
-                            (push val :to-unevaluated :output-register))) ;stupid edge case
-                      (do (swap! app-state assoc-in [:opcode] 7)
-                          (push val :to-fully-evaluated :output-register))) ;normal evaluation flushes all but the output register
-                    (do (swap! app-state assoc-in [:opcode] 2)
-                        (push "" :nothin-baby :shhh-just-the-wind)))))) ;already evaluated, do nothing
 (def opcode
   ;an experiment in rewriting "push" as a vector of methods: we're not really doing the von-neumann bottleneck
   ;any favors by dispatching on action tags. can we force the use of direct addressing by converting the cond
   ;statement to an array of 12 procedures, and access them indexically?
   (vec [
         ;the first action
-        (fn [e] (do (divert-route :current-target :x)
-                    (put e :current-target)))
+        (fn [e] (put (get-in e [:key-id]) :r1))
+
         ;1 push to empty y register
-        (fn [e] (do (divert-route :current-target :y)
-                    (put e :current-target)))
-        ;2 push to empty op
-        (fn [e] (put e :control-bus))
-        ;3 push to a non-empty x-register
-        (fn [e] (shunt e :current-target))
+        (fn [e] (put (get-in e [:key-id]) :r2))
+        ;3 push to op reg
+        (fn [e] (put (get-in e [:key-id]) :op))
         ;4 push to a non-empty y-register
-        (fn [e] (shunt e :current-target))
+        (fn [e] (put (get-in e [:key-id]) :r2))
         ;5 push to a sparkly clean x register (triggered when "equals" is followed by a number)
         (fn [e]
-          (do (flushRegister :result)
+          (do (flushRegister :r3)
               (flushRegister :op)
-              (flushRegister :x)
-              (flushRegister :y)
+              (flushRegister :r1)
+              (flushRegister :r2)
               (divert-route :current-target :x)
-              (put e :current-target)))
-        ;6 push to fully-evaluated op register
+              (put (get-in e [:key-id]) :current-target)))
+        ;;6 push to fully-evaluated op register
         (fn [e]
           (if (can-evaluate?)
-            (do (put (apply (dispatch (show 'op))    ; Try not to assume a particular data type.  Just serialize these jumps:
-                            [(js/parseFloat (show 'x))    ; 1) push expression to output-register (we know it's well-formed)
-                             (js/parseFloat (show 'y))])   ; 2) reduce it down
-                     :data-bus)                          ; 3) clear non-empty input registers
-                (flushRegister :x)                        ; 4) allocate space in x
-                (put (show 'data-bus) :primary-register)  ; 5) box it up
-                (flushRegister :result)
-                (flushRegister :y)
+            (do (put (apply (jump-to :op)    ; Try not to assume a particular data type.  Just serialize these jumps:
+                            [(js/parseFloat (jump-to :r1) )   ; 1) push expression to output-register (we know it's well-formed)
+                             (js/parseFloat (jump-to :r2))] ) ; 2) reduce it down
+                     :r3)                          ; 3) clear non-empty input registers
+                (flushRegister :r1)                       ; 4) allocate space in x
+                                                          ; 5) box it up
+                (flushRegister :r2)
                 (flushRegister :op)
-                (divert-route :current-target :x)
-                (put e :control-bus))))
-        ;7 eval and push answer to output register
+                (swap! db update-in [:semaphoreB :state] inc))))
+        ;;7 eval and push answer to output register
         (fn []
           (if (can-evaluate?)
-            (do (put (apply (dispatch (show 'op))
-                            [(js/parseFloat (show 'x))
-                             (js/parseFloat (show 'y))])
-                     :data-bus)
-                (flushRegister :x)
-                (flushRegister :y)
+            (do (put (apply (jump-to :op)
+                            [(js/parseFloat (jump-to :r1))
+                             (js/parseFloat (jump-to :r2))])
+                     :r3)
+                (flushRegister :r1)
+                (flushRegister :r2)
                 (flushRegister :op)
-                (divert-route :current-target :result))))
-        ;8 push op to previously evaluated expression
-        (fn [e]
-          (do (put (show 'data-bus) :primary-register)
-              (put e :control-bus)
-              (flushRegister :result)
-              (divert-route :current-target :x)))
-        ;10 edge case such that x equals itself if y is empty
-        (fn []
-          (do (put (show 'x) :data-bus)
-              (flushRegister :x)
-              (divert-route :current-target :result)))
-        ;11 stupid edge case in the event the exp isn't well-formed ("5 +")
-        (fn []
-          (do (put (show 'x) :data-bus)
-              (flushRegister :x)
-              (flushRegister :op)
-              (divert-route :current-target :result)))]))
+                (swap! db update-in [:semaphoreB :state] inc))))]))
+        ;;8 push op to previously evaluated expression
+        ;(fn [e]
+        ;  (do (put (show 'data-bus) :primary-register)
+        ;      (put e :control-bus)
+        ;      (flushRegister :result)
+        ;      (divert-route :current-target :x)))
+        ;;10 edge case such that x equals itself if y is empty
+        ;(fn []
+        ;  (do (put (show 'x) :data-bus)
+        ;      (flushRegister :x)
+        ;      (divert-route :current-target :result)))
+        ;;11 stupid edge case in the event the exp isn't well-formed ("5 +")
+        ;(fn []
+        ;  (do (put (show 'x) :data-bus)
+        ;      (flushRegister :x)
+        ;      (flushRegister :op)
+        ;      (divert-route :current-target :result)))])))
 ;
 ;
-(defn shortbus [num]
+(defn shortbus [e]
   ;let's try something crazy: call methods from the vector
-  (let [address-bus (show 'address-bus)
-        control-bus (show 'control-bus)
-        data-bus (show 'data-bus)
-        key-in (show 'key-in)
-        x (show 'x)
-        y (show 'y)
-        op (show 'op)
-        ans (show 'result)]
-    (swap! app-state assoc-in [:opval] num)
+  (let [current-row (into [] (route-to :current-register))
+        index       (route-to :current-index)
+        op          (get-in @db [:opcode])
+        data-tag    (get-in @e [:tag])
+        charval     (get-in @e [:key-id])]
 
     (cond
-      (num? num) (if (empty? ans)
-                   (if (empty? y)
-                     (if (empty? op)
-                       (if (empty? x)
-                         (apply (opcode 0) [num]) ;the first action
-                         (apply (opcode 3) [num])) ;keep concatenating to x
-                       (apply (opcode 1) [num])) ;update :current-target to y and assoc the new val
-                     (apply (opcode 4) [num])) ;keep concatenating to y
-                   (apply (opcode 5) [num])) ;clear registers, reset target to x, put val there
-      (shift? num) (swap! app-state assoc-in [:shift-in] true) ;helper events for keyboard inputs
-      (unshift? num) (swap! app-state assoc-in [:shift-in] false)
-      (operator? num) (if (empty? ans)
-                        (if (empty? y)
-                          (if (empty? op)
-                            (if (empty? x)
-                              (apply (opcode -1) []) ;don't add voids
-                              (apply (opcode 2) [num])) ;typical usual case for ops
-                            (apply (opcode 2) [num])) ;if duplicate ops, we take most recent. same logic
-                          (apply (opcode 6) [num])) ;chained expressions are ok (e.g. 5+3*8-2)
-                        (apply (opcode 8) [num])) ;resume chaining if the prev op was "equals"
-      (eval? val) (if (empty? ans)
-                    (if (empty? y)
-                      (if (empty? op)
-                        (if (empty? x)
-                          (apply (opcode -1) []) ;don't evaluate voids
+      (= data-tag :number)
+                (if (empty? (jump-to :r3))
+                   (if (empty? (jump-to :r2))
+                     (if (empty? (jump-to :op))
+                       (if (empty? (jump-to :r1))
+                         (apply (opcode 0) [charval]) ;the first action
+                         (apply (opcode 3) [charval])) ;keep concatenating to x
+                       (apply (opcode 1) [charval])) ;update :current-target to y and assoc the new val
+                     (apply (opcode 4) [charval])) ;keep concatenating to y
+                   (apply (opcode 5) [charval])) ;clear registers, reset target to x, put val there
+      (= data-tag :operator)    (if (empty? (jump-to :r3))
+                           (if (empty? (jump-to :r2))
+                             (if (empty? (jump-to :op))
+                               (if (empty? (jump-to :r1))
+                              (apply (opcode 2) []) ;don't add voids
+                              (apply (opcode 2) [charval])) ;typical usual case for ops
+                            (apply (opcode 2) [charval])) ;if duplicate ops, we take most recent. same logic
+                          (apply (opcode 6) [charval])) ;chained expressions are ok (e.g. 5+3*8-2)
+                        (apply (opcode 8) [charval])) ;resume chaining if the prev op was "equals"
+      (= data-tag :equals)     (if (empty? (jump-to :r3))
+                        (if (empty? (jump-to :r2))
+                          (if (empty? (jump-to :op))
+                            (if (empty? (jump-to :r1))
+                          (apply (opcode 0) []) ;don't evaluate voids
                           (apply (opcode 10) [])) ;let x equal itself
                         (apply (opcode 11) [])) ;stupid edge case
                       (apply (opcode 7) [])) ;normal evaluation flushes all but the output register
-                    (apply (opcode -1) []))))) ;already evaluated, do nothing
+                    (apply (opcode 0) []))))) ;already evaluated, do nothing
 ;
-;
-(defn butt-stuff [arg]
-  ; implements the interface to our non-blocking I/O Monad, the bus-driver control unit
-  (do
-    (swap! keyboard-input assoc-in [:key-id] (str arg))
-    (bus-driver arg)))
 
-(defn a-simple-stateful-object [app-state input]
-  (let [target-register (get-in @app-state [:current-target])]
+(defn butt-stuff [arg]
+    (swap! keyboard-input assoc-in [:key-id] (str arg))
+    (shortbus arg))
+
+(defn a-simple-stateful-object [app input]
+  (let [target-register (get-in @app [:active-thread])]
 
 
     (do
       (sab/html [:div
                  [:div
-                  [:h1 (etc/well {} (str (get-in @app-state [target-register])))
+                  [:h1 (etc/well {} (str (get-in @app [target-register])))
                   ]
                  [:h3
                   [:button {:href    "#"
@@ -507,13 +396,8 @@
                         (d/tbody
                           (d/tr
                             (d/td (d/code {} "State Register:"))
-                            (d/td (str (get-in @keyboard-input [:key-id]))))
-                          (d/tr
-                            (d/td (d/code {} "Shift key:"))
-                            (d/td (d/code {} (str (get-in @app-state [:shift-in])))))
-                          (d/tr
-                            (d/td (d/code {} "Has interacted? "))
-                            (d/td (d/code {} (str (get-in @app-state [:has-interacted])))))))
+                            (d/td (str (get-in @keyboard-input [:key-id]))))))
+
                  ]]))))
 
 (def stringnums (set ["1" "2" "3" "4" "5" "6" "7" "8" "9" "0"]))
@@ -538,6 +422,7 @@
 ;  Object
 ;  (-keyCode [this] (.-keyCode this)))
 
+
 (defn tag [ascii-code]
   (let [num ascii-code
         operators #{42 43 45 47}
@@ -550,23 +435,22 @@
     (.addEventListener js/window "keypress"
                    (fn [e]
                      (let [character (.-key e)
-                           ascii-code (.-keyCode e)
-                           keyCode (.-code e)
-                           is-number? (not (js/isNaN (js/parseInt character)))
-                           is-operator? (op? ascii-code)]
+                           ascii-code (.-keyCode e)]
 
                          (swap! keyboard-input assoc-in [:key-id] character)
                          (swap! keyboard-input assoc-in [:ascii-code] (js/String ascii-code))
-                         (swap! keyboard-input assoc-in [:tag] (js/String (tag ascii-code)))
+                         (swap! keyboard-input assoc-in [:tag] (tag ascii-code))
                          ;(reset! keypress (Input. e))
-                         (.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))
-                         (.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])
-                                                         ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])
-                                                         ", [:tag] " (get-in @keyboard-input [:tag]))
-                         (shortbus character))))
+                         ;(.log js/console "ascii-code: " ascii-code " character: " character " number? " (not (js/isNaN (js/parseInt character))))
+                         ;(.log js/console "keyboard-input:   [:key-id] " (get-in @keyboard-input [:key-id])
+                         ;                                ", [:ascii-code] " (get-in @keyboard-input [:ascii-code])
+                         ;                                ", [:tag] " (get-in @keyboard-input [:tag]))
+
+                         (swap! db assoc-in [:opcode] (get-opcode))
+                         (shortbus @keyboard-input))))
 (defn render! []
   (.render js/ReactDOM
-           (a-simple-stateful-object app-state keyboard-input)
+           (a-simple-stateful-object db keyboard-input)
            (.getElementById js/document "app")))
 (defn quil-setup []
   ; Set frame rate to 30 frames per second.
@@ -595,11 +479,8 @@
     (zipmap [:x :y] (into [] [(* 2.5 x-scalar)
                               (* (+ 6.75 (* line-num line-height)) y-scalar)]))))
 (defn translate-target []
-  (if (= (get-in @app-state [:current-target]) :x)
-    "r1"
-    (if (= (get-in @app-state [:current-target]) :y)
-      "r2"
-      "r3")))
+  (let [index (mod (get-in @db [:semaphoreB :state]) 3)]
+    (get ["r1"  "r2"  "r3"] index)))
 
 (defn draw-rectangle
   [x1 y1 x2 y2] (comp (q/rect (* x1 x-scalar)
@@ -730,7 +611,7 @@
                               (* 1 y-scalar)
                               (* 3 x-scalar)
                               (* 3 y-scalar))
-        code (get-in @app-state [:opcode])
+        code (get-in @db [:opcode])
 
         ]
     (apply q/fill [200])
@@ -776,18 +657,17 @@
 
 
 
-
     ; move the input line over if there's a shift event
-    (if (true? (get-in @app-state [:shift-in]))
+    (if (true? (get-in @db [:shift-in]))
       (q/line (* 20 x-scalar) (* 16 y-scalar) (* 25 x-scalar) (* 14 y-scalar))
       (q/line (* 22 x-scalar) (* 16 y-scalar) (* 27 x-scalar) (* 14 y-scalar)))
     (q/line (* 32 x-scalar) (* 16 y-scalar) (* 27 x-scalar) (* 14 y-scalar))
 
-    (if (= (get-in @app-state [:current-target]) :x)
+    (if (= (mod (get-in @db [:semaphoreB :state]) 3) 0)
       (do
         (q/ellipse (* 21.25 x-scalar) (* 10.85 y-scalar) (* 0.25 x-scalar) (* 0.25 y-scalar))
         (q/line (* 15 x-scalar) (* 11.75 y-scalar) (* 20 x-scalar) (* 10.75 y-scalar)))
-      (if (= (get-in @app-state [:current-target]) :y)
+      (if (= (mod (get-in @db [:semaphoreB :state]) 3) 1)
         (do (q/ellipse (* 21.25 x-scalar) (* 11.85 y-scalar) (* 0.25 x-scalar) (* 0.25 y-scalar))
             (q/line (* 15 x-scalar) (* 11.75 y-scalar) (* 20 x-scalar) (* 11.75 y-scalar)))
         (do (q/ellipse (* 21.25 x-scalar) (* 12.85 y-scalar) (* 0.25 x-scalar) (* 0.25 y-scalar))
@@ -796,12 +676,12 @@
 
 
     ; boolean sentinel for op register
-    (if (empty? (get-in @app-state [:values :op]))
+    (if (empty? (get-in @db [:semaphoreA :registers :op :val :curr]))
       (apply q/fill [250 340 240])
       (apply q/fill [80 250 340]))
     (q/ellipse op-sentinel-x op-sentinel-y (* 2 x-scalar) (* 2 y-scalar))
     ; sentinel node for current target
-    (if (not (contains? (set [3 1 5]) (get-in @app-state [:opcode])))
+    (if  (empty? (get-in @db (resolve [:semaphoreB :row])))
       (apply q/fill [250 340 240])
       (apply q/fill [80 250 340]))
     (q/ellipse targ-x targ-y (* 2 x-scalar) (* 2 y-scalar))
@@ -816,17 +696,17 @@
     (q/text (str "ascii code:") (* 20.33 x-scalar) (* 19 y-scalar))
     (q/text (str (get-in @keyboard-input [:ascii-code])) (* 23.33 x-scalar) (* 19 y-scalar))
     (q/text "OUTPUT " (* 28.66 x-scalar) (* 17 y-scalar))
-    (q/text (str (get-in @app-state [:values (get-in @app-state [:current-target])])) (* 29.33 x-scalar) (* 18 y-scalar))
+    (q/text (str (resolve (route-to :current-target))) (* 29.33 x-scalar) (* 18 y-scalar))
     (q/text "ACCUMULATOR " (* 21 x-scalar) (* 10 y-scalar))
     (q/text "r1" (* 22 x-scalar) (* 11 y-scalar))
-    (q/text (get-in @app-state [:values :x]) (* 23 x-scalar) (* 11 y-scalar))
+    (q/text (get-in @db [:semaphoreB :registers :r1 :val :curr]) (* 23 x-scalar) (* 11 y-scalar))
     (q/text "r2" (* 22 x-scalar) (* 12 y-scalar))
-    (q/text (get-in @app-state [:values :y]) (* 23 x-scalar) (* 12 y-scalar))
+    (q/text (get-in @db [:semaphoreB :registers :r2 :val :curr]) (* 23 x-scalar) (* 12 y-scalar))
     (q/text "r3" (* 22 x-scalar) (* 13 y-scalar))
-    (q/text (get-in @app-state [:values :result]) (* 23 x-scalar) (* 13 y-scalar))
+    (q/text (get-in @db [:semaphoreB :registers :r1 :val :curr]) (* 23 x-scalar) (* 13 y-scalar))
     (q/text "ARITHMETIC CONTROL UNIT " (* 20 x-scalar) (* 6 y-scalar))
     (q/text "op" (* 22 x-scalar) (* 7.5 y-scalar))
-    (q/text (get-in @app-state [:values :op]) (* 23 x-scalar) (* 7.5 y-scalar))
+    (q/text (get-in @db [:semaphoreA :registers :op :val :curr]) (* 23 x-scalar) (* 7.5 y-scalar))
     (q/text "CONTROL UNIT" (* 2 x-scalar) (* 6 y-scalar))
     (q/text "INSTRUCTION REGISTERS" (* 1 x-scalar) (* 0.85 y-scalar))
     (q/text "0" (* 3 x-scalar) (* 3.8 y-scalar))
@@ -841,10 +721,10 @@
     (q/text "9" (* 29.75 x-scalar) (* 3.8 y-scalar))
     (q/text "10" (* 32.8 x-scalar) (* 3.8 y-scalar))
     (q/text "OPCODE" (* 10.5 x-scalar) (* 9 y-scalar))
-    (q/text (get-in @app-state [:opcode]) (* 11.5 x-scalar) (* 10.25 y-scalar))
-    (if (= (get-in @app-state [:current-target]) :x)
+    (q/text (get-in @db [:opcode]) (* 11.5 x-scalar) (* 10.25 y-scalar))
+    (if (= (mod (get-in @db [:semaphoreB :state]) 3) 0)
       (q/text "r1" (* 14.83 x-scalar) (* 11.89 y-scalar))
-      (if (= (get-in @app-state [:current-target]) :y)
+      (if (= (mod (get-in @db [:semaphoreB :state]) 3) 1)
         (q/text "r2" (* 14.83 x-scalar) (* 11.89 y-scalar))
         (q/text "r3" (* 14.83 x-scalar) (* 11.89 y-scalar))))
 
@@ -861,24 +741,28 @@
                        (q/text (print-to-console " " ";switch register to r2" "  ;and put val in r2" " " "(apply (opcode 1) [num]) " "=>  loading..." "..." " " (apply str "putting '" (get-in @keyboard-input [:key-id]) "'" "  in :r2...") " ""update complete.") 1 1))
           (= code 2) (do
                        (draw-triangle 2)
-                       (q/text (print-to-console " " ";lock r1 and update the " "  cleared op reg" " " "(apply (opcode 2) [num]) " "=>  loading..." "..." (apply str "setting op to'" (show 'op) "'...") " " "update complete.") 1 1))
+                       (q/text (print-to-console " " ";lock r1 and update the " "  cleared op reg" " " "(apply (opcode 2) [num]) " "=>  loading..." "..." (apply str "setting op to'" (jump-to :op) "'...") " " "update complete.") 1 1))
           (= code 6) (do
                        (draw-triangle 6)
-                       (q/text (print-to-console " " ";chained expression" "  (e.g. '5+4-7')" " " "(apply (opcode 6) [num]) " "=> loading..." " " "pushing vectorized " "      expression to r3..." (apply str "r3 evaluates to '" (show 'x) "'...") (apply str "copying '" (show 'x) "' to locked r1...") (apply str "setting op to '" (show 'op) "'...") " " "evaluation complete.") 1 1))
+                       (q/text (print-to-console " " ";chained expression" "  (e.g. '5+4-7')" " " "(apply (opcode 6) [num]) " "=> loading..." " " "pushing vectorized " "      expression to r3..." (apply str "r3 evaluates to '" (jump-to :r1) "'...") (apply str "copying '" (jump-to :r1) "' to locked r1...") (apply str "setting op to '" (jump-to :op) "'...") " " "evaluation complete.") 1 1))
           (= code 8) (do
                        (draw-triangle 8)
-                       (q/text (print-to-console " " ";resume chaining a " "  previously evaluated" "  expression" " " "(apply (opcode 8) [num]))" "=> loading..." " " (str "copying '" (show 'x) "' from r3 to locked r1...") "now clearing r3..." (apply str "setting op to '" (show 'op) "'") "evaluation complete.") 1 1))
+                       (q/text (print-to-console " " ";resume chaining a " "  previously evaluated" "  expression" " " "(apply (opcode 8) [num]))" "=> loading..." " " (str "copying '" (jump-to :r1) "' from r3 to locked r1...") "now clearing r3..." (apply str "setting op to '" (jump-to :op) "'") "evaluation complete.") 1 1))
           (= code 7) (do
                        (draw-triangle 7)
-                       (q/text (print-to-console " " ";evaluate normally and" "  flush the registers" " " "(apply (opcode 8) [num]))" "=> loading..." " " "pushing (op r1 r2) to r3..." (apply str "r3 evaluates to '" (show 'result) "'...") "flushing the registers..." " " "evaluation complete.") 1 1))
+                       (q/text (print-to-console " " ";evaluate normally and" "  flush the registers" " " "(apply (opcode 8) [num]))" "=> loading..." " " "pushing (op r1 r2) to r3..." (apply str "r3 evaluates to '" (jump-to :r3) "'...") "flushing the registers..." " " "evaluation complete.") 1 1))
           (= code 5) (do
                        (draw-triangle 5)
-                       (q/text (print-to-console " " ";start a new expression" " " "(apply (opcode 5) [num])" "=> loading...." " " "flushing r3..." (apply str "now putting '" (show 'x) "' in r1...") " " "update complete.") 1 1))
+                       (q/text (print-to-console " " ";start a new expression" " " "(apply (opcode 5) [num])" "=> loading...." " " "flushing r3..." (apply str "now putting '" (jump-to :r1) "' in r1...") " " "update complete.") 1 1))
           (= code 10) (do
                         (draw-triangle 10)
                         (q/text (print-to-console " " ";bad expression" "  flush registers but" "  push r1 to r3"  " " "(apply (opcode 10) [num]))" "=> loading..." " " "pushing r1 to r3..." "flushing the registers..." " " "update complete.") 1 1))
           :else (q/text (print-to-console " ""[heavy breathing]" " " " " " " "listening to keyboard " "  for numbers...") 1 1)
           )))
+
+(defn pp [x]
+  (cljs.pprint/pprint x)
+  (.log js/console (cljs.pprint/pprint x)))
 ;(apply (opcode 1) [num])) ;update :current-target to y and assoc the new val
 ;        (apply (opcode 4) [num])) ;keep concatenating to y
 ;  (apply (opcode 5) [num])) ;clear registers, reset target to x, put val there
@@ -1041,7 +925,7 @@
 ;;(add-watch y :on-change (fn [_ _ _ _] (render!)))
 ;;(add-watch op :on-change (fn [_ _ _ _] (render!)))
 ;
-(add-watch app-state :on-change (fn [_ _ _ _] (render!)))
+(add-watch db :on-change (fn [_ _ _ _] (render!)))
 (add-watch keyboard-input :on-change (fn [_ _ _ _] (render!)))
 ;(add-watch result :on-change (fn [_ _ _ _] (render!)))
 

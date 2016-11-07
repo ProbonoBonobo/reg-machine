@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06ae22b7-ef60-4cd1-a78c-a02be4027a76" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figwheel_server.log" afterPath="$PROJECT_DIR$/figwheel_server.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.cljc.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.cljc.cache.edn" />
@@ -141,6 +143,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/util.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/util.js" />
@@ -184,10 +187,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/succulent/core.cljs" afterPath="$PROJECT_DIR$/src/succulent/core.cljs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/succulent.iml" afterPath="$PROJECT_DIR$/succulent.iml" />
     </list>
     <ignored path="reg2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,20 +212,18 @@
       <file leaf-file-name="core.cljs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/succulent/core.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3002">
-              <caret line="158" column="14" selection-start-line="158" selection-start-column="14" selection-end-line="158" selection-end-column="14" />
-              <folding>
-                <marker date="1478404004000" expanded="true" signature="1022:1916" ph="..." />
-              </folding>
+            <state relative-caret-position="-2812">
+              <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".nrepl-port" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.nrepl-port">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="589">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -239,8 +242,8 @@
       <file leaf-file-name="figwheel_server.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/figwheel_server.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="3436" column="0" selection-start-line="3436" selection-start-column="0" selection-end-line="3436" selection-end-column="0" />
+            <state relative-caret-position="136230">
+              <caret line="10027" column="0" selection-start-line="10027" selection-start-column="0" selection-end-line="10027" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -248,9 +251,6 @@
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="0">
@@ -259,6 +259,9 @@
               </first_editor>
               <second_editor />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -308,6 +311,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1440" />
     <option name="height" value="900" />
@@ -337,9 +347,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -442,7 +449,10 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="NBKnowledgePane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,7 +468,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../reframe-template" />
   </component>
   <component name="ReplState" timestamp="1478398894051">{:repl-history {:ide [], :local [&quot;(+ 33 3)&quot; &quot;app-state&quot; &quot;(ns succulent.core \&quot;0.1.1-SNAPSHOT\&quot;\n  (:require\n    [sablono.core :as sab]\n    [reagent.core :as r]\n    [om-bootstrap.button :as b]\n    [om-bootstrap.table :refer [table]]\n    [om-tools.dom :as d]\n    [om-bootstrap.grid :as g]\n    [om-bootstrap.random :as etc]\n    [om.core :as om :include-macros true]\n    [om.dom :as dom :include-macros true]\n    [quil.core :as q :include-macros true]\n    [quil.middleware :as m]))\n\n\n(enable-console-print!)\n\n\n(js/console.log \&quot;Booted\&quot;)\n\n(defn bind-input [input-atom]\n  #(reset! input-atom (-&gt; %1 .-target .-value)))\n\n(defn some-component []\n  (let [value-atom (r/atom nil)]\n    [:input {:type \&quot;text\&quot; :on-change (bind-input value-atom)}]))\n\n\n(def app-state\n  (atom\n    {:values             {:x \&quot;\&quot; :y \&quot;\&quot; :op \&quot;\&quot; :result \&quot;\&quot; :tape [\&quot;\&quot;] }\n     :data-bus           :result\n     :control-bus        :op\n     :address-bus        :x\n     :primary-register   :x\n     :secondary-register :y\n     :current-target     :x\n     :shift-in           false\n     :opval              \&quot;\&quot;\n     :opcode             nil }))&quot; &quot;(ns succulent.core \&quot;0.1.1-SNAPSHOT\&quot;\n  (:require\n    [sablono.core :as sab]\n    [reagent.core :as r]\n    [om-bootstrap.button :as b]\n    [om-bootstrap.table :refer [table]]\n    [om-tools.dom :as d]\n    [om-bootstrap.grid :as g]\n    [om-bootstrap.random :as etc]\n    [om.core :as om :include-macros true]\n    [om.dom :as dom :include-macros true]\n    [quil.core :as q :include-macros true]\n    [quil.middleware :as m]))&quot;], :remote []}}</component>
-  <component name="RunManager" selected="Clojure REPL.REPL for succulent">
+  <component name="RunManager" selected="Clojure Application.core">
     <configuration default="false" name="core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="succulent" />
       <setting name="path" value="$PROJECT_DIR$/src/succulent/core.cljs" />
@@ -490,10 +500,7 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -516,10 +523,7 @@
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AppleScriptRunType" factoryName="Run AppleScript" logEvents="false">
       <method />
@@ -929,12 +933,14 @@
       <updated>1478135033396</updated>
       <workItem from="1478135035256" duration="22267000" />
       <workItem from="1478185399569" duration="5940000" />
-      <workItem from="1478399335292" duration="4384000" />
+      <workItem from="1478399335292" duration="42789000" />
+      <workItem from="1478447531348" duration="378000" />
+      <workItem from="1478450022523" duration="11897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32591000" />
+    <option name="totallyTimeSpent" value="83271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -968,6 +974,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -992,9 +999,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1478404004000" expanded="true" signature="1022:1916" ph="..." />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +1019,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.lein-repl-history">
+    <entry file="file://$PROJECT_DIR$/figwheel_server.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136230">
+          <caret line="7170" column="0" selection-start-line="7170" selection-start-column="0" selection-end-line="7170" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/succulent/core.cljs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1014,6 +1065,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.lein-repl-history" />
     <entry file="file://$PROJECT_DIR$/figwheel_server.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15390">
@@ -1023,9 +1083,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -1034,6 +1091,9 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
@@ -1056,16 +1116,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <marker date="1478404004000" expanded="true" signature="1022:1916" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -1074,6 +1129,9 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
@@ -1092,44 +1150,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.nrepl-port">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.lein-repl-history">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.lein-repl-history" />
     <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1140,10 +1168,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/figwheel_server.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="3436" column="0" selection-start-line="3436" selection-start-column="0" selection-end-line="3436" selection-end-column="0" />
+        <state relative-caret-position="136230">
+          <caret line="10027" column="0" selection-start-line="10027" selection-start-column="0" selection-end-line="10027" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
@@ -1154,13 +1196,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/succulent/core.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3002">
-          <caret line="158" column="14" selection-start-line="158" selection-start-column="14" selection-end-line="158" selection-end-column="14" />
-          <folding>
-            <marker date="1478404004000" expanded="true" signature="1022:1916" ph="..." />
-          </folding>
+        <state relative-caret-position="-2812">
+          <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
