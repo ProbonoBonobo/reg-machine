@@ -16,7 +16,7 @@
   <scm>
     <connection>scm:git:git://github.com/ProbonoBonobo/reg-machine.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/ProbonoBonobo/reg-machine.git</developerConnection>
-    <tag>6d1adf4d6a6d6fdb0cd89d2aef619281d39c737c
+    <tag>470c8d14fd4494de8873ffa24fe671cb146ba06a
 </tag>
     <url>https://github.com/ProbonoBonobo/reg-machine</url>
   </scm>
@@ -59,6 +59,9 @@
       </releases>
     </repository>
   </repositories>
+  <dependencyManagement>
+    <dependencies/>
+  </dependencyManagement>
   <dependencies>
     <dependency>
       <groupId>devcards</groupId>
@@ -81,60 +84,9 @@
       <version>1.9.227</version>
     </dependency>
     <dependency>
-      <groupId>cljsjs</groupId>
-      <artifactId>react</artifactId>
-      <version>15.0.1-1</version>
-    </dependency>
-    <dependency>
-      <groupId>cljsjs</groupId>
-      <artifactId>react-dom</artifactId>
-      <version>15.3.1-0</version>
-    </dependency>
-    <dependency>
-      <groupId>reagent</groupId>
-      <artifactId>reagent</artifactId>
-      <version>0.6.0</version>
-      <exclusions>
-        <exclusion>
-          <groupId>cljsjs</groupId>
-          <artifactId>react</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>sablono</groupId>
-      <artifactId>sablono</artifactId>
-      <version>0.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>compojure</groupId>
-      <artifactId>compojure</artifactId>
-      <version>1.4.0</version>
-    </dependency>
-    <dependency>
-      <groupId>enlive</groupId>
-      <artifactId>enlive</artifactId>
-      <version>1.1.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.omcljs</groupId>
-      <artifactId>om</artifactId>
-      <version>0.8.8</version>
-    </dependency>
-    <dependency>
-      <groupId>racehub</groupId>
-      <artifactId>om-bootstrap</artifactId>
-      <version>0.6.1</version>
-    </dependency>
-    <dependency>
-      <groupId>environ</groupId>
-      <artifactId>environ</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>quil</groupId>
-      <artifactId>quil</artifactId>
-      <version>2.2.6</version>
+      <groupId>org.clojure</groupId>
+      <artifactId>core.async</artifactId>
+      <version>0.2.391</version>
     </dependency>
   </dependencies>
 </project>

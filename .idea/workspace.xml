@@ -2,19 +2,243 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06ae22b7-ef60-4cd1-a78c-a02be4027a76" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_yahoo_platform_yui_yuicompressor_2_4_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__garden_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/.repl-session1.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__bouncycastle_bcmail_jdk14_138.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__bouncycastle_bcprov_jdk14_138.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clj_time_0_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cljsjs_react_15_0_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cljsjs_react_dom_15_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clout_2_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_lowagie_itext_2_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_codec_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_fileupload_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_io_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__compojure_1_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_equality_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__crypto_random_1_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__de_kotka_lazymap_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__enlive_1_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__environ_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__instaparse_1_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__joda_time_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__medley_0_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_bouncycastle_bcmail_jdk14_1_38.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_bouncycastle_bcprov_jdk14_1_38.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_bouncycastle_bctsp_jdk14_1_38.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_async_0_2_374.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_cache_0_6_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_core_memoize_0_5_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_data_priority_map_0_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_0_6_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_analyzer_jvm_0_6_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_tools_macro_0_1_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_jsoup_jsoup_1_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_omcljs_om_0_8_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__prismatic_om_tools_0_3_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__prismatic_plumbing_0_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__prismatic_schema_0_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__quil_2_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__quil_gluegen_rt_fat_2_1_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__quil_jogl_all_fat_2_1_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__quil_processing_core_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__quil_processing_dxf_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__quil_processing_js_1_4_8_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__quil_processing_pdf_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__racehub_om_bootstrap_0_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__reagent_0_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_codec_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_core_1_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__sablono_0_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.nrepl-port" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.cljc.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.cljc.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.cljc.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.cljc.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.cljc.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/goog/crypt/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/goog/crypt/crypt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/goog/string/stringformat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/goog/ui/idgenerator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/core.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/core.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/react-dom-server.inc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/react-dom.inc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/react.inc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.cljc.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.cljc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.cljc.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.cljs.cache.edn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/succulent/core.cljs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/succulent-0.1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/replstate.xml" afterPath="$PROJECT_DIR$/.idea/replstate.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/figwheel_server.log" afterPath="$PROJECT_DIR$/figwheel_server.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.cljc.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.cljc.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/analyzer.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.cljc.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.cljc.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/compiler.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.cljc.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.cljc.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core$macros.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/.figwheel-compile-stamp" afterPath="$PROJECT_DIR$/resources/public/cljs/out/.figwheel-compile-stamp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async.js.map" />
@@ -32,11 +256,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async/impl/protocols.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async/impl/protocols.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async/impl/timers.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async/impl/timers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async/impl/timers.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/core/async/impl/timers.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/env.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/js.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/pprint.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/pprint.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/pprint.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/pprint.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/pprint.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/pprint.js.map" />
@@ -45,28 +264,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/repl.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/repl.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/repl.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/repl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/repl.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/repl.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/source_map/base64_vlq.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec/impl/gen.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec/impl/gen.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec/impl/gen.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/spec/impl/gen.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tagged_literals.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/commons.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/impl/utils.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs/tools/reader/reader_types.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/cljs_deps.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/cljs_deps.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/clojure/set.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/clojure/set.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/clojure/set.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/clojure/set.js.map" />
@@ -89,47 +291,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/figwheel/client/utils.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/figwheel/client/utils.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/figwheel/client/utils.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/figwheel/client/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/figwheel/client/utils.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/figwheel/client/utils.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/core.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om/core.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om/core.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om/dom.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/button.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/grid.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/mixins.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/random.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/table.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/types.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_bootstrap/util.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/core.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/dom.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/om_tools/mixin.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/core.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/plumbing/fnk/schema.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/core.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/middleware.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/middleware.js" />
@@ -143,51 +304,21 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/middlewares/navigation_3d.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/sketch.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/util.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/quil/util.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/quil/util.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/core.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/debug.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/dom/server.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/batching.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/template.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/impl/util.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/interop.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/reagent/ratom.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/core.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/interpreter.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.cljc.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.cljc.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/sablono/util.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/schema/core.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.cljs.cache.edn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/schema/utils.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.cljs" afterPath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.cljs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.cljs.cache.edn" afterPath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.cljs.cache.edn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js" afterPath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js.map" afterPath="$PROJECT_DIR$/resources/public/cljs/out/succulent/core.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/index.html" afterPath="$PROJECT_DIR$/resources/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/succulent/core.cljs" afterPath="$PROJECT_DIR$/src/succulent/core.cljs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/succulent.iml" afterPath="$PROJECT_DIR$/succulent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/succulent/succulent/pom.properties" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/succulent/succulent/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stale/leiningen.core.classpath.extract-native-dependencies" afterPath="$PROJECT_DIR$/target/stale/leiningen.core.classpath.extract-native-dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stale/leiningen.figwheel.clean-on-dependency-change" afterPath="$PROJECT_DIR$/target/stale/leiningen.figwheel.clean-on-dependency-change" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/succulent/core_test.cljs" afterPath="$PROJECT_DIR$/test/succulent/core_test.cljs" />
     </list>
     <ignored path="reg2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -212,25 +343,38 @@
       <file leaf-file-name="core.cljs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/succulent/core.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2812">
-              <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="46">
+              <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+              <folding>
+                <marker date="1479344223000" expanded="true" signature="363:428" ph="..." />
+                <marker date="1479344223000" expanded="true" signature="71351:71881" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name=".repl-session1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/.repl-session1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="425160">
+              <caret line="17715" column="0" selection-start-line="17715" selection-start-column="0" selection-end-line="17715" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core_test.cljs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
+      <file leaf-file-name="core.cljc" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojurescript/1.9.227/clojurescript-1.9.227.jar!/cljs/core.cljc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45048">
+              <caret line="1877" column="15" selection-start-line="1877" selection-start-column="15" selection-end-line="1877" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/public/tests.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -239,18 +383,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="figwheel_server.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/figwheel_server.log">
+      <file leaf-file-name="tests.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/runners/tests.cljs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136230">
-              <caret line="10027" column="0" selection-start-line="10027" selection-start-column="0" selection-end-line="10027" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="core_test.cljs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-181">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="figwheel_server.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/figwheel_server.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413520">
+              <caret line="27317" column="0" selection-start-line="27317" selection-start-column="0" selection-end-line="27317" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="0">
@@ -260,32 +437,26 @@
               <second_editor />
             </state>
           </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="-325">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Text File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -298,9 +469,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/figwheel_server.log" />
+        <option value="$PROJECT_DIR$/src/succulent/trees.cljs" />
+        <option value="$PROJECT_DIR$/.nrepl-port" />
+        <option value="$PROJECT_DIR$/src/.repl-session1.txt" />
+        <option value="$PROJECT_DIR$/test/succulent/core_test.cljs" />
         <option value="$PROJECT_DIR$/resources/public/index.html" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/figwheel_server.log" />
         <option value="$PROJECT_DIR$/src/succulent/core.cljs" />
       </list>
     </option>
@@ -322,6 +497,109 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Google App Engine (Python)</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -329,7 +607,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -347,6 +625,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="NBKnowledgePane" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -396,6 +678,10 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runners" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -408,6 +694,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stale" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reg2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reg2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reg2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reg2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,35 +767,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="NBKnowledgePane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reframe-template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
   </component>
-  <component name="ReplState" timestamp="1478398894051">{:repl-history {:ide [], :local [&quot;(+ 33 3)&quot; &quot;app-state&quot; &quot;(ns succulent.core \&quot;0.1.1-SNAPSHOT\&quot;\n  (:require\n    [sablono.core :as sab]\n    [reagent.core :as r]\n    [om-bootstrap.button :as b]\n    [om-bootstrap.table :refer [table]]\n    [om-tools.dom :as d]\n    [om-bootstrap.grid :as g]\n    [om-bootstrap.random :as etc]\n    [om.core :as om :include-macros true]\n    [om.dom :as dom :include-macros true]\n    [quil.core :as q :include-macros true]\n    [quil.middleware :as m]))\n\n\n(enable-console-print!)\n\n\n(js/console.log \&quot;Booted\&quot;)\n\n(defn bind-input [input-atom]\n  #(reset! input-atom (-&gt; %1 .-target .-value)))\n\n(defn some-component []\n  (let [value-atom (r/atom nil)]\n    [:input {:type \&quot;text\&quot; :on-change (bind-input value-atom)}]))\n\n\n(def app-state\n  (atom\n    {:values             {:x \&quot;\&quot; :y \&quot;\&quot; :op \&quot;\&quot; :result \&quot;\&quot; :tape [\&quot;\&quot;] }\n     :data-bus           :result\n     :control-bus        :op\n     :address-bus        :x\n     :primary-register   :x\n     :secondary-register :y\n     :current-target     :x\n     :shift-in           false\n     :opval              \&quot;\&quot;\n     :opcode             nil }))&quot; &quot;(ns succulent.core \&quot;0.1.1-SNAPSHOT\&quot;\n  (:require\n    [sablono.core :as sab]\n    [reagent.core :as r]\n    [om-bootstrap.button :as b]\n    [om-bootstrap.table :refer [table]]\n    [om-tools.dom :as d]\n    [om-bootstrap.grid :as g]\n    [om-bootstrap.random :as etc]\n    [om.core :as om :include-macros true]\n    [om.dom :as dom :include-macros true]\n    [quil.core :as q :include-macros true]\n    [quil.middleware :as m]))&quot;], :remote []}}</component>
-  <component name="RunManager" selected="Clojure Application.core">
-    <configuration default="false" name="core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
-      <module name="succulent" />
-      <setting name="path" value="$PROJECT_DIR$/src/succulent/core.cljs" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="$PROJECT_DIR$/src/succulent" />
-      <setting name="repl" value="false" />
-      <method />
-    </configuration>
+  <component name="ReplState" timestamp="1479344319636">{:repl-history {:ide [], :local [&quot;db&quot; &quot;(defn load-inst [subroutine]\n  (do\n    (swap! db assoc-in [:queue :val] (into (get-in @db [:queue :val]) subroutine))\n    (swap! db update-in [:queue :rear-ptr] + (count (into [] subroutine)))\n    (swap! db assoc-in [:queue :state] 2)))\n&quot; &quot;()(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr]}\n                 :queue {:val []\n                         :front-ptr 0\n                         :rear-ptr 0\n                         :state 0\n                         :children []}}))&quot; &quot;ref&quot; &quot;(defn refpath [t]\n  (if (contains? (into #{} (keys (get-in @db :refs))) t)\n    (get-in @db :refs)\n    :unknown))&quot; &quot;(defn refpath [t]\n  (if (contains? (into #{} (keys (get-in @db [:refs]))) t)\n    (get-in @db [:refs t])\n    :unknown))&quot; &quot;:(defn refpath [t]\n   (if (contains? (into #{} (keys (get-in @db [:refs]))) t)\n     (get-in @db [:refs t])\n     :unknown))\n\n(defn resolve [path]\n  (if (and (keyword? path)\n           (contains? (into #{} (keys (get-in @db [:refs]))) path))\n    (get-in @db (refpath path))\n    (get-in @db (path))))&quot; &quot;(defn refpath [t]\n  (if (contains? (into #{} (keys (get-in @db [:refs]))) t)\n    (get-in @db [:refs t])\n    :unknown))\n\n(defn resolve [path]\n  (if (and (keyword? path)\n           (contains? (into #{} (keys (get-in @db [:refs]))) path))\n    (get-in @db (refpath path))\n    (get-in @db (path))))&quot; &quot;(resolve :r1)&quot; &quot;(defn resolve [path]\n  (if (and (keyword? path)\n           (contains? (into #{} (keys (get-in @db [:refs]))) path))\n    (get-in @db (refpath path))\n    (get-in @db path)))&quot; &quot;(refpath :front-ptr)&quot; &quot;(resolve :rear-ptr)&quot; &quot;(resolve [:queue :val])&quot; &quot;(take 1 (resolve [:queue :val]))&quot; &quot;(take-while #(not (= (resolve :front-ptr) (resolve :rear-ptr))) (resolve [:queue :val]))&quot; &quot;(take-while (not (= (resolve :front-ptr) (resolve :rear-ptr))) (resolve [:queue :val]))&quot; &quot;(take-while (&lt; (resolve :front-ptr) (resolve :rear-ptr)) (resolve [:queue :val]))&quot; &quot;(take-while true? (resolve [:queue :val]))&quot; &quot;(take-while true (resolve [:queue :val]))&quot; &quot;(take-while #(apply (cadr %) (cadar %)) \n            (resolve [:queue :val]))&quot; &quot;(nth (resolve [:queue :val]) 2)&quot; &quot;(caar (nth (resolve [:queue :val]) 2))&quot; &quot;(car (nth (resolve [:queue :val]) 2)&quot; &quot;(car (nth (resolve [:queue :val]) 2))&quot; &quot;(cdr (nth (resolve [:queue :val]) 2))&quot; &quot;(second\n  (nth (resolve [:queue :val]) 2))&quot; &quot;(boolean? true)&quot; &quot;(bool? true)&quot; &quot;(eq? 3 4)&quot; &quot;(equal? 4 3)&quot; &quot;(= 3 2)&quot; &quot;(= true 1)&quot; &quot;(== true 1)&quot; &quot;(defn boolean? [x]\n  (or (true? x) (false? x)))\n\n(defn int-&gt;bool [i]\n  (if (and (number? i)\n           (= 1 i))\n    true\n    false))\n\n(defn bool-&gt;int [b]\n  (if (boolean? b)\n    (if (true? b)\n      1\n      0)\n    -1))\n&quot; &quot;(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr] :queue-val [:queue :val] :queue-state [:queue :state]}\n               :queue {:val []\n                       :front-ptr 0\n                       :rear-ptr 0\n                       :state 0\n                       :children []}}))&quot; &quot;(nth (resolve :queue-val) (resolve :front-ptr))&quot; &quot;(constantly \&quot;empty\&quot;)&quot; &quot;(apply constantly [\&quot;empty\&quot;])&quot; &quot;(apply take [1 (constantly \&quot;empty\&quot;)])&quot; &quot;(def empty (constantly \&quot;Empty!\&quot;))&quot; &quot;(take 1 empty)&quot; &quot;(take 5 [empty])&quot; &quot;(apply empty [])&quot; &quot;\n(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr] :queue-val [:queue :val] :queue-state [:queue :state]}\n               :queue {:val [[(constantly :empty) [])]]\n:front-ptr 0\n:rear-ptr 0\n:state 0\n:children []}}))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (apply f args)\n    (swap! db update-in (refpath :front-ptr) inc)\n    (swap! db update-in (refpath :queue-state) (bool-&gt;int\n                                                 (= (resolve :front-ptr)\n                                                    (resolve :rear-ptr))))))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (do\n      (apply f args)\n      (swap! db update-in (refpath :front-ptr) inc)\n      (swap! db update-in (refpath :queue-state) (bool-&gt;int\n                                                   (= (resolve :front-ptr)\n                                                      (resolve :rear-ptr)))))))&quot; &quot;(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr] :queue-val [:queue :val] :queue-state [:queue :state]}\n               :queue {:val [[(constantly :empty) []]]\n                       :front-ptr 0\n                       :rear-ptr 0\n                       :state 0\n                       :children []}}))&quot; &quot;(resolve :front-ptr)&quot; &quot;(resolve :queue-val)&quot; &quot;(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr] :queue-val [:queue :val] :queue-state [:queue :state]}\n               :queue {:val [[str [\&quot;Empty!\&quot;]]]\n                       :front-ptr 0\n                       :rear-ptr 0\n                       :state 0\n                       :children []}}))&quot; &quot;(defn bool-&gt;int [b]\n  (if (boolean? b)\n    (if (true? b)\n      1\n      0)))&quot; &quot;(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr] :queue-val [:queue :val] :queue-state [:queue :state]}\n               :queue {:val [[str [\&quot;Empty!\&quot;]]]\n                       :front-ptr 0\n                       :rear-ptr 1\n                       :state 0\n                       :children []}}))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (str f \&quot;, \&quot; args)))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (apply f args)))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (do\n      (apply f args)\n      (swap! db update-in (refpath :front-ptr) inc))))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (do\n      (apply f args)\n      (swap! db update-in (refpath :front-ptr) inc)\n      (swap! db update-in (refpath :queue-state)  (= (resolve :front-ptr)\n                                                     (resolve :rear-ptr))))))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (do\n      (apply f args)\n      (swap! db update-in (refpath :front-ptr) inc)\n      (swap! db assoc-in (refpath :queue-state)  (= (resolve :front-ptr)\n                                                    (resolve :rear-ptr))))))&quot; &quot;(type true)&quot; &quot;(defn ^boolean boolean\n  \&quot;Coerce to boolean\&quot;\n  [x]\n  (cond\n    (nil? x) false\n    (false? x) false\n    :else true))&quot; &quot;(defn ^boolean boolean\n  \&quot;Coerce to boolean\&quot;\n  [x]\n  (cond\n    (zero? x) false\n    (empty? x) false\n    (nil? x) false\n    (false? x) false\n    :else true))&quot; &quot;(defn ^boolean boolean\n  \&quot;Coerce to boolean\&quot;\n  [x]\n  (cond\n    (zero? x) false\n    (nil? x) false\n    (false? x) false\n    :else true))&quot; &quot;(boolean 1)&quot; &quot;(boolean 0)&quot; &quot;(boolean \&quot;\&quot;)&quot; &quot;(zero? \&quot;\&quot;)&quot; &quot;(count 0)&quot; &quot;(defn int-&gt;bool [i]\n  (cond\n    (not (number? i)) nil\n    (zero? i) false\n    (&gt; i 0) true\n    :else nil))&quot; &quot;(int-&gt;bool 3)&quot; &quot;(defn boolean? [x]\n  (or (true? x) (false? x)))\n\n(defn int-&gt;bool [i]\n  (cond\n    (not (number? i)) nil\n    (zero? i) false\n    (&gt; i 0) true\n    :else nil))\n\n(defn bool-&gt;int [b]\n  (cond\n    (not (boolean? b)) nil\n    (true? b) 1\n    (false? b) 0\n    :else nil))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (do\n      (apply f args)\n      (swap! db update-in (refpath :front-ptr) inc)\n      (swap! db assoc-in (refpath :queue-state) (bool-&gt;int\n                                                  (= (resolve :front-ptr)\n                                                     (resolve :rear-ptr)))))))&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (do\n      (apply f args)\n      (swap! db update-in (refpath :front-ptr) inc)\n      (swap! db assoc-in (refpath :queue-state) (bit-not\n                                                  (bool-&gt;int\n                                                    (= (resolve :front-ptr)\n                                                       (resolve :rear-ptr))))))))&quot; &quot;(bit-flip 1)&quot; &quot;(bit-flip 1 0)&quot; &quot;(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr] :queue-val [:queue :val] :queue-state [:queue :state]}\n               :queue {:val [[str [\&quot;Empty!\&quot;]] [str [\&quot;Empty!\&quot;]]]\n                       :front-ptr 0\n                       :rear-ptr 1\n                       :state 0\n                       :children []}}))\n&quot; &quot;(defn boolean? [x]\n  (or (true? x) (false? x)))\n\n(defn int-&gt;bool [i]\n  (cond\n    (not (number? i)) nil\n    (zero? i) false\n    (&gt; i 0) true\n    :else nil))\n\n(defn bool-&gt;int [b]\n  (cond\n    (not (boolean? b)) nil\n    (true? b) 1\n    (false? b) 0\n    :else nil))\n&quot; &quot;(reset-db)&quot; &quot;(bool-&gt;int (= (resolve :front-ptr) (resolve :rear-ptr)))&quot; &quot;(bit-flip 0 0)&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)]\n    (do\n      (apply f args)\n      (swap! db update-in (refpath :front-ptr) inc)\n      (swap! db assoc-in (refpath :queue-state) (if (= (resolve :front-ptr)\n                                                       (resolve :rear-ptr))\n                                                  0\n                                                  1)))))&quot; &quot;(defn IR [opcode]\n  (let [instructions {0 [[make-root-component [:registers]]\n                         [make-nested-component [:registers :r1]]\n                         [make-nested-component [:registers :op]]\n                         [make-nested-component [:registers :r2]]\n                         [make-nested-component [:registers :r3]]\n                         [str [\&quot;Empty!\&quot;]]]}]\n    (load-inst (get instructions opcode))))&quot; &quot;(contains? {:b 4 :c 5} :c)&quot; &quot;\n(defn make-root-component\n  ([k] (if-not (in-refs? k)\n         (do\n           (swap! db assoc k {:idx k :state 0 :val 0 :children {}})\n           (swap! db update-in [:refs] merge {k [k]}))\n         \&quot;Not overwriting the existing root component\&quot;))\n  ([k v] (if-not (in-refs? k)\n           (do\n             (swap! db assoc k v)\n             (swap! db update-in [:refs] merge {k [k]})))\n   \&quot;Not overwriting the existing root component\&quot;))\n\n(defn make-nested-component\n  ([parent k]\n   (let [root       (get-in @db [parent])\n         siblings   (get-in @db (into [] [parent :children]))\n         next-index (count siblings)]\n     (if-not (in-refs? k)\n       (do\n         (swap! db update-in [parent :children] conj {next-index {:idx k :state 0 :val 0 :children {}}})\n         (swap! db update-in [:refs] merge {k (into [] [parent :children next-index])}))\n       \&quot;Not overwriting the existing component\&quot;))))\n&quot; &quot;(defn in-refs? [k]\n  (contains? (get-in @db [:refs]) k))&quot; &quot;(defn make-root-component\n  ([k] (if-not (in-refs? k)\n         (do\n           (swap! db assoc k {:idx k :state 0 :val 0 :children {}})\n           (swap! db update-in [:refs] merge {k [k]}))\n         \&quot;Not overwriting the existing root component\&quot;))\n  ([k v] (if-not (in-refs? k)\n           (do\n             (swap! db assoc k v)\n             (swap! db update-in [:refs] merge {k [k]})))\n   \&quot;Not overwriting the existing root component\&quot;))\n\n(defn make-nested-component\n  ([parent k]\n   (let [root       (get-in @db [parent])\n         siblings   (get-in @db (into [] [parent :children]))\n         next-index (count siblings)]\n     (if-not (in-refs? k)\n       (do\n         (swap! db update-in [parent :children] conj {next-index {:idx k :state 0 :val 0 :children {}}})\n         (swap! db update-in [:refs] merge {k (into [] [parent :children next-index])}))\n       \&quot;Not overwriting the existing component\&quot;))))\n&quot; &quot;(make-nested-component :registers \&quot;balls\&quot;)&quot; &quot;(make-nested-component :registers :r1)&quot; &quot;(defn process-queue []\n  (let [next-instruction (nth (resolve :queue-val) (resolve :front-ptr))\n        f (first next-instruction)\n        args (second next-instruction)\n        has-next? (int-&gt;bool (resolve :queue-state))]\n    (if has-next?\n      (do\n        (apply f args)\n        (swap! db update-in (refpath :front-ptr) inc)\n        (swap! db assoc-in (refpath :queue-state) (if (= (resolve :front-ptr)\n                                                         (resolve :rear-ptr))\n                                                    0\n                                                    1)))\n      :update-complete)))&quot; &quot;(def db (atom {:refs {:queue [:queue] :front-ptr [:queue :front-ptr] :rear-ptr [:queue :rear-ptr] :queue-val [:queue :val] :queue-state [:queue :state]}\n               :queue {:val [[str [\&quot;Empty!\&quot;]] [str [\&quot;Empty!\&quot;]]]\n                       :front-ptr 0\n                       :rear-ptr 1\n                       :state 0\n                       :children []}}))&quot; &quot;(IR 0)&quot; &quot;(process-queue)&quot; &quot;(active-register)&quot; &quot;(defprotocol Dog\n  (sit [this]\n    (bark [this])\n    (eat [this]\n         (deftype Terrier\n           Dog\n           (sit [this]\n             (prn \&quot;sitting\&quot;))\n           (bark [this]\n             (prn \&quot;woof!\&quot;))\n           (eat [this]\n             (prn \&quot;nom nom nom!\&quot;)))\n         (defn new-terrier []\n           (Terrier.)))))&quot; &quot;(defprotocol Dog\n  (sit [this])\n    (bark [this])\n    (eat [this]))\n         (deftype Terrier\n           Dog\n           (sit [this]\n             (prn \&quot;sitting\&quot;))\n           (bark [this]\n             (prn \&quot;woof!\&quot;))\n           (eat [this]\n             (prn \&quot;nom nom nom!\&quot;)))\n         (defn new-terrier []\n           (Terrier.))&quot; &quot;(defprotocol Dog\n  (sit [this])\n  (bark [this])\n  (eat [this]))&quot; &quot;(deftype Terrier\n  Dog\n  (sit [this]\n    (prn \&quot;sitting\&quot;))\n  (bark [this]\n    (prn \&quot;woof!\&quot;))\n  (eat [this]\n    (prn \&quot;nom nom nom!\&quot;)))&quot; &quot;(deftype Terrier []\n  Dog\n  (sit [this]\n    (prn \&quot;sitting\&quot;))\n  (bark [this]\n    (prn \&quot;woof!\&quot;))\n  (eat [this]\n    (prn \&quot;nom nom nom!\&quot;)))&quot; &quot;(defn new-terrier []\n  (Terrier.))&quot; &quot;()&quot; &quot;(def terrier (new-terrier))&quot; &quot;(bark terrier)&quot; &quot;(in-ns 'succulent.core)&quot;], :remote []}}</component>
+  <component name="RunManager" selected="Clojure REPL.REPL for succulent">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -500,7 +805,10 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -523,7 +831,10 @@
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
-      <method />
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="AppleScriptRunType" factoryName="Run AppleScript" logEvents="false">
       <method />
@@ -559,6 +870,13 @@
       <setting name="parameters" value="" />
       <setting name="workingDir" value="" />
       <setting name="profiles" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="0" />
+      <module name="" />
       <method />
     </configuration>
     <configuration default="true" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
@@ -893,6 +1211,59 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
+      <module name="succulent" />
+      <setting name="path" value="$PROJECT_DIR$/src/succulent/core.cljs" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/succulent" />
+      <setting name="repl" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Retard #4" type="ClojureREPL" factoryName="Remote">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="1" />
+      <module name="succulent" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Retard #3" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="1" />
+      <module name="succulent" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Cuntface" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="nrepl://127.0.0.1" />
+      <setting name="port" value="57408" />
+      <setting name="replType" value="0" />
+      <module name="succulent" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Megawhore" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="http://0.0.0.0" />
+      <setting name="port" value="3449" />
+      <setting name="replType" value="0" />
+      <module name="succulent" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="localhost" />
+      <setting name="port" value="3449" />
+      <setting name="replType" value="0" />
+      <module name="succulent" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Leiningen REPL" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="2" />
+      <module name="succulent" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <method />
+    </configuration>
     <configuration default="false" name="REPL for succulent" type="ClojureREPL" factoryName="Local">
       <setting name="replType" value="1" />
       <module name="succulent" />
@@ -902,15 +1273,16 @@
       <setting name="profiles" value="" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Clojure REPL.REPL for succulent" />
-      <item index="1" class="java.lang.String" itemvalue="Clojure Application.core" />
+    <list size="8">
+      <item index="0" class="java.lang.String" itemvalue="Clojure Application.core" />
+      <item index="1" class="java.lang.String" itemvalue="Clojure REPL.Retard #4" />
+      <item index="2" class="java.lang.String" itemvalue="Clojure REPL.Retard #3" />
+      <item index="3" class="java.lang.String" itemvalue="Clojure REPL.Cuntface" />
+      <item index="4" class="java.lang.String" itemvalue="Clojure REPL.Megawhore" />
+      <item index="5" class="java.lang.String" itemvalue="Clojure REPL.Unnamed" />
+      <item index="6" class="java.lang.String" itemvalue="Clojure REPL.Leiningen REPL" />
+      <item index="7" class="java.lang.String" itemvalue="Clojure REPL.REPL for succulent" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Clojure Application.core" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -935,12 +1307,27 @@
       <workItem from="1478185399569" duration="5940000" />
       <workItem from="1478399335292" duration="42789000" />
       <workItem from="1478447531348" duration="378000" />
-      <workItem from="1478450022523" duration="11897000" />
+      <workItem from="1478450022523" duration="14599000" />
+      <workItem from="1478554970318" duration="38938000" />
+      <workItem from="1478627027732" duration="527000" />
+      <workItem from="1478627613376" duration="830000" />
+      <workItem from="1478628473208" duration="224000" />
+      <workItem from="1478628719558" duration="10674000" />
+      <workItem from="1478887859896" duration="4589000" />
+      <workItem from="1478895669972" duration="928000" />
+      <workItem from="1478896668208" duration="658000" />
+      <workItem from="1478899756437" duration="1532000" />
+      <workItem from="1478902198401" duration="12745000" />
+      <workItem from="1478917196556" duration="57087000" />
+      <workItem from="1479068025516" duration="875000" />
+      <workItem from="1479151605510" duration="52492000" />
+      <workItem from="1479214192933" duration="561000" />
+      <workItem from="1479215515748" duration="23837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83271000" />
+    <option name="totallyTimeSpent" value="292470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -948,33 +1335,33 @@
     <layout>
       <window_info id="eSnippet Pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="iSnippet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="iSnippet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44313148" sideWeight="0.2284345" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23958333" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24930556" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12291667" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2529412" sideWeight="0.7715655" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -991,15 +1378,70 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="ClojureREPL">
+        <watch expression="active-register" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/public/cljs/tests/all-tests.js" />
+    <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/runners/browser.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/succulent/core.cljs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1479344223000" expanded="true" signature="363:428" ph="..." />
+            <marker date="1479344223000" expanded="true" signature="71351:71881" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1007,7 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,24 +1462,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/figwheel_server.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136230">
-          <caret line="7170" column="0" selection-start-line="7170" selection-start-column="0" selection-end-line="7170" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="192565">
+          <caret line="10135" column="0" selection-start-line="10135" selection-start-column="0" selection-end-line="10135" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
@@ -1061,7 +1500,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1479344223000" expanded="true" signature="363:428" ph="..." />
+            <marker date="1479344223000" expanded="true" signature="71351:71881" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/figwheel_server.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136230">
+          <caret line="7170" column="0" selection-start-line="7170" selection-start-column="0" selection-end-line="7170" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/succulent/core.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1479344223000" expanded="true" signature="363:428" ph="..." />
+            <marker date="1479344223000" expanded="true" signature="71351:71881" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1078,22 +1582,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15390">
           <caret line="810" column="0" selection-start-line="810" selection-start-column="0" selection-end-line="810" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
@@ -1116,22 +1618,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1479344223000" expanded="true" signature="363:428" ph="..." />
+            <marker date="1479344223000" expanded="true" signature="71351:71881" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
@@ -1150,15 +1654,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.nrepl-port">
+    <entry file="file://$PROJECT_DIR$/.lein-repl-history" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojurescript/1.9.227/clojurescript-1.9.227.jar!/cljs/core.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44877">
+          <caret line="6411" column="57" selection-start-line="6411" selection-start-column="57" selection-end-line="6411" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/runners/browser.cljs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.lein-repl-history" />
-    <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
+    <entry file="file://$PROJECT_DIR$/resources/public/cljs/tests/all-tests.js" />
+    <entry file="file://$PROJECT_DIR$/src/succulent/trees.cljs" />
+    <entry file="file://$PROJECT_DIR$/target/repl-port" />
+    <entry file="file://$PROJECT_DIR$/.nrepl-port" />
+    <entry file="file:///private/var/folders/tl/jz2skppn6sgbswhzxgk0q0jr0000gn/T/form-init8894643548098611543.clj" />
+    <entry file="file://$PROJECT_DIR$/src/.repl-session1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425160">
+          <caret line="17715" column="0" selection-start-line="17715" selection-start-column="0" selection-end-line="17715" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/tests.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1168,13 +1712,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/figwheel_server.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136230">
-          <caret line="10027" column="0" selection-start-line="10027" selection-start-column="0" selection-end-line="10027" selection-end-column="0" />
+        <state relative-caret-position="413520">
+          <caret line="27317" column="0" selection-start-line="27317" selection-start-column="0" selection-end-line="27317" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -1184,39 +1731,55 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/runners/tests.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojurescript/1.9.227/clojurescript-1.9.227.jar!/cljs/core.cljc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+        <state relative-caret-position="45048">
+          <caret line="1877" column="15" selection-start-line="1877" selection-start-column="15" selection-end-line="1877" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/succulent/core_test.cljs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="-325">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="-181">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/succulent/core.cljs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2812">
-          <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="46">
+          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+          <folding>
+            <marker date="1479344223000" expanded="true" signature="363:428" ph="..." />
+            <marker date="1479344223000" expanded="true" signature="71351:71881" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1299,6 +1862,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Leiningen: args4j:2.0.26</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

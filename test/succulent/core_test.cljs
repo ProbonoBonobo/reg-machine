@@ -2,7 +2,17 @@
   (:require [cljs.test :refer-macros [is testing async]]
             [devcards.core :refer-macros [deftest]]
              [succulent.core :as s]))
-;
+
+;(deftest input-number
+;         (testing "(sendkeys \"5\")")
+;         (sendkeys "5")
+;         (is = (goto :charstring) 5))
+
+;(deftest test7
+;         (testing "make-forest"
+;           (plant :test :forest)
+;           (is (true? (satisfies? Forest (get-in @db [:test]))))))
+
 ;(deftest a-test
 ;  (testing "FIXME, I fail."
 ;    (async done

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: racehub/om-bootstrap:0.6.1">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/racehub/om-bootstrap/0.6.1/om-bootstrap-0.6.1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
