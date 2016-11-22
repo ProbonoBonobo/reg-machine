@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.9.227 {}
+// Compiled by ClojureScript 1.9.293 {}
 goog.provide('clojure.walk');
 goog.require('cljs.core');
 /**
@@ -35,22 +35,22 @@ return outer.call(null,form);
  *   Recognizes all Clojure data structures. Consumes seqs as with doall.
  */
 clojure.walk.postwalk = (function clojure$walk$postwalk(f,form){
-return clojure.walk.walk.call(null,cljs.core.partial.call(null,clojure$walk$postwalk,f),f,form);
+return clojure.walk.walk.call(null,cljs.core.partial.call(null,clojure.walk.postwalk,f),f,form);
 });
 /**
  * Like postwalk, but does pre-order traversal.
  */
 clojure.walk.prewalk = (function clojure$walk$prewalk(f,form){
-return clojure.walk.walk.call(null,cljs.core.partial.call(null,clojure$walk$prewalk,f),cljs.core.identity,f.call(null,form));
+return clojure.walk.walk.call(null,cljs.core.partial.call(null,clojure.walk.prewalk,f),cljs.core.identity,f.call(null,form));
 });
 /**
  * Recursively transforms all map keys from strings to keywords.
  */
 clojure.walk.keywordize_keys = (function clojure$walk$keywordize_keys(m){
-var f = (function (p__33133){
-var vec__33134 = p__33133;
-var k = cljs.core.nth.call(null,vec__33134,(0),null);
-var v = cljs.core.nth.call(null,vec__33134,(1),null);
+var f = (function (p__52738){
+var vec__52739 = p__52738;
+var k = cljs.core.nth.call(null,vec__52739,(0),null);
+var v = cljs.core.nth.call(null,vec__52739,(1),null);
 if(typeof k === 'string'){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.call(null,k),v], null);
 } else {
@@ -71,10 +71,10 @@ return x;
  * Recursively transforms all map keys from keywords to strings.
  */
 clojure.walk.stringify_keys = (function clojure$walk$stringify_keys(m){
-var f = (function (p__33141){
-var vec__33142 = p__33141;
-var k = cljs.core.nth.call(null,vec__33142,(0),null);
-var v = cljs.core.nth.call(null,vec__33142,(1),null);
+var f = (function (p__52746){
+var vec__52747 = p__52746;
+var k = cljs.core.nth.call(null,vec__52747,(0),null);
+var v = cljs.core.nth.call(null,vec__52747,(1),null);
 if((k instanceof cljs.core.Keyword)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.name.call(null,k),v], null);
 } else {
@@ -120,4 +120,4 @@ return x;
 }),form);
 });
 
-//# sourceMappingURL=walk.js.map?rel=1478445827460
+//# sourceMappingURL=walk.js.map?rel=1479783755520

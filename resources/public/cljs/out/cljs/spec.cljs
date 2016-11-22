@@ -177,8 +177,8 @@
   [spec x]
   (explain-data* spec [] (if-let [name (spec-name spec)] [name] []) [] x))
 
-(defn explain-out
-  "prints an explanation to *out*."
+(defn explain-printer
+  "Default printer for explain-data. nil indicates a successful validation."
   [ed]
   (if ed
     (print
@@ -208,6 +208,14 @@
             (pr v)
             (newline)))))
     (println "Success!")))
+
+(def ^:dynamic *explain-out* explain-printer)
+
+(defn explain-out
+  "Prints explanation data (per 'explain-data') to *out* using the printer in *explain-out*,
+    by default explain-printer."
+  [ed]
+  (*explain-out* ed))
 
 (defn explain
   "Given a spec and a value that fails to conform, prints an explanation to *out*."
@@ -425,7 +433,7 @@
        (gen* [_ _ _ _] (if gfn
                          (gfn)
                          (gen/gen-for-pred pred)))
-       (with-gen* [_ gfn] (spec-impl form pred gfn cpred?))
+       (with-gen* [_ gfn] (spec-impl form pred gfn cpred? unc))
        (describe* [_] form)))))
 
 (defn ^:skip-wiki multi-spec-impl
@@ -434,8 +442,7 @@
   ([form mmvar retag gfn]
    (let [id (random-uuid)
          predx #(let [mm @mmvar]
-                 (c/and (contains? (methods mm)
-                                   ((-dispatch-fn mm) %))
+                 (c/and (-get-method mm ((-dispatch-fn mm) %))
                         (mm %)))
          dval #((-dispatch-fn @mmvar) %)
          tag (if (keyword? retag)
@@ -473,7 +480,7 @@
              (when (every? identity gs)
                (gen/one-of gs)))))
        (with-gen* [_ gfn] (multi-spec-impl form mmvar retag gfn))
-       (describe* [_] `(multi-spec ~form))))))
+       (describe* [_] `(multi-spec ~form ~retag))))))
 
 (defn ^:skip-wiki tuple-impl
   "Do not call this directly, use 'tuple'"
@@ -692,7 +699,8 @@
                        (assoc ret (nth (if conform-keys cv v) 0) (nth cv 1))))
                    identity]
 
-                  (list? x) [empty addcv reverse]
+                  (c/or (list? conform-into) (seq? conform-into) (c/and (not conform-into) (c/or (list? x) (seq? x))))
+                  [empty addcv reverse]
 
                   :else [#(empty (c/or conform-into %)) addcv identity]))]
      (reify
