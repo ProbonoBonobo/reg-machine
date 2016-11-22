@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.9.227 {}
+// Compiled by ClojureScript 1.9.293 {}
 goog.provide('quil.middleware');
 goog.require('cljs.core');
 goog.require('quil.middlewares.fun_mode');
@@ -115,4 +115,4 @@ quil.middleware.navigation_2d = (function quil$middleware$navigation_2d(options)
 return quil.middlewares.navigation_2d.navigation_2d.call(null,options);
 });
 
-//# sourceMappingURL=middleware.js.map?rel=1479332394015
+//# sourceMappingURL=middleware.js.map?rel=1479783414923

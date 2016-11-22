@@ -1,0 +1,1 @@
+{:rename-macros {}, :renames {}, :use-macros {testing cljs.test, async cljs.test, is cljs.test, deftest devcards.core}, :excludes #{}, :name succulent.core-test, :imports nil, :requires {cljs.test cljs.test, devcards.core devcards.core, s succulent.core, succulent.core succulent.core}, :uses nil, :require-macros {cljs.test cljs.test, devcards.core devcards.core}, :doc nil}

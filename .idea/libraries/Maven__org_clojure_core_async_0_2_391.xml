@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.clojure:core.async:0.2.391">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojure/core.async/0.2.391/core.async-0.2.391.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojure/core.async/0.2.391/core.async-0.2.391-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojure/core.async/0.2.391/core.async-0.2.391-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
